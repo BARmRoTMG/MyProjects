@@ -6,3 +6,11 @@ I:\Bar Projects\Loops_26.4\obj\Debug\Loops_26.4.csproj.SuggestedBindingRedirects
 I:\Bar Projects\Loops_26.4\obj\Debug\Loops_26.4.csproj.CoreCompileInputs.cache
 I:\Bar Projects\Loops_26.4\obj\Debug\Loops_26.4.exe
 I:\Bar Projects\Loops_26.4\obj\Debug\Loops_26.4.pdb
+I:\Bar Projects\MyProjects\Loops_26.4\bin\Debug\Loops_26.4.exe.config
+I:\Bar Projects\MyProjects\Loops_26.4\bin\Debug\Loops_26.4.exe
+I:\Bar Projects\MyProjects\Loops_26.4\bin\Debug\Loops_26.4.pdb
+I:\Bar Projects\MyProjects\Loops_26.4\obj\Debug\Loops_26.4.csproj.AssemblyReference.cache
+I:\Bar Projects\MyProjects\Loops_26.4\obj\Debug\Loops_26.4.csproj.SuggestedBindingRedirects.cache
+I:\Bar Projects\MyProjects\Loops_26.4\obj\Debug\Loops_26.4.csproj.CoreCompileInputs.cache
+I:\Bar Projects\MyProjects\Loops_26.4\obj\Debug\Loops_26.4.exe
+I:\Bar Projects\MyProjects\Loops_26.4\obj\Debug\Loops_26.4.pdb
