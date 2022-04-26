@@ -1,0 +1,8 @@
+I:\Bar Projects\Exersice_2.2_BMI\bin\Debug\Exersice_2.2_BMI.exe.config
+I:\Bar Projects\Exersice_2.2_BMI\bin\Debug\Exersice_2.2_BMI.exe
+I:\Bar Projects\Exersice_2.2_BMI\bin\Debug\Exersice_2.2_BMI.pdb
+I:\Bar Projects\Exersice_2.2_BMI\obj\Debug\Exersice_2.2_BMI.csproj.AssemblyReference.cache
+I:\Bar Projects\Exersice_2.2_BMI\obj\Debug\Exersice_2.2_BMI.csproj.SuggestedBindingRedirects.cache
+I:\Bar Projects\Exersice_2.2_BMI\obj\Debug\Exersice_2.2_BMI.csproj.CoreCompileInputs.cache
+I:\Bar Projects\Exersice_2.2_BMI\obj\Debug\Exersice_2.2_BMI.exe
+I:\Bar Projects\Exersice_2.2_BMI\obj\Debug\Exersice_2.2_BMI.pdb

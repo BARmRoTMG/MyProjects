@@ -1,0 +1,8 @@
+I:\Bar Projects\Exerceise_2.3_Hotel\bin\Debug\Exerceise_2.3_Hotel.exe.config
+I:\Bar Projects\Exerceise_2.3_Hotel\bin\Debug\Exerceise_2.3_Hotel.exe
+I:\Bar Projects\Exerceise_2.3_Hotel\bin\Debug\Exerceise_2.3_Hotel.pdb
+I:\Bar Projects\Exerceise_2.3_Hotel\obj\Debug\Exerceise_2.3_Hotel.csproj.AssemblyReference.cache
+I:\Bar Projects\Exerceise_2.3_Hotel\obj\Debug\Exerceise_2.3_Hotel.csproj.SuggestedBindingRedirects.cache
+I:\Bar Projects\Exerceise_2.3_Hotel\obj\Debug\Exerceise_2.3_Hotel.csproj.CoreCompileInputs.cache
+I:\Bar Projects\Exerceise_2.3_Hotel\obj\Debug\Exerceise_2.3_Hotel.exe
+I:\Bar Projects\Exerceise_2.3_Hotel\obj\Debug\Exerceise_2.3_Hotel.pdb

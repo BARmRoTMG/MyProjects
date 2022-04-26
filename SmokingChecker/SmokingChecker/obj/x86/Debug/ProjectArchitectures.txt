@@ -1,0 +1,1 @@
+I:\Bar Projects\SmokingChecker\SmokingChecker\SmokingChecker.csproj;x86

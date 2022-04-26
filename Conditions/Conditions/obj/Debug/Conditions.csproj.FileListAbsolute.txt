@@ -1,0 +1,8 @@
+I:\Bar Projects\Conditions\Conditions\bin\Debug\Conditions.exe.config
+I:\Bar Projects\Conditions\Conditions\bin\Debug\Conditions.exe
+I:\Bar Projects\Conditions\Conditions\bin\Debug\Conditions.pdb
+I:\Bar Projects\Conditions\Conditions\obj\Debug\Conditions.csproj.AssemblyReference.cache
+I:\Bar Projects\Conditions\Conditions\obj\Debug\Conditions.csproj.SuggestedBindingRedirects.cache
+I:\Bar Projects\Conditions\Conditions\obj\Debug\Conditions.csproj.CoreCompileInputs.cache
+I:\Bar Projects\Conditions\Conditions\obj\Debug\Conditions.exe
+I:\Bar Projects\Conditions\Conditions\obj\Debug\Conditions.pdb
