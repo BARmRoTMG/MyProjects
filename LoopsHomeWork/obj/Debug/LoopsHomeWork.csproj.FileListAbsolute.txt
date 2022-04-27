@@ -1,0 +1,8 @@
+I:\Bar Projects\MyProjects\LoopsHomeWork\bin\Debug\LoopsHomeWork.exe.config
+I:\Bar Projects\MyProjects\LoopsHomeWork\bin\Debug\LoopsHomeWork.exe
+I:\Bar Projects\MyProjects\LoopsHomeWork\bin\Debug\LoopsHomeWork.pdb
+I:\Bar Projects\MyProjects\LoopsHomeWork\obj\Debug\LoopsHomeWork.csproj.AssemblyReference.cache
+I:\Bar Projects\MyProjects\LoopsHomeWork\obj\Debug\LoopsHomeWork.csproj.SuggestedBindingRedirects.cache
+I:\Bar Projects\MyProjects\LoopsHomeWork\obj\Debug\LoopsHomeWork.csproj.CoreCompileInputs.cache
+I:\Bar Projects\MyProjects\LoopsHomeWork\obj\Debug\LoopsHomeWork.exe
+I:\Bar Projects\MyProjects\LoopsHomeWork\obj\Debug\LoopsHomeWork.pdb
