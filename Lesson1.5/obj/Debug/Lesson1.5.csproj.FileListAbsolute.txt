@@ -1,0 +1,16 @@
+C:\Users\User\source\repos\Lesson1.5\bin\Debug\Lesson1.5.exe.config
+C:\Users\User\source\repos\Lesson1.5\bin\Debug\Lesson1.5.exe
+C:\Users\User\source\repos\Lesson1.5\bin\Debug\Lesson1.5.pdb
+C:\Users\User\source\repos\Lesson1.5\obj\Debug\Lesson1.5.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\Lesson1.5\obj\Debug\Lesson1.5.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\source\repos\Lesson1.5\obj\Debug\Lesson1.5.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Lesson1.5\obj\Debug\Lesson1.5.exe
+C:\Users\User\source\repos\Lesson1.5\obj\Debug\Lesson1.5.pdb
+C:\Users\User\Documents\GitHub\MyProjects\Lesson1.5\bin\Debug\Lesson1.5.exe.config
+C:\Users\User\Documents\GitHub\MyProjects\Lesson1.5\bin\Debug\Lesson1.5.exe
+C:\Users\User\Documents\GitHub\MyProjects\Lesson1.5\bin\Debug\Lesson1.5.pdb
+C:\Users\User\Documents\GitHub\MyProjects\Lesson1.5\obj\Debug\Lesson1.5.csproj.AssemblyReference.cache
+C:\Users\User\Documents\GitHub\MyProjects\Lesson1.5\obj\Debug\Lesson1.5.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\Documents\GitHub\MyProjects\Lesson1.5\obj\Debug\Lesson1.5.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\MyProjects\Lesson1.5\obj\Debug\Lesson1.5.exe
+C:\Users\User\Documents\GitHub\MyProjects\Lesson1.5\obj\Debug\Lesson1.5.pdb
