@@ -10,7 +10,7 @@ namespace Loops_26._4
     {
         static void Main(string[] args)
         {
-            int numOfStudents = 10;
+            int numOfStudents = 11;
             int studentChoice;
             int Dev = 0;
             int QA = 0;
@@ -23,37 +23,26 @@ namespace Loops_26._4
                 Console.WriteLine("Which course would you like to sign to?");
                 Console.WriteLine("1. Development course. \n2. QA course \n3. Talk to a consultant");
 
-                bool bStudentChoice = int.TryParse(Console.ReadLine(), out studentChoice);
+                int.TryParse(Console.ReadLine(), out studentChoice);
 
-                if (bStudentChoice)
-                {
-                    if (studentChoice == 1 || studentChoice == 2 || studentChoice == 3)
-                    {
-                        switch (studentChoice)
-                        {
-                            case 1:
-                                Dev++;
-                                break;
-                            case 2:
-                                QA++;
-                                break;
-                            case 3:
-                                Consultant++;
-                                break;
-                        }
-
-                    } else
-                    {
+                switch (studentChoice)
+                 {
+                   case 1:
+                        Dev++;
+                        break;
+                   case 2:
+                        QA++;
+                        break;
+                   case 3:
+                        Consultant++;
+                        break;
+                   default:
                         Console.ForegroundColor = ConsoleColor.Red;
                         Console.WriteLine("Invalid answer!");
                         i--;
-                    }
-                } else
-                {
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("Invalid answer!");
-                    i--;
+                        break;
                 }
+                
             }
 
             Console.ForegroundColor = ConsoleColor.Green;

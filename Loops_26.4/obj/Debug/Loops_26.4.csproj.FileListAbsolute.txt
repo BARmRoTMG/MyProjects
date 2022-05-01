@@ -14,3 +14,11 @@ I:\Bar Projects\MyProjects\Loops_26.4\obj\Debug\Loops_26.4.csproj.SuggestedBindi
 I:\Bar Projects\MyProjects\Loops_26.4\obj\Debug\Loops_26.4.csproj.CoreCompileInputs.cache
 I:\Bar Projects\MyProjects\Loops_26.4\obj\Debug\Loops_26.4.exe
 I:\Bar Projects\MyProjects\Loops_26.4\obj\Debug\Loops_26.4.pdb
+C:\Users\User\Documents\GitHub\MyProjects\Loops_26.4\bin\Debug\Loops_26.4.exe.config
+C:\Users\User\Documents\GitHub\MyProjects\Loops_26.4\bin\Debug\Loops_26.4.exe
+C:\Users\User\Documents\GitHub\MyProjects\Loops_26.4\bin\Debug\Loops_26.4.pdb
+C:\Users\User\Documents\GitHub\MyProjects\Loops_26.4\obj\Debug\Loops_26.4.csproj.AssemblyReference.cache
+C:\Users\User\Documents\GitHub\MyProjects\Loops_26.4\obj\Debug\Loops_26.4.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\Documents\GitHub\MyProjects\Loops_26.4\obj\Debug\Loops_26.4.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\MyProjects\Loops_26.4\obj\Debug\Loops_26.4.exe
+C:\Users\User\Documents\GitHub\MyProjects\Loops_26.4\obj\Debug\Loops_26.4.pdb
