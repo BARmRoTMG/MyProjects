@@ -58,7 +58,7 @@ namespace Lesson1._5
             //        if (userNum < 0)
             //        {
             //            negativeNum = userNum;
-            //            output += negativeNum.ToString() + ", ";
+            //            output += negativeNum.ToString() + " ";
             //        }
             //    }
             //    else
@@ -81,27 +81,60 @@ namespace Lesson1._5
 
             // EXERCISE 3
 
-            int input;
-            int sumSingles = 0;
-            int sumScores = 0;
 
-            for (int i = 0; i < 10; i++)
+            //int input;
+            //int sumSingles = 0;
+            //int sumScores = 0;
+
+            //for (int i = 0; i < 10; i++)
+            //{
+            //    Console.WriteLine("Enter number #{0}", (i + 1));
+            //    if (int.TryParse(Console.ReadLine(), out input) && (input > 9) && (input < 100))
+            //    {
+            //        sumSingles += input % 10;
+            //        sumScores += input / 10;
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Not a 2-digit number.");
+            //        i--;
+            //    }
+            //}
+            //Console.WriteLine("The sum of the single digits is " + sumSingles);
+            //Console.WriteLine("The sum of the score digits is " + sumScores);
+
+
+            // TIMES BOARD
+
+
+            //for (int i = 1; i <= 10; i++)
+            //{
+            //    for (int j = 1; j <= 10; j++)
+            //    {
+            //        Console.Write(i * j);
+            //        Console.Write("\t");
+            //    }
+            //    Console.WriteLine(" ");
+            //}
+
+
+            // LOOPS IN LOOPS
+
+
+            Console.WriteLine("Height of rectangle: ");
+            int height = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Width of rectangle: ");
+            int width = int.Parse(Console.ReadLine());
+
+            for (int i = 0; i < height; i++)
             {
-                Console.WriteLine("Enter number #{0}", (i + 1));
-                if (int.TryParse(Console.ReadLine(), out input) && (input > 9) && (input < 100))
+                for (int j = 0; j < width; j++)
                 {
-                    sumSingles += input % 10;
-                    sumScores += input / 10;
+                    Console.Write("*");
                 }
-                else
-                {
-                    Console.WriteLine("Not a 2-digit number.");
-                    i--;
-                }
-            }
-            Console.WriteLine("The sum of the single digits is " + sumSingles);
-            Console.WriteLine("The sum of the score digits is " + sumScores);
-
+                Console.WriteLine(" ");
+            } 
             Console.ReadKey();
         }
     }
