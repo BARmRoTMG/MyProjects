@@ -1,0 +1,8 @@
+I:\Bar Projects\MyProjects\IntroductionTirgul\bin\Debug\IntroductionTirgul.exe.config
+I:\Bar Projects\MyProjects\IntroductionTirgul\bin\Debug\IntroductionTirgul.exe
+I:\Bar Projects\MyProjects\IntroductionTirgul\bin\Debug\IntroductionTirgul.pdb
+I:\Bar Projects\MyProjects\IntroductionTirgul\obj\Debug\IntroductionTirgul.csproj.AssemblyReference.cache
+I:\Bar Projects\MyProjects\IntroductionTirgul\obj\Debug\IntroductionTirgul.csproj.SuggestedBindingRedirects.cache
+I:\Bar Projects\MyProjects\IntroductionTirgul\obj\Debug\IntroductionTirgul.csproj.CoreCompileInputs.cache
+I:\Bar Projects\MyProjects\IntroductionTirgul\obj\Debug\IntroductionTirgul.exe
+I:\Bar Projects\MyProjects\IntroductionTirgul\obj\Debug\IntroductionTirgul.pdb
