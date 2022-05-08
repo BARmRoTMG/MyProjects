@@ -1,1 +1,1 @@
-I:\Bar Projects\Calculator\Calculator\Calculator.csproj;x86
+I:\Bar Projects\MyProjects\Calculator\Calculator\Calculator.csproj;x86
