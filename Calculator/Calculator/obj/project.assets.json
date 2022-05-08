@@ -8166,11 +8166,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "I:\\Bar Projects\\Calculator\\Calculator\\Calculator.csproj",
+      "projectUniqueName": "I:\\Bar Projects\\MyProjects\\Calculator\\Calculator\\Calculator.csproj",
       "projectName": "Calculator",
-      "projectPath": "I:\\Bar Projects\\Calculator\\Calculator\\Calculator.csproj",
+      "projectPath": "I:\\Bar Projects\\MyProjects\\Calculator\\Calculator\\Calculator.csproj",
       "packagesPath": "C:\\Users\\barba\\.nuget\\packages\\",
-      "outputPath": "I:\\Bar Projects\\Calculator\\Calculator\\obj\\",
+      "outputPath": "I:\\Bar Projects\\MyProjects\\Calculator\\Calculator\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [

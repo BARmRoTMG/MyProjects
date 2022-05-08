@@ -10,22 +10,22 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>d800f33a-6b58-4e55-abeb-255cd0a63915</PackageIdentityName>
     <PackageIdentityPublisher>CN=barba</PackageIdentityPublisher>
-    <IntermediateOutputPath>I:\Bar Projects\Calculator\Calculator\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>I:\Bar Projects\MyProjects\Calculator\Calculator\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>I:\Bar Projects\Calculator\Calculator\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>I:\Bar Projects\MyProjects\Calculator\Calculator\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="I:\Bar Projects\Calculator\Calculator\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="I:\Bar Projects\MyProjects\Calculator\Calculator\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="I:\Bar Projects\Calculator\Calculator\bin\x86\Debug\Calculator.exe">
+    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\Calculator\Calculator\bin\x86\Debug\Calculator.exe">
       <PackagePath>entrypoint\Calculator.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.13\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
@@ -34,52 +34,52 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.19041.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="I:\Bar Projects\Calculator\Calculator\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\Calculator\Calculator\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="I:\Bar Projects\Calculator\Calculator\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\Calculator\Calculator\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="I:\Bar Projects\Calculator\Calculator\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\Calculator\Calculator\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="I:\Bar Projects\Calculator\Calculator\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\Calculator\Calculator\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="I:\Bar Projects\Calculator\Calculator\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\Calculator\Calculator\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="I:\Bar Projects\Calculator\Calculator\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\Calculator\Calculator\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="I:\Bar Projects\Calculator\Calculator\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\Calculator\Calculator\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="I:\Bar Projects\Calculator\Calculator\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\Calculator\Calculator\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="I:\Bar Projects\Calculator\Calculator\bin\x86\Debug\Calculator.xr.xml">
+    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\Calculator\Calculator\bin\x86\Debug\Calculator.xr.xml">
       <PackagePath>Calculator.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="I:\Bar Projects\Calculator\Calculator\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\Calculator\Calculator\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="I:\Bar Projects\Calculator\Calculator\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\Calculator\Calculator\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="I:\Bar Projects\Calculator\Calculator\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\Calculator\Calculator\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="I:\Bar Projects\Calculator\Calculator\bin\x86\Debug\Core\Calculator.exe">
+    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\Calculator\Calculator\bin\x86\Debug\Core\Calculator.exe">
       <PackagePath>Calculator.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
