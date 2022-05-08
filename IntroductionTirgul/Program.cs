@@ -274,9 +274,14 @@ namespace IntroductionTirgul
 
 
             // While Loops 3
-            int width = 5;
-            int height = 5;
+            //int width = 5;
+            //int height = 5;
+            for     (int i = 1; i != 10; i += 2)
+            {
+                Console.WriteLine(i);
+            }
 
+           /* 
             for (int i = 1; i < width; i++)
             {
                 for (int j = 1; j < height; j++)
@@ -285,7 +290,7 @@ namespace IntroductionTirgul
                 }
                 Console.WriteLine(" ");
                 Console.Write(i);
-            }
+            }*/
 
             Console.ReadKey();
         }
