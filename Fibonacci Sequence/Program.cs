@@ -8,20 +8,48 @@ namespace Fibonacci_Sequence
 {
     internal class Program
     {
-        public static int FibonacciSeries(int n)
-        {
-            if (n == 0) return 0;
-            if (n == 1) return 1; 
-            return FibonacciSeries(n - 1) + FibonacciSeries(n - 2);
-        }
         public static void Main(string[] args)
         {
-            Console.Write("Enter the length of the Fibonacci Series: ");
-            int length = Convert.ToInt32(Console.ReadLine());
-            for (int i = 0; i < length; i++)
+            int index;
+
+            for (int i = 0; i < 1; i++)
             {
-                Console.Write("{0} ", FibonacciSeries(i));
-            }
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.Write("Enter an index for Fibonacci Sequence: ");
+
+                if (int.TryParse(Console.ReadLine(), out index))
+                {
+                    if (index == 0)
+                    {
+                        Console.WriteLine("0");
+                    }
+                    else if (index <= 0)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("Illegal action!");
+                        i--;
+                    }
+                    else
+                    {
+                        int first = 0, second = 1, third;
+
+                        Console.Write(first + " " + second + " ");
+
+                        for (int j = 2; j < index; j++)
+                        {
+                            third = first + second;
+                            Console.Write(third + " ");
+                            first = second;
+                            second = third;
+                        }
+                    }
+                } else
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Invalid input!");
+                    i--;
+                }
+            }               
             Console.ReadKey();
         }
     }
