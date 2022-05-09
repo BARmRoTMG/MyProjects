@@ -1,0 +1,8 @@
+I:\Bar Projects\MyProjects\Classes_Methods_9.5\bin\Debug\Classes_Methods_9.5.exe.config
+I:\Bar Projects\MyProjects\Classes_Methods_9.5\bin\Debug\Classes_Methods_9.5.exe
+I:\Bar Projects\MyProjects\Classes_Methods_9.5\bin\Debug\Classes_Methods_9.5.pdb
+I:\Bar Projects\MyProjects\Classes_Methods_9.5\obj\Debug\Classes_Methods_9.5.csproj.AssemblyReference.cache
+I:\Bar Projects\MyProjects\Classes_Methods_9.5\obj\Debug\Classes_Methods_9.5.csproj.SuggestedBindingRedirects.cache
+I:\Bar Projects\MyProjects\Classes_Methods_9.5\obj\Debug\Classes_Methods_9.5.csproj.CoreCompileInputs.cache
+I:\Bar Projects\MyProjects\Classes_Methods_9.5\obj\Debug\Classes_Methods_9.5.exe
+I:\Bar Projects\MyProjects\Classes_Methods_9.5\obj\Debug\Classes_Methods_9.5.pdb
