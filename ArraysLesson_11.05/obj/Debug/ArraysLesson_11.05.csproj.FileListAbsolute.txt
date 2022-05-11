@@ -1,0 +1,8 @@
+C:\Users\User\Documents\GitHub\MyProjects\ArraysLesson_11.05\bin\Debug\ArraysLesson_11.05.exe.config
+C:\Users\User\Documents\GitHub\MyProjects\ArraysLesson_11.05\bin\Debug\ArraysLesson_11.05.exe
+C:\Users\User\Documents\GitHub\MyProjects\ArraysLesson_11.05\bin\Debug\ArraysLesson_11.05.pdb
+C:\Users\User\Documents\GitHub\MyProjects\ArraysLesson_11.05\obj\Debug\ArraysLesson_11.05.csproj.AssemblyReference.cache
+C:\Users\User\Documents\GitHub\MyProjects\ArraysLesson_11.05\obj\Debug\ArraysLesson_11.05.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\Documents\GitHub\MyProjects\ArraysLesson_11.05\obj\Debug\ArraysLesson_11.05.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\MyProjects\ArraysLesson_11.05\obj\Debug\ArraysLesson_11.05.exe
+C:\Users\User\Documents\GitHub\MyProjects\ArraysLesson_11.05\obj\Debug\ArraysLesson_11.05.pdb
