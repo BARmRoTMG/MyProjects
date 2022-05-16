@@ -1,0 +1,40 @@
+﻿<Page
+    x:Class="ArraysInUWP.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ArraysInUWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Height="400" Width="400"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="120"/>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="150"/>
+        </Grid.ColumnDefinitions>
+        
+        <TextBlock Text="Name:" FontSize="24" VerticalAlignment="Center"></TextBlock>
+        <TextBlock Text="Grade:" FontSize="24" VerticalAlignment="Center" Grid.Row="1"></TextBlock>
+        <TextBox x:Name="nameInput" Grid.Column="1" FontSize="22" VerticalAlignment="Center"></TextBox>
+        <TextBox x:Name="gradeInput" Grid.Column="1" Grid.Row="1" FontSize="22" VerticalAlignment="Center"></TextBox>
+
+        <StackPanel  Grid.Column="2" Grid.RowSpan="2" >
+            <Button x:Name="enterButton" Content="Enter" HorizontalAlignment="Stretch" Click="Button_Click"></Button>
+            <Button x:Name="copyButton" Content="Copy To TextBox" HorizontalAlignment="Stretch" Click="Copy_Click"></Button>
+            <Button x:Name="removeSelectedButton" Content="Remove Selected" HorizontalAlignment="Stretch" Click="RemoveSelected_Click"></Button>
+            <Button x:Name="removeFirst" Content="Remove First" HorizontalAlignment="Stretch" Click="RemoveFirst_Click"></Button>
+            <Button x:Name="removeLast" Content="Remove Last" HorizontalAlignment="Stretch" Click="RemoveLast_Click"></Button>
+        </StackPanel>
+
+        <Button x:Name="sortButton" Content="Sort By Name" Grid.Row = "2" Grid.ColumnSpan="3" HorizontalAlignment="Stretch"></Button>
+        <ListBox x:Name="listOutput" Grid.Row="3" Grid.ColumnSpan="3"></ListBox>
+    </Grid>
+</Page>
