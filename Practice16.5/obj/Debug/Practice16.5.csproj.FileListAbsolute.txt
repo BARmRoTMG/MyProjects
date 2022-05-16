@@ -1,0 +1,8 @@
+I:\Bar Projects\MyProjects\Practice16.5\bin\Debug\Practice16.5.exe.config
+I:\Bar Projects\MyProjects\Practice16.5\bin\Debug\Practice16.5.exe
+I:\Bar Projects\MyProjects\Practice16.5\bin\Debug\Practice16.5.pdb
+I:\Bar Projects\MyProjects\Practice16.5\obj\Debug\Practice16.5.csproj.AssemblyReference.cache
+I:\Bar Projects\MyProjects\Practice16.5\obj\Debug\Practice16.5.csproj.SuggestedBindingRedirects.cache
+I:\Bar Projects\MyProjects\Practice16.5\obj\Debug\Practice16.5.csproj.CoreCompileInputs.cache
+I:\Bar Projects\MyProjects\Practice16.5\obj\Debug\Practice16.5.exe
+I:\Bar Projects\MyProjects\Practice16.5\obj\Debug\Practice16.5.pdb
