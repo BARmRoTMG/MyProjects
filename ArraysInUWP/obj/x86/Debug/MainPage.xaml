@@ -34,7 +34,7 @@
             <Button x:ConnectionId='10' x:Name="removeLast" Content="Remove Last" HorizontalAlignment="Stretch"                         ></Button>
         </StackPanel>
 
-        <Button x:ConnectionId='4' x:Name="sortButton" Content="Sort By Name" Grid.Row = "2" Grid.ColumnSpan="3" HorizontalAlignment="Stretch"></Button>
+        <Button x:ConnectionId='4' x:Name="sortButton" Content="Sort By Grade" Grid.Row = "2" Grid.ColumnSpan="3" HorizontalAlignment="Stretch"                         ></Button>
         <ListBox x:ConnectionId='5' x:Name="listOutput" Grid.Row="3" Grid.ColumnSpan="3"                                     ></ListBox>
     </Grid>
 </Page>
