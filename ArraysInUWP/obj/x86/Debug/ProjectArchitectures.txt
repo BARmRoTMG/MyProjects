@@ -1,1 +1,1 @@
-I:\Bar Projects\MyProjects\ArraysInUWP\ArraysInUWP.csproj;x86
+C:\Users\User\Documents\GitHub\MyProjects\ArraysInUWP\ArraysInUWP.csproj;x86

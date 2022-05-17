@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eQcWCQ1zJdTFmt/LaU3cMqcjaWPpq/ykVRd8swnTqIK+bqVI+Rd6zIxhksPreSuEpk9+89Llff7cTnqIjtwwtA==",
+  "dgSpecHash": "5urc7rvv8nX1Z4gjCOmYykfq9x+PP7HPUWaCVAUlp/6FyJOmET+uMhyD+/fNPdbChyKClx7FZiuQL1VxJOOfcQ==",
   "success": true,
-  "projectFilePath": "I:\\Bar Projects\\MyProjects\\ArraysInUWP\\ArraysInUWP.csproj",
+  "projectFilePath": "C:\\Users\\User\\Documents\\GitHub\\MyProjects\\ArraysInUWP\\ArraysInUWP.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.native.compiler\\2.2.11-rel-30601-02\\microsoft.net.native.compiler.2.2.11-rel-30601-02.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.uwpcoreruntimesdk\\2.2.13\\microsoft.net.uwpcoreruntimesdk.2.2.13.nupkg.sha512",

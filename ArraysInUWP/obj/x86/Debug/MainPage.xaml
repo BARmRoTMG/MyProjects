@@ -35,7 +35,7 @@
         </StackPanel>
 
         <Button x:ConnectionId='4' x:Name="sortButton" Content="Sort By Name" Grid.Row = "2" Grid.ColumnSpan="3" HorizontalAlignment="Stretch"></Button>
-        <ListBox x:ConnectionId='5' x:Name="listOutput" Grid.Row="3" Grid.ColumnSpan="3"></ListBox>
+        <ListBox x:ConnectionId='5' x:Name="listOutput" Grid.Row="3" Grid.ColumnSpan="3"                                     ></ListBox>
     </Grid>
 </Page>
 

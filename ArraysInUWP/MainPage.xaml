@@ -34,7 +34,7 @@
             <Button x:Name="removeLast" Content="Remove Last" HorizontalAlignment="Stretch" Click="RemoveLast_Click"></Button>
         </StackPanel>
 
-        <Button x:Name="sortButton" Content="Sort By Name" Grid.Row = "2" Grid.ColumnSpan="3" HorizontalAlignment="Stretch"></Button>
-        <ListBox x:Name="listOutput" Grid.Row="3" Grid.ColumnSpan="3"></ListBox>
+        <Button x:Name="sortButton" Content="Sort By Name" Grid.Row = "2" Grid.ColumnSpan="3" HorizontalAlignment="Stretch" Click="sortButton_Click"></Button>
+        <ListBox x:Name="listOutput" Grid.Row="3" Grid.ColumnSpan="3" SizeChanged="listOutput_SizeChanged"></ListBox>
     </Grid>
 </Page>

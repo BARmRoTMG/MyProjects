@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.UI.Popups;
 
 namespace ArraysInUWP
 {
@@ -20,23 +21,30 @@ namespace ArraysInUWP
         private const int _NUMBER_OF_STUDENTS = 5;
         private int _counter = 0;
         private string[] _namesList;
+        private int[] _gradesList;
 
         public MainPage()
         {
             this.InitializeComponent();
             _namesList = new string[_NUMBER_OF_STUDENTS];
+            _gradesList = new int[_NUMBER_OF_STUDENTS];
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private async void Button_Click(object sender, RoutedEventArgs e)
         {
-            _namesList[_counter] = nameInput.Text + "\t" + gradeInput.Text;
-            nameInput.Text = "";
-            gradeInput.Text = "";
-            listOutput.Items.Add(_namesList[_counter]);
-            _counter++;
-
-            if (_counter == _NUMBER_OF_STUDENTS)
-                    enterButton.IsEnabled = false;
+            if (!string.IsNullOrWhiteSpace(nameInput.Text) && int.TryParse(gradeInput.Text, out _gradesList[_counter]))
+            {
+                listOutput.Items.Add(nameInput.Text + "\t\t" + gradeInput.Text);
+                _namesList[_counter] = nameInput.Text;
+                _counter++;
+                gradeInput.Text = "";
+                nameInput.Text = "";
+                nameInput.Focus(FocusState.Keyboard);
+            } else
+            {
+                MessageDialog msg = new MessageDialog("ERROR:\nThe name or the grade you entered are incorect.");
+                msg.ShowAsync();
+            }
         }
 
         private void Copy_Click(object sender, RoutedEventArgs e)
@@ -48,15 +56,30 @@ namespace ArraysInUWP
         private void RemoveSelected_Click(object sender, RoutedEventArgs e)
         {
             if (listOutput.SelectedIndex != -1)
-                //listOutput.SelectedItems.Clear();
+                listOutput.Items.RemoveAt(listOutput.SelectedIndex);
         }
 
         private void RemoveFirst_Click(object sender, RoutedEventArgs e)
         {
-
+            if (listOutput.Items.Count > 0)
+                listOutput.Items.RemoveAt(0);
         }
 
         private void RemoveLast_Click(object sender, RoutedEventArgs e)
+        {
+            if (listOutput.Items.Count > 0)
+                listOutput.Items.RemoveAt(listOutput.Items.Count - 1);
+        }
+
+        private void listOutput_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+            if (_counter < _NUMBER_OF_STUDENTS)
+                enterButton.IsEnabled = true;
+            else
+                enterButton.IsEnabled = false;
+        }
+
+        private void sortButton_Click(object sender, RoutedEventArgs e)
         {
 
         }

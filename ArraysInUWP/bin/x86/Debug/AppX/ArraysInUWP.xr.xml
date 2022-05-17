@@ -45,7 +45,9 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootEvent Name="Click" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ListBox" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ListBox">
+      <RootEvent Name="SizeChanged" />
+    </RootType>
     <RootType FullName="ArraysInUWP.MainPage" />
   </Roots.RootTypes>
 </Roots>
