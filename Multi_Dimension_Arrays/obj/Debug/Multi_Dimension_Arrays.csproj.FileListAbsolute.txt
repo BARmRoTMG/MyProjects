@@ -1,0 +1,8 @@
+C:\Users\User\Documents\GitHub\MyProjects\Multi_Dimension_Arrays\bin\Debug\Multi_Dimension_Arrays.exe.config
+C:\Users\User\Documents\GitHub\MyProjects\Multi_Dimension_Arrays\bin\Debug\Multi_Dimension_Arrays.exe
+C:\Users\User\Documents\GitHub\MyProjects\Multi_Dimension_Arrays\bin\Debug\Multi_Dimension_Arrays.pdb
+C:\Users\User\Documents\GitHub\MyProjects\Multi_Dimension_Arrays\obj\Debug\Multi_Dimension_Arrays.csproj.AssemblyReference.cache
+C:\Users\User\Documents\GitHub\MyProjects\Multi_Dimension_Arrays\obj\Debug\Multi_Dimension_Arrays.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\Documents\GitHub\MyProjects\Multi_Dimension_Arrays\obj\Debug\Multi_Dimension_Arrays.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\MyProjects\Multi_Dimension_Arrays\obj\Debug\Multi_Dimension_Arrays.exe
+C:\Users\User\Documents\GitHub\MyProjects\Multi_Dimension_Arrays\obj\Debug\Multi_Dimension_Arrays.pdb

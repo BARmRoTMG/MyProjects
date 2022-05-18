@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\User\Documents\GitHub\MyProjects\ArraysInUWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-05-17T13:11:56.965</Modified>
+      <Modified>2022-05-18T08:33:29.714</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\ArraysInUWP\bin\x86\Debug\ArraysInUWP.exe">
       <PackagePath>entrypoint\ArraysInUWP.exe</PackagePath>
-      <Modified>2022-05-17T13:11:56.404</Modified>
+      <Modified>2022-05-18T08:33:28.830</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.13\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -86,15 +86,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\ArraysInUWP\bin\x86\Debug\ArraysInUWP.xr.xml">
       <PackagePath>ArraysInUWP.xr.xml</PackagePath>
-      <Modified>2022-05-17T08:00:10.048</Modified>
+      <Modified>2022-05-18T06:31:19.313</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\ArraysInUWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2022-05-17T13:11:56.351</Modified>
+      <Modified>2022-05-18T08:33:28.749</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\ArraysInUWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2022-05-17T13:11:56.351</Modified>
+      <Modified>2022-05-18T08:33:28.749</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -106,7 +106,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\ArraysInUWP\bin\x86\Debug\Core\ArraysInUWP.exe">
       <PackagePath>ArraysInUWP.exe</PackagePath>
-      <Modified>2022-05-17T13:11:56.962</Modified>
+      <Modified>2022-05-18T08:33:29.703</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -11,8 +11,8 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="80"/>
-            <RowDefinition Height="80"/>
-            <RowDefinition Height="40"/>
+            <RowDefinition Height="85"/>
+            <RowDefinition Height="35"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
@@ -21,10 +21,16 @@
             <ColumnDefinition Width="150"/>
         </Grid.ColumnDefinitions>
         
-        <TextBlock Text="Name:" FontSize="24" VerticalAlignment="Center"></TextBlock>
-        <TextBlock Text="Grade:" FontSize="24" VerticalAlignment="Center" Grid.Row="1"></TextBlock>
-        <TextBox x:Name="nameInput" Grid.Column="1" FontSize="22" VerticalAlignment="Center"></TextBox>
-        <TextBox x:Name="gradeInput" Grid.Column="1" Grid.Row="1" FontSize="22" VerticalAlignment="Center"></TextBox>
+        <TextBlock Text="Name:" FontSize="24" VerticalAlignment="Top"></TextBlock>
+        <TextBlock Text="Grade:" FontSize="24" VerticalAlignment="Bottom" Grid.Row="0"></TextBlock>
+        <TextBox x:Name="nameInput" Grid.Column="1" FontSize="22" VerticalAlignment="Top"></TextBox>
+        <TextBox x:Name="gradeInput" Grid.Column="1" Grid.Row="0" FontSize="22" VerticalAlignment="Bottom"></TextBox>
+
+        <StackPanel Grid.ColumnSpan="2" Grid.Row="1">
+            <Button x:Name="bestStudent" Content="Best students" HorizontalAlignment="Stretch" Height="30" Click="bestStudent_Click"></Button>
+            <Button x:Name="worstStudent" Content="Worst Students" HorizontalAlignment="Stretch" Height="30" Click="worstStudent_Click"></Button>
+            <Button x:Name="avarageStudent" Content="Avarage students"  HorizontalAlignment="Stretch" Height="30" Click="avarageStudent_Click"></Button>
+        </StackPanel>
 
         <StackPanel  Grid.Column="2" Grid.RowSpan="2" >
             <Button x:Name="enterButton" Content="Enter" HorizontalAlignment="Stretch" Click="Button_Click"></Button>
