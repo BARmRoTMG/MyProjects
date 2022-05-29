@@ -1,0 +1,8 @@
+I:\Bar Projects\MyProjects\Objects_Classes_22.5\bin\Debug\Objects_Classes_22.5.exe.config
+I:\Bar Projects\MyProjects\Objects_Classes_22.5\bin\Debug\Objects_Classes_22.5.exe
+I:\Bar Projects\MyProjects\Objects_Classes_22.5\bin\Debug\Objects_Classes_22.5.pdb
+I:\Bar Projects\MyProjects\Objects_Classes_22.5\obj\Debug\Objects_Classes_22.5.csproj.AssemblyReference.cache
+I:\Bar Projects\MyProjects\Objects_Classes_22.5\obj\Debug\Objects_Classes_22.5.csproj.SuggestedBindingRedirects.cache
+I:\Bar Projects\MyProjects\Objects_Classes_22.5\obj\Debug\Objects_Classes_22.5.csproj.CoreCompileInputs.cache
+I:\Bar Projects\MyProjects\Objects_Classes_22.5\obj\Debug\Objects_Classes_22.5.exe
+I:\Bar Projects\MyProjects\Objects_Classes_22.5\obj\Debug\Objects_Classes_22.5.pdb

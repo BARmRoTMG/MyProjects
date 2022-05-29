@@ -1,0 +1,34 @@
+﻿<Page
+    x:Class="DodgeGame.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DodgeGame"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Grid>
+
+
+        <Canvas x:Name="canvas"></Canvas>
+        <TextBlock x:Name="healthText" TextWrapping="Wrap" Text="3" FontSize="60"/>
+        <CommandBar VerticalAlignment="Bottom" Height="40" Background="#C1100F0F">
+            <AppBarButton x:Name="startNewButton" Content="START NEW GAME" FontSize="40" Width="120" Click="startNewButton_Click"></AppBarButton>
+            <AppBarButton x:Name="saveGameButton" Content="SAVE GAME" FontSize="40" Width="120" Icon="Save"/>
+            <AppBarButton x:Name="loadGameButton" Content="LOAD GAME" FontSize="40" Width="120"/>
+
+            <AppBarButton x:Name="diffucultyButton" Content="DIFFICULTY" FontSize="40" Width="120">
+                <AppBarButton.Flyout>
+                    <MenuFlyout>
+                        <MenuFlyoutItem Text="Easy" Click="MenuFlyoutItem_Click"></MenuFlyoutItem>
+                        <MenuFlyoutItem Text="Normal" Click="MenuFlyoutItem_Click_1"></MenuFlyoutItem>
+                        <MenuFlyoutItem Text="Hard" Click="MenuFlyoutItem_Click_2"></MenuFlyoutItem>
+                    </MenuFlyout>
+                </AppBarButton.Flyout>
+            </AppBarButton>
+            
+            <AppBarButton  x:Name="pauseButton" FontSize="100" Width="120" Click="pauseButton_Click">
+                <SymbolIcon x:Name="pause_play" Symbol="Pause"/>
+            </AppBarButton>
+        </CommandBar>
+    </Grid>
+</Page>
