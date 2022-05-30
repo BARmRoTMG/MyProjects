@@ -12,7 +12,6 @@ namespace DodgeGame
     internal class Enemy : PlayerController
     {
         //Enemy fields
-        GameManager gameManager;
         public Enemy(int x, int y) : base(x, y, 60, 60)
         {
         }

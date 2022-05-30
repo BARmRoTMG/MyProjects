@@ -13,9 +13,6 @@ namespace DodgeGame.Scripts
         public int Width { get; set; }
         public int Height { get; set; }
 
-        public int MoveSpeed = 3;
-        public int CollisionTimes = 0;
-
         public PlayerController(int x, int y, int width, int height)
         {
             this.X = x;

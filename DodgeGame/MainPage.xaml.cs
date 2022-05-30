@@ -32,7 +32,7 @@ namespace DodgeGame
 
 
         //SETTINGS FIELDS
-        private bool gameRunning = false;
+        private bool isPaused = false;
         private bool isIdle;
         
         public MainPage()
@@ -131,20 +131,22 @@ namespace DodgeGame
             EnemyMove();
             CheckBounds();
             Collision();
+            PlayerCollision();
+            CheckWinLoose();
         }
         public void EnemyMove()
         {
             for (int i = 0; i < enemies.Length; i++)
             {
                 if (Canvas.GetTop(_playerSprite) < Canvas.GetTop(enemies[i]))
-                    Canvas.SetTop(enemies[i], Canvas.GetTop(enemies[i]) -1);
+                    Canvas.SetTop(enemies[i], Canvas.GetTop(enemies[i]) - gameManager.MoveSpeed);
                 else if (Canvas.GetTop(_playerSprite) > Canvas.GetTop(enemies[i]))
-                    Canvas.SetTop(enemies[i], Canvas.GetTop(enemies[i]) + 1);
+                    Canvas.SetTop(enemies[i], Canvas.GetTop(enemies[i]) + gameManager.MoveSpeed);
 
                 if (Canvas.GetLeft(_playerSprite) < Canvas.GetLeft(enemies[i]))
-                    Canvas.SetLeft(enemies[i], Canvas.GetLeft(enemies[i]) - 1);
+                    Canvas.SetLeft(enemies[i], Canvas.GetLeft(enemies[i]) - gameManager.MoveSpeed);
                 else if (Canvas.GetLeft(_playerSprite) > Canvas.GetLeft(enemies[i]))
-                    Canvas.SetLeft(enemies[i], Canvas.GetLeft(enemies[i]) + 1);
+                    Canvas.SetLeft(enemies[i], Canvas.GetLeft(enemies[i]) + gameManager.MoveSpeed);
             }
         }
         public void CheckBounds()
@@ -155,39 +157,75 @@ namespace DodgeGame
             else if (Canvas.GetLeft(_playerSprite) < -50)
                 Canvas.SetLeft(_playerSprite, Window.Current.Bounds.Width);
             else if (Canvas.GetTop(_playerSprite) > Window.Current.Bounds.Height)
-                Canvas.SetTop(_playerSprite, 0);
+                Canvas.SetTop(_playerSprite, -30);
             else if (Canvas.GetTop(_playerSprite) < -50)
                 Canvas.SetTop(_playerSprite, Window.Current.Bounds.Height);
-
-            //Enemy bounds
-            if (Canvas.GetLeft(_enemySprite) > Window.Current.Bounds.Width)
-                Canvas.SetLeft(_enemySprite, -30);
-            else if (Canvas.GetLeft(_enemySprite) < -50)
-                Canvas.SetLeft(_enemySprite, Window.Current.Bounds.Width);
-            else if (Canvas.GetTop(_enemySprite) > Window.Current.Bounds.Height)
-                Canvas.SetTop(_enemySprite, 0);
-            else if (Canvas.GetTop(_enemySprite) < -50)
-                Canvas.SetTop(_enemySprite, Window.Current.Bounds.Height);
         }
 
         public void Collision()
         {
             for (int i = 0; i < gameManager.enemiesArr.Length; i++)
             {
-                for (int j = 1; j < gameManager.enemiesArr.Length; j++)
+                for (int j = 0; j < gameManager.enemiesArr.Length; j++)
                 {
-                    if (gameManager.enemiesArr[i].Y == gameManager.enemiesArr[j].Y && gameManager.enemiesArr[i].X == gameManager.enemiesArr[j].X)
-                        healthText.Text = "CONTACT";
+                    if (i != j)
+                    {
+                        if (Math.Pow(Canvas.GetTop(enemies[i]) - (Canvas.GetTop(enemies[j])), 2) + Math.Pow(Canvas.GetLeft(enemies[i]) - (Canvas.GetLeft(enemies[j])), 2) == Math.Pow(_enemySprite.Width, 2))
+                        {
+                            Canvas.SetLeft(enemies[i], 5000);
+                            Canvas.SetTop(enemies[i], 5000);
+                            gameManager.EnemiesCounter--;
+                        }
+                    }
+                        
                 }
+            }
+        }
+        public void PlayerCollision()
+        {
+            for (int i = 0; i < gameManager.enemiesArr.Length; i++)
+            {
+                for (int j = 0; j < gameManager.enemiesArr.Length; j++)
+                {
+                    if (i != j)
+                    {
+                        if (Math.Pow(Canvas.GetTop(enemies[i]) - (Canvas.GetTop(enemies[j])), 2) + Math.Pow(Canvas.GetLeft(enemies[i]) - (Canvas.GetLeft(enemies[j])), 2) == Math.Pow(_playerSprite.Width, 2))
+                        {
+                            healthText.Text = Convert.ToString(gameManager.LifesLeft--);
+                        }
+                    }
+
+                }
+            }
+        }
+        public void CheckWinLoose()
+        {
+            if (gameManager.LifesLeft == 0)
+            {
+                healthText.Text = "LOST";
+            } else if (gameManager.LifesLeft > 0 && gameManager.EnemiesCounter == 1)
+            {
+                healthText.Text = "YOU WON";
             }
         }
 
         public void DestroyAll()
         {
-            for (int i = 0; i < enemies.Length; i++)
+            for (var i = 0; i < enemies.Length; i++)
             {
-                canvas.Children.Remove(enemies[i]);
+                Canvas.SetLeft(enemies[i], 5000);
+                Canvas.SetTop(enemies[i], 5000);
+
+                canvas.Children.Remove(_playerSprite);
             }
+        }
+
+        public void StartNewGame()
+        {
+            StartTimer();
+            InitializePlayer();
+            InitializeEnemy();
+            healthText.Text = Convert.ToString(gameManager.LifesLeft);
         }
 
         #region COMMAND BAR BUTTONS
@@ -197,46 +235,45 @@ namespace DodgeGame
             {
                 pause_play.Symbol = Symbol.Pause;
                 _timer.Start();
-                gameRunning = true;
+                isPaused = true;
+                startNewButton.IsEnabled = true;
             }
             else if (pause_play.Symbol.Equals(Symbol.Pause))
             {
                 pause_play.Symbol = Symbol.Play;
                 _timer.Stop();
-                gameRunning = false;
+                isPaused = false;
+                startNewButton.IsEnabled = false;
             }
         }
 
         private void startNewButton_Click(object sender, RoutedEventArgs e)
         {
-            StartTimer();
-            InitializePlayer();
-            InitializeEnemy();
-            //if (!gameRunning)
-            //{
-            //    InitializeEnemy();
-            //    gameRunning = true;
-            //} else
-            //{
-            //    DestroyAll();
-            //    InitializeEnemy();
-            //    gameRunning = false;
-            //}
+            if (!isPaused)
+            {
+                StartNewGame();
+                startNewButton.Content = "RESTART";
+            } else if (isPaused)
+            {
+                //DestroyAll();
+                //StartNewGame();
+            }
+
         }
 
         private void MenuFlyoutItem_Click(object sender, RoutedEventArgs e) // Easy B
         {
-            //playerController.moveSpeed = 1;
+            gameManager.MoveSpeed = 1f;
         }
 
         private void MenuFlyoutItem_Click_1(object sender, RoutedEventArgs e) // Normal B
         {
-            //playerController.moveSpeed = 3;
+            gameManager.MoveSpeed = 1.5f;
         }
 
         private void MenuFlyoutItem_Click_2(object sender, RoutedEventArgs e) // HARD B
         {
-            //playerController.moveSpeed = 6;
+            gameManager.MoveSpeed = 2f;
         }
         #endregion
     }

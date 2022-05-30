@@ -10,7 +10,7 @@
 
 
         <Canvas x:ConnectionId='2' x:Name="canvas"></Canvas>
-        <TextBlock x:ConnectionId='3' x:Name="healthText" TextWrapping="Wrap" Text="3" FontSize="60"/>
+        <TextBlock x:ConnectionId='3' x:Name="healthText" TextWrapping="Wrap" Text="0" FontSize="60"/>
         <CommandBar VerticalAlignment="Bottom" Height="40" Background="#C1100F0F">
             <AppBarButton x:ConnectionId='4' x:Name="startNewButton" Content="START NEW GAME" FontSize="40" Width="120"                             ></AppBarButton>
             <AppBarButton x:ConnectionId='5' x:Name="saveGameButton" Content="SAVE GAME" FontSize="40" Width="120" Icon="Save"/>

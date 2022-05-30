@@ -30,13 +30,13 @@
     <AppXManifest Include="I:\Bar Projects\MyProjects\DodgeGame\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-05-29T10:23:02.742</Modified>
+      <Modified>2022-05-30T10:43:37.337</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="I:\Bar Projects\MyProjects\DodgeGame\bin\x86\Debug\DodgeGame.exe">
       <PackagePath>entrypoint\DodgeGame.exe</PackagePath>
-      <Modified>2022-05-29T10:23:02.180</Modified>
+      <Modified>2022-05-30T10:43:36.740</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.13\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -102,11 +102,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="I:\Bar Projects\MyProjects\DodgeGame\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2022-05-29T10:23:02.112</Modified>
+      <Modified>2022-05-30T10:43:36.664</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="I:\Bar Projects\MyProjects\DodgeGame\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2022-05-29T10:23:02.113</Modified>
+      <Modified>2022-05-30T10:43:36.665</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -118,7 +118,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="I:\Bar Projects\MyProjects\DodgeGame\bin\x86\Debug\Core\DodgeGame.exe">
       <PackagePath>DodgeGame.exe</PackagePath>
-      <Modified>2022-05-29T10:23:02.740</Modified>
+      <Modified>2022-05-30T10:43:37.334</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
