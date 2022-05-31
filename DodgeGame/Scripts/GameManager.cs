@@ -1,24 +1,40 @@
 ﻿using System;
+using System.IO;
+using Windows.System;
+using Windows.UI;
+using Windows.UI.Core;
+using Windows.UI.Xaml;
+using Windows.UI.Xaml.Controls;
+using Windows.UI.ViewManagement;
+using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.Foundation;
+using Windows.Foundation.Collections;
+using Windows.UI.Xaml.Input;
+using Windows.UI.Xaml.Shapes;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Controls.Primitives;
+using Windows.UI.Xaml.Data;
+using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Navigation;
 using DodgeGame.Scripts;
+using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Popups;
-using Windows.UI.Xaml;
 
 
 namespace DodgeGame
 {
-    internal class GameManager
+    internal class GameManager : Page
     {
-        //Game win / loose conditions
+        public Rectangle _playerSprite;
+        public Rectangle _enemySprite;
+        public Rectangle[] enemies;
 
         public Player player { get; set; }
         public Enemy[] enemiesArr { get; set; }
 
         public double _boardWidth, _boardHeight;
+
         Random random = new Random();
 
         //Universal game settings
@@ -44,14 +60,14 @@ namespace DodgeGame
             _boardWidth = boardWidth;
 
             player = new Player((int)_boardHeight, (int)_boardWidth);
-            enemiesArr = new Enemy[enemyNum];
+
+            enemiesArr = new Enemy[enemyNum]; // Enemies array
             for (int i = 0; i < 10; i++)
             {
                 enemiesArr[i] = new Enemy(random.Next(30, (int)_boardWidth - 30), random.Next(30, (int)_boardHeight - 30));
-            }
+            }          
         }
 
-        //NEW GAME
         public async void StartGameMessage()
         {
             MessageDialog msg = new MessageDialog("WELCOME TO THE GAME!");

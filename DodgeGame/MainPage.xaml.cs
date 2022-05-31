@@ -25,11 +25,10 @@ namespace DodgeGame
     public sealed partial class MainPage : Page
     {
         GameManager gameManager;
-        Rectangle _playerSprite;
-        Rectangle _enemySprite;
-        Rectangle[] enemies;
         DispatcherTimer _timer;
+        
 
+        bool isRight = false;
 
         //SETTINGS FIELDS
         private bool isPaused = false;
@@ -38,10 +37,14 @@ namespace DodgeGame
         public MainPage()
         {
             this.InitializeComponent();
-            InitializeScreen();
-            //gameManager.StartGameMessage();        
+
+            Rect windowRectangle = ApplicationView.GetForCurrentView().VisibleBounds;
+            gameManager = new GameManager(windowRectangle.Width, windowRectangle.Height);
+
+            InitializeScreen();  
+
             Window.Current.CoreWindow.KeyDown += CoreWindow_KeyDown;
-        }    
+        }
 
         public void InitializeScreen()
         {
@@ -56,23 +59,23 @@ namespace DodgeGame
         public void InitializePlayer()
         {
             //Player Settings
-            _playerSprite = new Rectangle();
-            _playerSprite.Width = 90;
-            _playerSprite.Height = 70;
-            _playerSprite.Fill = new ImageBrush { ImageSource = new BitmapImage(new Uri("ms-appx:///Assets/Player.png")) };
-            Canvas.SetTop(_playerSprite, 400);
-            Canvas.SetLeft(_playerSprite, 450);
-            canvas.Children.Add(_playerSprite);
+            gameManager._playerSprite = new Rectangle();
+            gameManager._playerSprite.Width = 90;
+            gameManager._playerSprite.Height = 70;
+            gameManager._playerSprite.Fill = new ImageBrush { ImageSource = new BitmapImage(new Uri("ms-appx:///Assets/Player.png")) };
+            Canvas.SetTop(gameManager._playerSprite, 400);
+            Canvas.SetLeft(gameManager._playerSprite, 450);
+            canvas.Children.Add(gameManager._playerSprite);
         }
 
         public void InitializeEnemy()
         {
             //Spawn Enemy
-            enemies = new Rectangle[10];
-            for (int i = 0; i < enemies.Length; i++)
+            gameManager.enemies = new Rectangle[10];
+            for (int i = 0; i < gameManager.enemies.Length; i++)
             {
                 Enemy currentEnemy = gameManager.enemiesArr[i];
-                enemies[i] = AddSprite(currentEnemy);
+                gameManager.enemies[i] = AddSprite(currentEnemy);
             }
         }
 
@@ -82,20 +85,54 @@ namespace DodgeGame
             switch (e.VirtualKey)
             {
                 case VirtualKey.W:
-                    Canvas.SetTop(_playerSprite, Canvas.GetTop(_playerSprite) - 10);
-                    gameManager.player.X = (int)Canvas.GetTop(_playerSprite) - 10;
+                    if (Canvas.GetTop(gameManager._playerSprite) <= 0)
+                    {
+                        Canvas.SetTop(gameManager._playerSprite, Canvas.GetTop(gameManager._playerSprite));
+                        PlayerCollision();
+                    } else
+                    {
+                        Canvas.SetTop(gameManager._playerSprite, Canvas.GetTop(gameManager._playerSprite) - 10);
+                        gameManager.player.X = (int)Canvas.GetTop(gameManager._playerSprite) - 10;
+                        PlayerCollision();
+                    }
                     break;
                 case VirtualKey.S:
-                    Canvas.SetTop(_playerSprite, Canvas.GetTop(_playerSprite) + 10);
-                    gameManager.player.X = (int)Canvas.GetTop(_playerSprite) + 10;
+                    if (Canvas.GetTop(gameManager._playerSprite) >= Window.Current.Bounds.Height - 70)
+                    {
+                        Canvas.SetTop(gameManager._playerSprite, Canvas.GetTop(gameManager._playerSprite));
+                        PlayerCollision();
+                    } else
+                    {
+                        Canvas.SetTop(gameManager._playerSprite, Canvas.GetTop(gameManager._playerSprite) + 10);
+                        gameManager.player.X = (int)Canvas.GetTop(gameManager._playerSprite) + 10;
+                        PlayerCollision();
+                    }
                     break;
-                case VirtualKey.A:
-                    Canvas.SetLeft(_playerSprite, Canvas.GetLeft(_playerSprite) - 10);
-                    gameManager.player.Y = (int)Canvas.GetLeft(_playerSprite) - 10;
+                case VirtualKey.A:                   
+                        if (Canvas.GetLeft(gameManager._playerSprite) <= 0)
+                        {
+                            Canvas.SetLeft(gameManager._playerSprite, Canvas.GetLeft(gameManager._playerSprite));
+                            PlayerCollision();
+                        }
+                        else
+                        {
+                             Canvas.SetLeft(gameManager._playerSprite, Canvas.GetLeft(gameManager._playerSprite) - 10);
+                             gameManager.player.Y = (int)Canvas.GetLeft(gameManager._playerSprite) - 10;
+                             PlayerCollision();
+                        }
                     break;
                 case VirtualKey.D:
-                    Canvas.SetLeft(_playerSprite, Canvas.GetLeft(_playerSprite) + 10);
-                    gameManager.player.Y = (int)Canvas.GetLeft(_playerSprite) + 10;
+                    if (Canvas.GetLeft(gameManager._playerSprite) >= Window.Current.Bounds.Width - 70)
+                    {
+                        Canvas.SetLeft(gameManager._playerSprite, Canvas.GetLeft(gameManager._playerSprite));
+                        PlayerCollision();
+                    }
+                    else
+                    {
+                        Canvas.SetLeft(gameManager._playerSprite, Canvas.GetLeft(gameManager._playerSprite) + 10);
+                        gameManager.player.Y = (int)Canvas.GetLeft(gameManager._playerSprite) + 10;
+                        PlayerCollision();
+                    }
                     break;
                 default:
                     isIdle = true;
@@ -105,18 +142,18 @@ namespace DodgeGame
 
         public Rectangle AddSprite(PlayerController playerController)
         {
-            _enemySprite = new Rectangle();
-            _enemySprite.Fill = new ImageBrush { ImageSource = new BitmapImage(new Uri("ms-appx:///Assets/scorpion.png")) };
+            gameManager._enemySprite = new Rectangle();
+            gameManager._enemySprite.Fill = new ImageBrush { ImageSource = new BitmapImage(new Uri("ms-appx:///Assets/scorpion.png")) };
 
-            _enemySprite.Width = playerController.Width;
-            _enemySprite.Height = playerController.Height;
+            gameManager._enemySprite.Width = playerController.Width;
+            gameManager._enemySprite.Height = playerController.Height;
 
-            Canvas.SetLeft(_enemySprite, playerController.X);
-            Canvas.SetTop(_enemySprite, playerController.Y);
+            Canvas.SetLeft(gameManager._enemySprite, playerController.X);
+            Canvas.SetTop(gameManager._enemySprite, playerController.Y);
 
-            canvas.Children.Add(_enemySprite);
+            canvas.Children.Add(gameManager._enemySprite);
 
-            return _enemySprite;
+            return gameManager._enemySprite;
         }
         public void StartTimer()
         {
@@ -129,37 +166,25 @@ namespace DodgeGame
         public void TimeManagment(object sender, object e)
         {
             EnemyMove();
-            CheckBounds();
             Collision();
             PlayerCollision();
             CheckWinLoose();
         }
+
         public void EnemyMove()
         {
-            for (int i = 0; i < enemies.Length; i++)
+            for (int i = 0; i < gameManager.enemies.Length; i++)
             {
-                if (Canvas.GetTop(_playerSprite) < Canvas.GetTop(enemies[i]))
-                    Canvas.SetTop(enemies[i], Canvas.GetTop(enemies[i]) - gameManager.MoveSpeed);
-                else if (Canvas.GetTop(_playerSprite) > Canvas.GetTop(enemies[i]))
-                    Canvas.SetTop(enemies[i], Canvas.GetTop(enemies[i]) + gameManager.MoveSpeed);
+                if (Canvas.GetTop(gameManager._playerSprite) < Canvas.GetTop(gameManager.enemies[i]))
+                    Canvas.SetTop(gameManager.enemies[i], Canvas.GetTop(gameManager.enemies[i]) - gameManager.MoveSpeed);
+                else if (Canvas.GetTop(gameManager._playerSprite) > Canvas.GetTop(gameManager.enemies[i]))
+                    Canvas.SetTop(gameManager.enemies[i], Canvas.GetTop(gameManager.enemies[i]) + gameManager.MoveSpeed);
 
-                if (Canvas.GetLeft(_playerSprite) < Canvas.GetLeft(enemies[i]))
-                    Canvas.SetLeft(enemies[i], Canvas.GetLeft(enemies[i]) - gameManager.MoveSpeed);
-                else if (Canvas.GetLeft(_playerSprite) > Canvas.GetLeft(enemies[i]))
-                    Canvas.SetLeft(enemies[i], Canvas.GetLeft(enemies[i]) + gameManager.MoveSpeed);
+                if (Canvas.GetLeft(gameManager._playerSprite) < Canvas.GetLeft(gameManager.enemies[i]))
+                    Canvas.SetLeft(gameManager.enemies[i], Canvas.GetLeft(gameManager.enemies[i]) - gameManager.MoveSpeed);
+                else if (Canvas.GetLeft(gameManager._playerSprite) > Canvas.GetLeft(gameManager.enemies[i]))
+                    Canvas.SetLeft(gameManager.enemies[i], Canvas.GetLeft(gameManager.enemies[i]) + gameManager.MoveSpeed);
             }
-        }
-        public void CheckBounds()
-        {
-            //Player bounds
-            if (Canvas.GetLeft(_playerSprite) > Window.Current.Bounds.Width)
-                Canvas.SetLeft(_playerSprite, -30);
-            else if (Canvas.GetLeft(_playerSprite) < -50)
-                Canvas.SetLeft(_playerSprite, Window.Current.Bounds.Width);
-            else if (Canvas.GetTop(_playerSprite) > Window.Current.Bounds.Height)
-                Canvas.SetTop(_playerSprite, -30);
-            else if (Canvas.GetTop(_playerSprite) < -50)
-                Canvas.SetTop(_playerSprite, Window.Current.Bounds.Height);
         }
 
         public void Collision()
@@ -170,17 +195,18 @@ namespace DodgeGame
                 {
                     if (i != j)
                     {
-                        if (Math.Pow(Canvas.GetTop(enemies[i]) - (Canvas.GetTop(enemies[j])), 2) + Math.Pow(Canvas.GetLeft(enemies[i]) - (Canvas.GetLeft(enemies[j])), 2) == Math.Pow(_enemySprite.Width, 2))
+                        if (Math.Pow(Canvas.GetTop(gameManager.enemies[i]) - (Canvas.GetTop(gameManager.enemies[j])), 2) + Math.Pow(Canvas.GetLeft(gameManager.enemies[i]) - (Canvas.GetLeft(gameManager.enemies[j])), 2) <= Math.Pow(gameManager._enemySprite.Width, 2))
                         {
-                            Canvas.SetLeft(enemies[i], 5000);
-                            Canvas.SetTop(enemies[i], 5000);
+                            Canvas.SetLeft(gameManager.enemies[i], 5000);
+                            Canvas.SetTop(gameManager.enemies[i], 5000);
                             gameManager.EnemiesCounter--;
                         }
                     }
-                        
+
                 }
             }
         }
+
         public void PlayerCollision()
         {
             for (int i = 0; i < gameManager.enemiesArr.Length; i++)
@@ -189,21 +215,27 @@ namespace DodgeGame
                 {
                     if (i != j)
                     {
-                        if (Math.Pow(Canvas.GetTop(enemies[i]) - (Canvas.GetTop(enemies[j])), 2) + Math.Pow(Canvas.GetLeft(enemies[i]) - (Canvas.GetLeft(enemies[j])), 2) == Math.Pow(_playerSprite.Width, 2))
+                        if (Math.Pow(Canvas.GetTop(gameManager.enemies[i]) - (Canvas.GetTop(gameManager._playerSprite)), 2) + Math.Pow(Canvas.GetLeft(gameManager.enemies[i]) - (Canvas.GetLeft(gameManager._playerSprite)), 2) <= Math.Pow(gameManager._playerSprite.Width, 2))
                         {
-                            healthText.Text = Convert.ToString(gameManager.LifesLeft--);
+                            if (gameManager.LifesLeft > 0)
+                                healthText.Text = Convert.ToString(gameManager.LifesLeft--);
+                            else if (gameManager.LifesLeft <= 0)
+                                healthText.Text = "YOU LOST";
+
                         }
                     }
 
                 }
             }
         }
+
         public void CheckWinLoose()
         {
             if (gameManager.LifesLeft == 0)
             {
                 healthText.Text = "LOST";
-            } else if (gameManager.LifesLeft > 0 && gameManager.EnemiesCounter == 1)
+            }
+            else if (gameManager.LifesLeft > 0 && gameManager.EnemiesCounter == 1)
             {
                 healthText.Text = "YOU WON";
             }
@@ -211,12 +243,12 @@ namespace DodgeGame
 
         public void DestroyAll()
         {
-            for (var i = 0; i < enemies.Length; i++)
+            for (var i = 0; i < gameManager.enemies.Length; i++)
             {
-                Canvas.SetLeft(enemies[i], 5000);
-                Canvas.SetTop(enemies[i], 5000);
+                Canvas.SetLeft(gameManager.enemies[i], 5000);
+                Canvas.SetTop(gameManager.enemies[i], 5000);
 
-                canvas.Children.Remove(_playerSprite);
+                canvas.Children.Remove(gameManager._playerSprite);
             }
         }
 
