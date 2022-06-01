@@ -26,13 +26,12 @@ namespace DodgeGame
 {
     internal class GameManager : Page
     {
-        public Rectangle _playerSprite;
-        public Rectangle _enemySprite;
-        public Rectangle[] enemies;
-
+        public Rectangle _playerSprite { get; set; }
+        public Rectangle _enemySprite { get; set; }
         public Player player { get; set; }
         public Enemy[] enemiesArr { get; set; }
 
+        public Rectangle[] enemies;
         public double _boardWidth, _boardHeight;
 
         Random random = new Random();
@@ -67,7 +66,6 @@ namespace DodgeGame
                 enemiesArr[i] = new Enemy(random.Next(30, (int)_boardWidth - 30), random.Next(30, (int)_boardHeight - 30));
             }          
         }
-
         public async void StartGameMessage()
         {
             MessageDialog msg = new MessageDialog("WELCOME TO THE GAME!");

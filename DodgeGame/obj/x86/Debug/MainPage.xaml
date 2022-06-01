@@ -11,7 +11,7 @@
         <TextBlock x:ConnectionId='3'  x:Name="healthText" TextWrapping="Wrap" Text="0" FontSize="60"/>
         <CommandBar VerticalAlignment="Bottom" Height="40" Background="#C1100F0F" HorizontalAlignment="Right">
             <AppBarButton x:ConnectionId='4' x:Name="startNewButton" Content="START NEW GAME" FontSize="30" Width="120"                             ></AppBarButton>
-            <AppBarButton x:ConnectionId='5' x:Name="saveGameButton" Content="SAVE GAME" FontSize="40" Width="120" Icon="Save"/>
+            <AppBarButton x:ConnectionId='5' x:Name="saveGameButton" Content="SAVE GAME" FontSize="40" Width="120" Icon="Save"                             />
             <AppBarButton x:ConnectionId='6' x:Name="loadGameButton" Content="LOAD GAME" FontSize="40" Width="120"/>
 
             <AppBarButton x:ConnectionId='7' x:Name="diffucultyButton" Content="DIFFICULTY" FontSize="40" Width="120">
