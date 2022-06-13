@@ -1,22 +1,12 @@
 ﻿using System;
-using System.IO;
 using Windows.System;
-using Windows.UI;
 using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.ViewManagement;
-using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Shapes;
-using System.Collections.Generic;
-using System.Linq;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
 using DodgeGame.Scripts;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Popups;
@@ -29,7 +19,6 @@ namespace DodgeGame
         DispatcherTimer _timer;
         
         //SETTINGS FIELDS
-        private bool isPaused = false;
         private bool isStarted = false;
         private bool isIdle;
         
@@ -70,11 +59,13 @@ namespace DodgeGame
         public void InitializeEnemy()
         {
             //Spawn Enemy
-            gameManager.enemies = new Rectangle[10];
+            gameManager.enemies = new Rectangle[10]; 
+
             for (int i = 0; i < gameManager.enemies.Length; i++)
             {
-                Enemy currentEnemy = gameManager.enemiesArr[i];
+                Enemy currentEnemy = gameManager.enemiesArr[i];    
                 gameManager.enemies[i] = AddSprite(currentEnemy);
+                gameManager.RandomizeEnemyLoc();
             }
         }
 
@@ -168,6 +159,7 @@ namespace DodgeGame
             EnemyMove();
             Collision();
             PlayerCollision();
+            CheckWinLoose();
         }
 
         public void EnemyMove()
@@ -196,9 +188,10 @@ namespace DodgeGame
                     {
                         if (Math.Pow(Canvas.GetTop(gameManager.enemies[i]) - (Canvas.GetTop(gameManager.enemies[j])), 2) + Math.Pow(Canvas.GetLeft(gameManager.enemies[i]) - (Canvas.GetLeft(gameManager.enemies[j])), 2) <= Math.Pow(gameManager._enemySprite.Width, 2))
                         {
+                            gameManager.EnemiesCounter++;
                             Canvas.SetLeft(gameManager.enemies[i], 500000);
-                            Canvas.SetTop(gameManager.enemies[i], 50000);
-                            //gameManager.EnemiesCounter--;
+                            Canvas.SetTop(gameManager.enemies[i], 500000);
+                            canvas.Children.Remove(gameManager.enemies[i]);
                         }
                     }
 
@@ -216,8 +209,9 @@ namespace DodgeGame
                     {
                         if (Math.Pow(Canvas.GetTop(gameManager.enemies[i]) - (Canvas.GetTop(gameManager._playerSprite)), 2) + Math.Pow(Canvas.GetLeft(gameManager.enemies[i]) - (Canvas.GetLeft(gameManager._playerSprite)), 2) <= Math.Pow(gameManager._playerSprite.Width, 2))
                         {
+                            Canvas.SetLeft(gameManager._playerSprite, 500000);
+                            Canvas.SetTop(gameManager._playerSprite, 50000);
                             gameManager.LifesLeft--;
-                            CheckWinLoose();
                         }
                     }
 
@@ -229,8 +223,6 @@ namespace DodgeGame
         {
             for (var i = 0; i < gameManager.enemies.Length; i++)
             {
-                //Canvas.SetLeft(gameManager.enemies[i], 500000);
-                //Canvas.SetTop(gameManager.enemies[i], 50000);
                 canvas.Children.Remove(gameManager.enemies[i]);
             }
             canvas.Children.Remove(gameManager._playerSprite);
@@ -243,17 +235,50 @@ namespace DodgeGame
             InitializeEnemy();
             healthText.Text = Convert.ToString(gameManager.LifesLeft);
         }
+
         public async void CheckWinLoose()
         {
-            if (gameManager.LifesLeft <= 0)
+            if (Canvas.GetLeft(gameManager._playerSprite) == 500000)
             {
+                _timer.Stop();
                 MessageDialog lost = new MessageDialog("PLAYER DIED!\nTry again..."); await lost.ShowAsync();
-                _timer.Stop();
+                DestroyAll();
+                StartNewGame();
             }
-            else if (gameManager.LifesLeft > 0 && canvas.Children.Count == 2)
+            else if (gameManager.EnemiesCounter == 9) // canvas.Children.Count == 2 && canvas.Children.Contains(gameManager._playerSprite)
             {
-                MessageDialog won = new MessageDialog("YOU WON!!\nTry it on hard mode..."); await won.ShowAsync();
                 _timer.Stop();
+                MessageDialog won = new MessageDialog("YOU WON!!\nTry it on hard mode..."); await won.ShowAsync();
+                DestroyAll();
+                StartNewGame();
+            }
+        }
+
+        private void SavingMethod_2()
+        {
+            //SAVING PLAYER LOCATION
+            gameManager.playerLastX = Canvas.GetTop(gameManager._playerSprite);
+            gameManager.playerLastY = Canvas.GetLeft(gameManager._playerSprite);
+
+            //SAVING ENEMY LOCATION
+            for (int i = 0; i < gameManager.enemies.Length; i++)
+            {
+                gameManager.enemyLastX[i] = Canvas.GetTop(gameManager.enemies[i]);
+                gameManager.enemyLastY[i] = Canvas.GetLeft(gameManager.enemies[i]);
+            }
+        }
+
+        private void LoadingMethod_2()
+        {
+            //PLACING PLAYER LOCATION
+            Canvas.SetTop(gameManager._playerSprite, gameManager.playerLastX);
+            Canvas.SetLeft(gameManager._playerSprite, gameManager.playerLastY);
+
+            //PLACING ENEMY LOCATION
+            for (int i = 0; i < gameManager.enemies.Length; i++)
+            {
+                Canvas.SetTop(gameManager.enemies[i], gameManager.enemyLastX[i]);
+                Canvas.SetLeft(gameManager.enemies[i], gameManager.enemyLastY[i]);
             }
         }
 
@@ -264,14 +289,12 @@ namespace DodgeGame
             {
                 pause_play.Symbol = Symbol.Pause;
                 _timer.Start();
-                isPaused = false;
                 startNewButton.IsEnabled = true;
             }
             else if (pause_play.Symbol.Equals(Symbol.Pause))
             {
                 pause_play.Symbol = Symbol.Play;
                 _timer.Stop();
-                isPaused = true;
                 isIdle = true;
                 startNewButton.IsEnabled = false;
             }
@@ -308,10 +331,19 @@ namespace DodgeGame
         {
             gameManager.MoveSpeed = 2f;
         }
-        #endregion
 
         private void saveGameButton_Click(object sender, RoutedEventArgs e)
         {
+            SavingMethod_2();
+            Storage.CreateFile(); //not working
         }
+
+        private void loadGameButton_Click(object sender, RoutedEventArgs e)
+        {
+            LoadingMethod_2();
+            Storage.ReadFile(); // not working
+        }
+        #endregion
+
     }
 }

@@ -1,24 +1,6 @@
 ﻿using System;
-using System.IO;
-using Windows.System;
-using Windows.UI;
-using Windows.UI.Core;
-using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.ViewManagement;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Shapes;
-using System.Collections.Generic;
-using System.Linq;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
-using DodgeGame.Scripts;
-using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Popups;
 
 
@@ -34,13 +16,19 @@ namespace DodgeGame
         public Rectangle[] enemies;
         public double _boardWidth, _boardHeight;
 
-        Random random = new Random();
+        public Random random = new Random();
 
         //Universal game settings
-        private static int enemyNum = 10;
+        public static int enemyNum = 10;
         public float MoveSpeed = 1f;
         private int _lifes = 3;
-        private int enemiesCounter = enemyNum;
+        private int _enemiesCounter = 0;
+
+        //Alternative to file save (saving internaly with variables)
+        public double playerLastX, playerLastY;
+        public double[] enemyLastX = new double[enemyNum];
+        public double[] enemyLastY = new double[enemyNum];
+
         public int LifesLeft
         {
             get { return _lifes; }
@@ -48,8 +36,8 @@ namespace DodgeGame
         }
         public int EnemiesCounter
         {
-            get { return enemiesCounter; }
-            set { enemiesCounter = value; }
+            get { return _enemiesCounter; }
+            set { _enemiesCounter = value; }
         }
 
 
@@ -60,11 +48,16 @@ namespace DodgeGame
 
             player = new Player((int)_boardHeight, (int)_boardWidth);
 
+            RandomizeEnemyLoc();
+        }
+
+        public void RandomizeEnemyLoc()
+        {
             enemiesArr = new Enemy[enemyNum]; // Enemies array
             for (int i = 0; i < 10; i++)
             {
                 enemiesArr[i] = new Enemy(random.Next(30, (int)_boardWidth - 30), random.Next(30, (int)_boardHeight - 30));
-            }          
+            }
         }
         public async void StartGameMessage()
         {
