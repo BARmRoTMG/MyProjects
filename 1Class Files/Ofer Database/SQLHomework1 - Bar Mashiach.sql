@@ -62,3 +62,42 @@ where C.CustomerID = O.CustomerID and  O.OrderID = OD.OrderID
 select O.OrderID, OD.Quantity, UnitsInStock, ((OD.Quantity * 100) / P.UnitsInStock) 'Percentage'
 from Customers C, Orders O, [Order Details] OD, Products P
 where C.CustomerID = O.CustomerID and  O.OrderID = OD.OrderID and OD.ProductID = P.ProductID and UnitsInStock > 0 and ((OD.Quantity * 100) / P.UnitsInStock) >= 10
+
+--13
+select Country, count(Country) 'NumOfEmployees', avg((year(GetDate()) - year(BirthDate))) 'Average Age'
+from Employees
+group by Country
+
+--14
+SELECT C.City, count(City) 'Orders', count(City) * '5' as 'Discount In Percentage'
+from Customers C, Orders O
+where C.CustomerID = O.CustomerID AND (day(ShippedDate) - day(OrderDate)) >= 5 and City = 'London'
+group by City
+
+--15 ?
+select P.ProductID, P.ProductName, UnitsInStock, p.UnitPrice, (P.UnitPrice * P.UnitsInStock) 'Total Value', Ord.Quantity
+from Orders O, [Order Details] Ord, Products P
+Where O.OrderID = Ord.OrderID AND Ord.ProductID = P.ProductID
+
+--16 ?
+select FirstName, (Ord.UnitPrice * count(Ord.UnitPrice)) 'Total'
+from Employees E, Orders O, [Order Details] Ord
+where E.EmployeeID = O.EmployeeID AND O.OrderID = Ord.OrderID AND ShippedDate is null
+group by FirstName, Ord.UnitPrice
+
+--17
+select SUM (Ord.UnitPrice) 'Anual Revenue' 
+from [Order Details] Ord
+INNER JOIN Orders O ON O.OrderID = Ord.OrderID
+GROUP BY YEAR(O.OrderDate);
+
+--18
+SELECT top 1 with ties
+
+PRODUCTID, SUM(Quantity*UnitPrice)
+
+FROM [ORDER DETAILS]
+
+GROUP BY PRODUCTID
+
+order by SUM(Quantity*UnitPrice) desc

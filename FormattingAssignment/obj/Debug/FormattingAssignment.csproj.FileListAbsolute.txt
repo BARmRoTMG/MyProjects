@@ -1,0 +1,8 @@
+I:\Bar Projects\MyProjects\FormattingAssignment\bin\Debug\FormattingAssignment.exe.config
+I:\Bar Projects\MyProjects\FormattingAssignment\bin\Debug\FormattingAssignment.exe
+I:\Bar Projects\MyProjects\FormattingAssignment\bin\Debug\FormattingAssignment.pdb
+I:\Bar Projects\MyProjects\FormattingAssignment\obj\Debug\FormattingAssignment.csproj.AssemblyReference.cache
+I:\Bar Projects\MyProjects\FormattingAssignment\obj\Debug\FormattingAssignment.csproj.SuggestedBindingRedirects.cache
+I:\Bar Projects\MyProjects\FormattingAssignment\obj\Debug\FormattingAssignment.csproj.CoreCompileInputs.cache
+I:\Bar Projects\MyProjects\FormattingAssignment\obj\Debug\FormattingAssignment.exe
+I:\Bar Projects\MyProjects\FormattingAssignment\obj\Debug\FormattingAssignment.pdb
