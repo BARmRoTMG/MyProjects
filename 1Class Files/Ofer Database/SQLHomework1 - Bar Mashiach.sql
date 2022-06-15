@@ -62,3 +62,67 @@ where C.CustomerID = O.CustomerID and  O.OrderID = OD.OrderID
 select O.OrderID, OD.Quantity, UnitsInStock, ((OD.Quantity * 100) / P.UnitsInStock) 'Percentage'
 from Customers C, Orders O, [Order Details] OD, Products P
 where C.CustomerID = O.CustomerID and  O.OrderID = OD.OrderID and OD.ProductID = P.ProductID and UnitsInStock > 0 and ((OD.Quantity * 100) / P.UnitsInStock) >= 10
+
+--13
+select Country, count(Country) 'NumOfEmployees', avg((year(GetDate()) - year(BirthDate))) 'Average Age'
+from Employees
+group by Country
+
+--14
+SELECT C.City, count(City) 'Orders', count(City) * '5' as 'Discount In Percentage'
+from Customers C, Orders O
+where C.CustomerID = O.CustomerID AND (day(ShippedDate) - day(OrderDate)) >= 5 and City = 'London'
+group by City
+
+--15
+select P.ProductID, P.ProductName, p.UnitsInStock,p.UnitPrice,(p.UnitPrice * p.UnitsInStock) 'Total Value'
+from Products p,[Order Details] od
+where p.ProductID = od.ProductID 
+group by p.ProductID, p.ProductName, p.UnitsInStock, p.UnitPrice
+having sum(od.Quantity) > 500
+order by 'Total Value' desc;
+
+--16 ?
+select FirstName, (Ord.UnitPrice * count(Ord.UnitPrice)) 'Total'
+from Employees E, Orders O, [Order Details] Ord
+where E.EmployeeID = O.EmployeeID AND O.OrderID = Ord.OrderID AND ShippedDate is null
+group by FirstName, Ord.UnitPrice
+
+--17
+select SUM (Ord.UnitPrice) 'Anual Revenue' 
+from [Order Details] Ord
+INNER JOIN Orders O ON O.OrderID = Ord.OrderID
+GROUP BY YEAR(O.OrderDate);
+
+--18
+select top 1 with tie ProductID, SUM(Quantity * UnitPrice)
+from [Order Details]
+GROUP BY ProductID
+order by SUM(Quantity * UnitPrice) desc
+
+--19
+select top 1 ProductName, sum([Order Details].Quantity * [Order Details].UnitPrice * (1-Discount)) 'Most Profitable'
+from Products, [Order Details] 
+where Products.ProductID = [Order Details].ProductID
+group by ProductName
+order by 'Most Profitable' desc;
+
+--20
+select p.ProductName,max(od.Quantity) as maxQuantity
+from [Order Details] od ,Products p
+where p.ProductID = od.ProductID
+group by p.ProductName
+
+--21
+select distinct C.City, year(O.OrderDate) 'Year', avg((Ord.UnitPrice * Ord.Quantity) * (1 + Ord.Discount)) 'Average Anual Income'
+from Customers C, [Order Details] Ord, orders O
+where C.CustomerID = O.CustomerID and O.OrderID = Ord.OrderID
+group by C.City, year(o.OrderDate)
+order by 'Year';
+
+--22
+select MONTH(o.OrderDate)as months,count(*)as averagefrom Products p,[Order Details] od,Orders o
+where p.ProductID = od.ProductID 
+and od.OrderID = o.OrderID
+and MONTH(o.OrderDate)=MONTH(o.OrderDate)
+group by MONTH(o.OrderDate)
