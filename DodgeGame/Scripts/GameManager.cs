@@ -56,7 +56,7 @@ namespace DodgeGame
             enemiesArr = new Enemy[enemyNum]; // Enemies array
             for (int i = 0; i < 10; i++)
             {
-                enemiesArr[i] = new Enemy(random.Next(30, (int)_boardWidth - 30), random.Next(30, (int)_boardHeight - 30));
+                enemiesArr[i] = new Enemy(random.Next(50, (int)_boardWidth - 30), random.Next(30, (int)_boardHeight - 30));
             }
         }
         public async void StartGameMessage()

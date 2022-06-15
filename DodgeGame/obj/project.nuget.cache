@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FKKFwgalcbdGPGmr6s0MomHBEYb4elP/BhTnt0+45PtaE+OMyReUDnzIGc2ZVyjILKzKH3ilZpTWv2zyCqprNA==",
+  "dgSpecHash": "cFySReKpA3cae2yZQRC8mquzsYaukKbhcFJcp71r0NZwgsnXEXJXo5aiuSFTato7HrgQMA8zxznGM/phzvwlDw==",
   "success": true,
-  "projectFilePath": "I:\\Bar Projects\\MyProjects\\DodgeGame\\DodgeGame.csproj",
+  "projectFilePath": "C:\\Users\\User\\Documents\\GitHub\\MyProjects\\DodgeGame\\DodgeGame.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.native.compiler\\2.2.11-rel-30601-02\\microsoft.net.native.compiler.2.2.11-rel-30601-02.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.uwpcoreruntimesdk\\2.2.13\\microsoft.net.uwpcoreruntimesdk.2.2.13.nupkg.sha512",
