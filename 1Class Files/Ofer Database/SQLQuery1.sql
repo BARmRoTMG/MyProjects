@@ -284,9 +284,13 @@ from Employees
 
 
 -- where in next file
-select employeeid,FirstName,[OrderDate]City,Country
+select *
 from Employees
 where EmployeeID >= 8 
 
+-- products details where stock bigger than 0
 
+select ProductID, ProductName,Unitprice, UnitsInStock, ReorderLevel, QuantityPerUnit
+from Products
+where UnitsInStock > 20
 
