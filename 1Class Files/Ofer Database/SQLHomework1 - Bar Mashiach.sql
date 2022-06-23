@@ -121,8 +121,19 @@ group by C.City, year(o.OrderDate)
 order by 'Year';
 
 --22
-select MONTH(o.OrderDate)as months,count(*)as averagefrom Products p,[Order Details] od,Orders o
-where p.ProductID = od.ProductID 
-and od.OrderID = o.OrderID
-and MONTH(o.OrderDate)=MONTH(o.OrderDate)
-group by MONTH(o.OrderDate)
+select month(o.OrderDate) 'Months', count(*) 'Average Sales' 
+from Products P,[Order Details] Ord, Orders O
+where P.ProductID = Ord.ProductID  and Ord.OrderID = O.OrderID and month(O.OrderDate) = month(O.OrderDate)
+group by month(O.OrderDate)
+order by 'Months'
+
+--23 ???
+select p.ProductName,max(od.Quantity) as maxQuantity
+from [Order Details] od ,Products p
+where p.ProductID = od.ProductID
+group by p.ProductName
+
+--24 ???
+select C.ContactName
+from Customers C, Orders O, [Order Details] Ord
+where C.CustomerID = O.CustomerID and O.OrderID = Ord.OrderID
