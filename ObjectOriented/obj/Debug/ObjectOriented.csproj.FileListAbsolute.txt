@@ -1,0 +1,8 @@
+I:\Bar Projects\MyProjects\ObjectOriented\bin\Debug\ObjectOriented.exe.config
+I:\Bar Projects\MyProjects\ObjectOriented\bin\Debug\ObjectOriented.exe
+I:\Bar Projects\MyProjects\ObjectOriented\bin\Debug\ObjectOriented.pdb
+I:\Bar Projects\MyProjects\ObjectOriented\obj\Debug\ObjectOriented.csproj.AssemblyReference.cache
+I:\Bar Projects\MyProjects\ObjectOriented\obj\Debug\ObjectOriented.csproj.SuggestedBindingRedirects.cache
+I:\Bar Projects\MyProjects\ObjectOriented\obj\Debug\ObjectOriented.csproj.CoreCompileInputs.cache
+I:\Bar Projects\MyProjects\ObjectOriented\obj\Debug\ObjectOriented.exe
+I:\Bar Projects\MyProjects\ObjectOriented\obj\Debug\ObjectOriented.pdb

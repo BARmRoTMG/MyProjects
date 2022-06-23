@@ -1,0 +1,8 @@
+I:\Bar Projects\MyProjects\BillingSystem\bin\Debug\BillingSystem.exe.config
+I:\Bar Projects\MyProjects\BillingSystem\bin\Debug\BillingSystem.exe
+I:\Bar Projects\MyProjects\BillingSystem\bin\Debug\BillingSystem.pdb
+I:\Bar Projects\MyProjects\BillingSystem\obj\Debug\BillingSystem.csproj.AssemblyReference.cache
+I:\Bar Projects\MyProjects\BillingSystem\obj\Debug\BillingSystem.csproj.SuggestedBindingRedirects.cache
+I:\Bar Projects\MyProjects\BillingSystem\obj\Debug\BillingSystem.csproj.CoreCompileInputs.cache
+I:\Bar Projects\MyProjects\BillingSystem\obj\Debug\BillingSystem.exe
+I:\Bar Projects\MyProjects\BillingSystem\obj\Debug\BillingSystem.pdb
