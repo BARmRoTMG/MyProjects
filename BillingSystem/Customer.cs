@@ -12,8 +12,7 @@ namespace BillingSystem
         private string _customerName;
         private double _customerBalance;
         private readonly int _customerId;
-        private static int _counter;
-        private const int STARTER_ID = 100000000;
+        private static int STARTER_ID = 100;
 
         //Properties
         public string CustomerName
@@ -35,15 +34,13 @@ namespace BillingSystem
 
         public Customer(string customerName)
         {
-            _customerName = customerName;
-            _customerBalance = 0;
-            _counter++;
-            _customerId = STARTER_ID + _counter;
+            CustomerName = customerName;
+            _customerId = STARTER_ID++;
         }
 
         public Customer(string customerName, double customerBalance) : this(customerName)
         {
-            _customerBalance = customerBalance;
+            CustomerBalance = customerBalance;
         }
 
         public override string ToString()
