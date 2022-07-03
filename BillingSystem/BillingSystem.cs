@@ -6,13 +6,15 @@ using System.Threading.Tasks;
 
 namespace BillingSystem
 {
-    internal class BillingSystem
+    class BillingSystem
     {
         private int _index;
         private Customer[] _customersArr;
-        public BillingSystem(int CustomerArr = 100)
+        const int defaultSize = 100;
+
+        public BillingSystem(int size = defaultSize)
         {
-            _customersArr = new Customer[CustomerArr];
+            _customersArr = new Customer[size];
         }
 
         public void AddCustomer(Customer c)
@@ -26,14 +28,56 @@ namespace BillingSystem
 
         public override string ToString()
         {
-            StringBuilder stringBuilder = new StringBuilder();
+            StringBuilder stringBuilder = new StringBuilder("Billing System Data:\n");
 
             for (int i = 0; i < _index; i++)
             {
-                stringBuilder.AppendLine(_customersArr.ToString());
+                stringBuilder.AppendLine(_customersArr[i].ToString());
             }
 
             return stringBuilder.ToString();
+        }
+
+
+        //Indexers
+        public Customer this[string name]
+        {
+            get
+            {
+                for (int i = 0; i < _index; i++)
+                    if (_customersArr[i].CustomerName.Equals(name))
+                        return _customersArr[i];
+                    else
+                        return null;
+            }
+        }
+
+        public Customer this[string name, int id]
+        {
+            get
+            {
+                for (int i = 0; i < _index; i++)
+                    if (_customersArr[i].CustomerName.Equals(name))
+                        return _customersArr[i];
+                    else
+                        return null;
+            }
+        }
+
+        public Customer this[int position]
+        {
+            get
+            {
+                if (position >= 0 && position < _index)
+                {
+
+                }
+            }
+        }
+
+        public void Sort()
+        {
+            Array.Sort(_customersArr, 0, _index);
         }
     }
 }

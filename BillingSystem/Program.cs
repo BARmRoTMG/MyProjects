@@ -10,7 +10,7 @@ namespace BillingSystem
     {
         static void Main(string[] args)
         {
-            BillingSystem billingSystem = new BillingSystem();
+            BillingSystem billingSystem = new BillingSystem(10);
 
             Customer c1 = new Customer("Bar", 5000);
             billingSystem.AddCustomer(c1);
@@ -21,7 +21,7 @@ namespace BillingSystem
             Customer c3 = new Customer("Keren");
             billingSystem.AddCustomer(c3);
 
-            Console.WriteLine(billingSystem.ToString());
+            Console.WriteLine(billingSystem);
             Console.ReadKey();
         }
     }

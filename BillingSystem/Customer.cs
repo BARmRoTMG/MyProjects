@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BillingSystem
 {
-    internal class Customer
+    abstract internal class Customer
     {
         //Fields
         private string _customerName;
@@ -46,6 +46,24 @@ namespace BillingSystem
         public override string ToString()
         {
             return $"Name: {_customerName}, Balance: {_customerBalance}, ID: {_customerId}";
+        }
+
+        public virtual void AddToBalance(double amount)
+        {
+        }
+
+        public override bool Equals(object obj)
+        {
+            // IS or AS to check type of inhertided as well. GetType for a single class.
+            //if (!(obj is Customer))
+            //    return false;
+            //Customer other = (Customer)obj; //down cast
+
+            Customer other = obj as Customer;
+            if (other == null)
+                return false;
+
+            return other.CustomerId == this.CustomerId;
         }
     }
 }
