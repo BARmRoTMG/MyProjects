@@ -299,21 +299,7 @@ Insert [Sale Details] values (13, 13, 1350000, 0)
 Insert [Sale Details] values (14, 14, 2500000, 0)
 Insert [Sale Details] values (15, 15, 2450000, 0)
 
-
-select H.TypeID, sum(sd.HousePrice) 'TOTAL', year(s.SaleDate) 'Year of Sales'
-from Sales S, [Sale Details] SD, Houses H
-WHERE S.SaleID = SD.SaleID and SD.HouseID = H.HouseID
-group by h.TypeID, year(s.SaleDate)
-
-SELECT Neighborhood, AVG(HousePrice) 'AverageHousingPrices'
-FROM Houses 
-GROUP BY Neighborhood
-ORDER BY AVG(HousePrice) desc
-
-select S.SalesmanID, SM.FirstName, sm.LastName, max(S.SalesmanID) 'Max'
-from Sales S, Salesmen SM
-where s.SalesmanID = SM.SalesmanID
-GROUP BY s.SalesmanID, SM.FirstName, SM.lASTName
+UPDATE Salesmen SET SalesMade = 9 WHERE SalesmanID = 1;  
 
 
 
