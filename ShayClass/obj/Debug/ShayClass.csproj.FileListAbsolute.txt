@@ -1,0 +1,8 @@
+C:\Users\User\Documents\GitHub\MyProjects\ShayClass\bin\Debug\ShayClass.exe.config
+C:\Users\User\Documents\GitHub\MyProjects\ShayClass\bin\Debug\ShayClass.exe
+C:\Users\User\Documents\GitHub\MyProjects\ShayClass\bin\Debug\ShayClass.pdb
+C:\Users\User\Documents\GitHub\MyProjects\ShayClass\obj\Debug\ShayClass.csproj.AssemblyReference.cache
+C:\Users\User\Documents\GitHub\MyProjects\ShayClass\obj\Debug\ShayClass.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\Documents\GitHub\MyProjects\ShayClass\obj\Debug\ShayClass.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\MyProjects\ShayClass\obj\Debug\ShayClass.exe
+C:\Users\User\Documents\GitHub\MyProjects\ShayClass\obj\Debug\ShayClass.pdb

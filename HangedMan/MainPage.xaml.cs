@@ -86,9 +86,11 @@ namespace HangedMan
 
         private string WordGenerator()
         {
-            string[] _words = { "cat", "dog", "house", "apple", "banana", "elephant" };
+            string[] easy = { "chicken", "football", "house", "television", "sugar", "elephant" };
+            string[] normal = { "conservation", "strength", "production", "eliminate", "suspect", "character" };
+            string[] hard = { "achievement", "violation", "continuous", "exhibition", "pedestrian", "atmosphere" };
             Random rnd = new Random();
-            return _words[rnd.Next(_words.Length)];
+            return easy[rnd.Next(easy.Length)];
         }
         
         private void CreateWordArea()

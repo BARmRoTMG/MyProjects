@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>BAR-PC</Machine>
-    <WindowsUser>barba</WindowsUser>
+    <Machine>DESKTOP-HKEHI8J</Machine>
+    <WindowsUser>User</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
@@ -10,22 +10,22 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>04f6ae9d-ddae-46c1-993a-77dd6f7d76ed</PackageIdentityName>
     <PackageIdentityPublisher>CN=barba</PackageIdentityPublisher>
-    <IntermediateOutputPath>I:\Bar Projects\MyProjects\HangedMan\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\User\Documents\GitHub\MyProjects\HangedMan\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>I:\Bar Projects\MyProjects\HangedMan\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\User\Documents\GitHub\MyProjects\HangedMan\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="I:\Bar Projects\MyProjects\HangedMan\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\HangedMan\bin\x86\Debug\HangedMan.exe">
+    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\bin\x86\Debug\HangedMan.exe">
       <PackagePath>entrypoint\HangedMan.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.13\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
@@ -34,88 +34,88 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.19041.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\HangedMan\HangedManImages\H0.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\HangedManImages\H0.png">
       <PackagePath>HangedManImages\H0.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\HangedMan\HangedManImages\H1.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\HangedManImages\H1.png">
       <PackagePath>HangedManImages\H1.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\HangedMan\HangedManImages\H10.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\HangedManImages\H10.png">
       <PackagePath>HangedManImages\H10.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\HangedMan\HangedManImages\H2.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\HangedManImages\H2.png">
       <PackagePath>HangedManImages\H2.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\HangedMan\HangedManImages\H3.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\HangedManImages\H3.png">
       <PackagePath>HangedManImages\H3.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\HangedMan\HangedManImages\H4.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\HangedManImages\H4.png">
       <PackagePath>HangedManImages\H4.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\HangedMan\HangedManImages\H5.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\HangedManImages\H5.png">
       <PackagePath>HangedManImages\H5.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\HangedMan\HangedManImages\H6.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\HangedManImages\H6.png">
       <PackagePath>HangedManImages\H6.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\HangedMan\HangedManImages\H7.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\HangedManImages\H7.png">
       <PackagePath>HangedManImages\H7.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\HangedMan\HangedManImages\H8.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\HangedManImages\H8.png">
       <PackagePath>HangedManImages\H8.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\HangedMan\HangedManImages\H9.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\HangedManImages\H9.png">
       <PackagePath>HangedManImages\H9.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\HangedMan\Assets\chalkboard.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\Assets\chalkboard.png">
       <PackagePath>Assets\chalkboard.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\HangedMan\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\HangedMan\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\HangedMan\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\HangedMan\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\HangedMan\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\HangedMan\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\HangedMan\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\HangedMan\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\HangedMan\bin\x86\Debug\HangedMan.xr.xml">
+    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\bin\x86\Debug\HangedMan.xr.xml">
       <PackagePath>HangedMan.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\HangedMan\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\HangedMan\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\HangedMan\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\HangedMan\bin\x86\Debug\Core\HangedMan.exe">
+    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\bin\x86\Debug\Core\HangedMan.exe">
       <PackagePath>HangedMan.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
