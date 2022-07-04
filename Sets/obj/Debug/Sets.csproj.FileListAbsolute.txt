@@ -1,0 +1,8 @@
+I:\Bar Projects\MyProjects\Sets\bin\Debug\Sets.exe.config
+I:\Bar Projects\MyProjects\Sets\bin\Debug\Sets.exe
+I:\Bar Projects\MyProjects\Sets\bin\Debug\Sets.pdb
+I:\Bar Projects\MyProjects\Sets\obj\Debug\Sets.csproj.AssemblyReference.cache
+I:\Bar Projects\MyProjects\Sets\obj\Debug\Sets.csproj.SuggestedBindingRedirects.cache
+I:\Bar Projects\MyProjects\Sets\obj\Debug\Sets.csproj.CoreCompileInputs.cache
+I:\Bar Projects\MyProjects\Sets\obj\Debug\Sets.exe
+I:\Bar Projects\MyProjects\Sets\obj\Debug\Sets.pdb

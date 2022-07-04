@@ -1,0 +1,23 @@
+﻿<Page x:Name="page"
+    x:Class="HangedMan.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HangedMan"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Canvas x:Name="canvas"></Canvas>
+        <TextBlock Text="HANGMAN" FontSize="65" HorizontalAlignment="Center"></TextBlock>
+        <Button Content="New Game" FontSize="40" Padding="10" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0, 100, 0, 0" Click="Button_Click"></Button>
+        <StackPanel x:Name="wordArea" VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal"></StackPanel>
+        <Image x:Name="imageMiss" Source="HangedManImages/H0.png" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="60, 100, 0, 0" Height="400" Width="400"></Image>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0, 0, 0, 20">
+            <StackPanel x:Name="firstRow" Orientation="Horizontal" HorizontalAlignment="Center"></StackPanel>
+            <StackPanel x:Name="secondRow" Orientation="Horizontal" HorizontalAlignment="Center"></StackPanel>
+            <StackPanel x:Name="thirdRow" Orientation="Horizontal" HorizontalAlignment="Center"></StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

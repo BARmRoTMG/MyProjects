@@ -41,7 +41,10 @@ namespace ObjectOriented
 
         public override bool Equals(object obj)
         {           
-            if (obj.GetType() != typeof(Person))
+            //if (obj.GetType() != typeof(Person))
+            //    return false;
+
+            if (!(obj is Person))
                 return false;
 
             //Down cast
