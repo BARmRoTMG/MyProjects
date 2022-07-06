@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9tLp2CdMWE1iXNNrRQLBkIkPmNEj4tqePDk2UgEqDYjPzYIhTMt0RvN1/NlAW2l5MFsrT3PXFls3S9IMntaXMQ==",
+  "dgSpecHash": "Lm6fg9sWkyqF8UB5AJEL3JaiVPHA9Mu18x5KghBNILahZpXqL+GrzQ+nzAe87RiZiXCVe4T4ACiN7dHUqasW8w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\User\\Documents\\GitHub\\MyProjects\\HangedMan\\HangedMan.csproj",
+  "projectFilePath": "I:\\Bar Projects\\MyProjects\\HangedMan\\HangedMan.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.native.compiler\\2.2.11-rel-30601-02\\microsoft.net.native.compiler.2.2.11-rel-30601-02.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.uwpcoreruntimesdk\\2.2.13\\microsoft.net.uwpcoreruntimesdk.2.2.13.nupkg.sha512",

@@ -1,1 +1,1 @@
-C:\Users\User\Documents\GitHub\MyProjects\HangedMan\HangedMan.csproj;x86
+I:\Bar Projects\MyProjects\HangedMan\HangedMan.csproj;x86

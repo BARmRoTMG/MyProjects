@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>DESKTOP-HKEHI8J</Machine>
-    <WindowsUser>User</WindowsUser>
+    <Machine>BAR-PC</Machine>
+    <WindowsUser>barba</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>04f6ae9d-ddae-46c1-993a-77dd6f7d76ed</PackageIdentityName>
     <PackageIdentityPublisher>CN=barba</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\User\Documents\GitHub\MyProjects\HangedMan\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>I:\Bar Projects\MyProjects\HangedMan\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,8 +18,8 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\User\Documents\GitHub\MyProjects\HangedMan\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>5B10E2B0C7EBC9BF9446CF2C895258BBC19CE396B8DD2F1196E7566D2F364CC2</RegisteredManifestChecksum>
+    <LayoutDir>I:\Bar Projects\MyProjects\HangedMan\bin\x86\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>1FD6C9C638CC101034F2EAF2D34F6A0BD0150BD2F01F0656DAFFC13E8E406998</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>04f6ae9d-ddae-46c1-993a-77dd6f7d76ed_1.0.0.0_x86__dqfap8z6ft6gt</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>04f6ae9d-ddae-46c1-993a-77dd6f7d76ed_dqfap8z6ft6gt!App</RegisteredUserModeAppID>
     <RegisteredPackageID>04f6ae9d-ddae-46c1-993a-77dd6f7d76ed</RegisteredPackageID>
@@ -27,16 +27,16 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="I:\Bar Projects\MyProjects\HangedMan\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-07-04T11:56:22.792</Modified>
+      <Modified>2022-07-06T11:55:38.054</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\bin\x86\Debug\HangedMan.exe">
+    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\HangedMan\bin\x86\Debug\HangedMan.exe">
       <PackagePath>entrypoint\HangedMan.exe</PackagePath>
-      <Modified>2022-07-04T11:56:21.982</Modified>
+      <Modified>2022-07-06T11:55:37.415</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.13\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -46,115 +46,119 @@
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2020-12-02T01:52:00.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\HangedManImages\H0.png">
+    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\HangedMan\HangedManImages\H0.png">
       <PackagePath>HangedManImages\H0.png</PackagePath>
-      <Modified>2022-07-04T06:52:55.196</Modified>
+      <Modified>2022-06-27T09:20:51.191</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\HangedManImages\H1.png">
+    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\HangedMan\HangedManImages\H1.png">
       <PackagePath>HangedManImages\H1.png</PackagePath>
-      <Modified>2022-07-04T06:52:55.196</Modified>
+      <Modified>2022-06-27T09:22:13.358</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\HangedManImages\H10.png">
+    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\HangedMan\HangedManImages\H10.png">
       <PackagePath>HangedManImages\H10.png</PackagePath>
-      <Modified>2022-07-04T06:52:55.197</Modified>
+      <Modified>2022-06-27T09:25:08.779</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\HangedManImages\H2.png">
+    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\HangedMan\HangedManImages\H2.png">
       <PackagePath>HangedManImages\H2.png</PackagePath>
-      <Modified>2022-07-04T06:52:55.197</Modified>
+      <Modified>2022-06-27T09:22:34.304</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\HangedManImages\H3.png">
+    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\HangedMan\HangedManImages\H3.png">
       <PackagePath>HangedManImages\H3.png</PackagePath>
-      <Modified>2022-07-04T06:52:55.197</Modified>
+      <Modified>2022-06-27T09:25:22.854</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\HangedManImages\H4.png">
+    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\HangedMan\HangedManImages\H4.png">
       <PackagePath>HangedManImages\H4.png</PackagePath>
-      <Modified>2022-07-04T06:52:55.198</Modified>
+      <Modified>2022-06-27T09:25:59.703</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\HangedManImages\H5.png">
+    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\HangedMan\HangedManImages\H5.png">
       <PackagePath>HangedManImages\H5.png</PackagePath>
-      <Modified>2022-07-04T06:52:55.198</Modified>
+      <Modified>2022-06-27T09:25:53.834</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\HangedManImages\H6.png">
+    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\HangedMan\HangedManImages\H6.png">
       <PackagePath>HangedManImages\H6.png</PackagePath>
-      <Modified>2022-07-04T06:52:55.199</Modified>
+      <Modified>2022-06-27T09:25:47.943</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\HangedManImages\H7.png">
+    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\HangedMan\HangedManImages\H7.png">
       <PackagePath>HangedManImages\H7.png</PackagePath>
-      <Modified>2022-07-04T06:52:55.199</Modified>
+      <Modified>2022-06-27T09:24:17.196</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\HangedManImages\H8.png">
+    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\HangedMan\HangedManImages\H8.png">
       <PackagePath>HangedManImages\H8.png</PackagePath>
-      <Modified>2022-07-04T06:52:55.200</Modified>
+      <Modified>2022-06-27T09:24:32.152</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\HangedManImages\H9.png">
+    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\HangedMan\HangedManImages\H9.png">
       <PackagePath>HangedManImages\H9.png</PackagePath>
-      <Modified>2022-07-04T06:52:55.200</Modified>
+      <Modified>2022-06-27T09:24:55.132</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\Assets\chalkboard.png">
+    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\HangedMan\Assets\chalkboard.png">
       <PackagePath>Assets\chalkboard.png</PackagePath>
-      <Modified>2022-07-04T06:52:55.194</Modified>
+      <Modified>2022-06-27T07:14:04.802</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\HangedMan\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2022-07-04T06:52:55.191</Modified>
+      <Modified>2022-06-16T11:31:16.781</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\HangedMan\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-07-04T06:52:55.192</Modified>
+      <Modified>2022-06-16T11:31:16.783</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\HangedMan\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-07-04T06:52:55.192</Modified>
+      <Modified>2022-06-16T11:31:16.784</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\HangedMan\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-07-04T06:52:55.193</Modified>
+      <Modified>2022-06-16T11:31:16.784</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\HangedMan\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-07-04T06:52:55.193</Modified>
+      <Modified>2022-06-16T11:31:16.785</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\HangedMan\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-07-04T06:52:55.193</Modified>
+      <Modified>2022-06-16T11:31:16.786</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\HangedMan\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-07-04T06:52:55.194</Modified>
+      <Modified>2022-06-16T11:31:16.786</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\HangedMan\Assets\background.jpg">
+      <PackagePath>Assets\background.jpg</PackagePath>
+      <Modified>2022-07-06T10:03:01.428</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\HangedMan\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2022-07-04T06:52:55.203</Modified>
+      <Modified>2022-06-27T06:32:58.911</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\bin\x86\Debug\HangedMan.xr.xml">
+    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\HangedMan\bin\x86\Debug\HangedMan.xr.xml">
       <PackagePath>HangedMan.xr.xml</PackagePath>
-      <Modified>2022-07-04T06:52:55.286</Modified>
+      <Modified>2022-07-06T10:07:05.038</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\HangedMan\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2022-07-04T11:56:21.923</Modified>
+      <Modified>2022-07-06T11:55:37.344</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\HangedMan\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2022-07-04T11:56:21.923</Modified>
+      <Modified>2022-07-06T11:55:37.344</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2020-12-01T23:52:06.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\HangedMan\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-07-04T07:58:28.838</Modified>
+      <Modified>2022-07-06T10:03:33.008</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Documents\GitHub\MyProjects\HangedMan\bin\x86\Debug\Core\HangedMan.exe">
+    <AppxPackagedFile Include="I:\Bar Projects\MyProjects\HangedMan\bin\x86\Debug\Core\HangedMan.exe">
       <PackagePath>HangedMan.exe</PackagePath>
-      <Modified>2022-07-04T11:56:22.786</Modified>
+      <Modified>2022-07-06T11:55:38.051</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

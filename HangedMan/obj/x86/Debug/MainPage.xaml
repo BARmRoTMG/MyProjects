@@ -10,14 +10,18 @@
 
     <Grid>
         <Canvas x:ConnectionId='2' x:Name="canvas"></Canvas>
-        <TextBlock Text="HANGMAN" FontSize="65" HorizontalAlignment="Center"></TextBlock>
-        <Button x:ConnectionId='3' Content="New Game" FontSize="40" Padding="10" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0, 100, 0, 0"                     ></Button>
-        <StackPanel x:ConnectionId='4' x:Name="wordArea" VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal"></StackPanel>
-        <Image x:ConnectionId='5' x:Name="imageMiss" Source="HangedManImages/H0.png" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="60, 100, 0, 0" Height="400" Width="400"></Image>
+        <StackPanel Width="550" VerticalAlignment="Top">
+            <Button x:ConnectionId='8' Content="New Game" FontSize="40" Padding="10" VerticalAlignment="Top" HorizontalAlignment="Left"                      ></Button>
+            <Button x:ConnectionId='9' Content="Hint" FontSize="40" Padding="10" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0, -80, 0, 0"                       ></Button>
+            <Button x:ConnectionId='10' x:Name="difficulty" Content="Easy" FontSize="40" Padding="10" VerticalAlignment="Top" HorizontalAlignment="Right"                          Margin="0, -80, 0, 0"></Button>
+            <TextBlock x:ConnectionId='11' x:Name="textHolder"></TextBlock>
+        </StackPanel>
+        <StackPanel x:ConnectionId='3' x:Name="wordArea" VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal"></StackPanel>
+        <Image x:ConnectionId='4' x:Name="imageHolder" Source="HangedManImages/H0.png" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="60, 100, 0, 0" Height="400" Width="400"></Image>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0, 0, 0, 20">
-            <StackPanel x:ConnectionId='6' x:Name="firstRow" Orientation="Horizontal" HorizontalAlignment="Center"></StackPanel>
-            <StackPanel x:ConnectionId='7' x:Name="secondRow" Orientation="Horizontal" HorizontalAlignment="Center"></StackPanel>
-            <StackPanel x:ConnectionId='8' x:Name="thirdRow" Orientation="Horizontal" HorizontalAlignment="Center"></StackPanel>
+            <StackPanel x:ConnectionId='5' x:Name="firstRow" Orientation="Horizontal" HorizontalAlignment="Center"></StackPanel>
+            <StackPanel x:ConnectionId='6' x:Name="secondRow" Orientation="Horizontal" HorizontalAlignment="Center"></StackPanel>
+            <StackPanel x:ConnectionId='7' x:Name="thirdRow" Orientation="Horizontal" HorizontalAlignment="Center"></StackPanel>
         </StackPanel>
     </Grid>
 </Page>

@@ -10,10 +10,14 @@
 
     <Grid>
         <Canvas x:Name="canvas"></Canvas>
-        <TextBlock Text="HANGMAN" FontSize="65" HorizontalAlignment="Center"></TextBlock>
-        <Button Content="New Game" FontSize="40" Padding="10" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0, 100, 0, 0" Click="Button_Click"></Button>
+        <StackPanel Width="550" VerticalAlignment="Top">
+            <Button Content="New Game" FontSize="40" Padding="10" VerticalAlignment="Top" HorizontalAlignment="Left"  Click="Button_Click"></Button>
+            <Button Content="Hint" FontSize="40" Padding="10" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0, -80, 0, 0" Click="Button_Click_1"></Button>
+            <Button x:Name="difficulty" Content="Easy" FontSize="40" Padding="10" VerticalAlignment="Top" HorizontalAlignment="Right" Click="difficulty_Click" Margin="0, -80, 0, 0"></Button>
+            <TextBlock x:Name="textHolder"></TextBlock>
+        </StackPanel>
         <StackPanel x:Name="wordArea" VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal"></StackPanel>
-        <Image x:Name="imageMiss" Source="HangedManImages/H0.png" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="60, 100, 0, 0" Height="400" Width="400"></Image>
+        <Image x:Name="imageHolder" Source="HangedManImages/H0.png" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="60, 100, 0, 0" Height="400" Width="400"></Image>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0, 0, 0, 20">
             <StackPanel x:Name="firstRow" Orientation="Horizontal" HorizontalAlignment="Center"></StackPanel>
             <StackPanel x:Name="secondRow" Orientation="Horizontal" HorizontalAlignment="Center"></StackPanel>
