@@ -1,0 +1,8 @@
+I:\Bar Projects\MyProjects\ShayPractice7.7\bin\Debug\ShayPractice7.7.exe.config
+I:\Bar Projects\MyProjects\ShayPractice7.7\bin\Debug\ShayPractice7.7.exe
+I:\Bar Projects\MyProjects\ShayPractice7.7\bin\Debug\ShayPractice7.7.pdb
+I:\Bar Projects\MyProjects\ShayPractice7.7\obj\Debug\ShayPractice7.7.csproj.AssemblyReference.cache
+I:\Bar Projects\MyProjects\ShayPractice7.7\obj\Debug\ShayPractice7.7.csproj.SuggestedBindingRedirects.cache
+I:\Bar Projects\MyProjects\ShayPractice7.7\obj\Debug\ShayPractice7.7.csproj.CoreCompileInputs.cache
+I:\Bar Projects\MyProjects\ShayPractice7.7\obj\Debug\ShayPractice7.7.exe
+I:\Bar Projects\MyProjects\ShayPractice7.7\obj\Debug\ShayPractice7.7.pdb
