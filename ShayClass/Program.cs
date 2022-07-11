@@ -222,7 +222,7 @@ namespace ShayClass
             MergeSort(a, begin, (begin + end) / 2);
             MergeSort(a, 1 + (begin + end) / 2, end);
             Merge(a, begin, end);
-        }
+        }  
 
         public static void Merge(int[] a, int begin, int end)
         {
@@ -254,6 +254,37 @@ namespace ShayClass
                     b[k] = a[i];
             for (i = begin, k = 0; k < b.Length; i++, k++)
                 a[i] = b[k];
+        } //with one array (splitted)
+
+        public static int Partition(int[] a, int start, int end) //חלוקה
+        {
+            int p = a[end]; //pivot
+            int i = start;
+            int j = end - 1;
+
+            while (i < j)
+            {
+                while (i < j && a[i] < p)
+                    i++;
+                while (i < j && a[j] > p)
+                    j--;
+
+                Swap(a, i, j);
+            }
+
+            Swap(a, i, end);
+            return i;
+        }
+
+        public static void QuickSort(int[] a, int start, int end)
+        {
+            if (start == end)
+                return;
+
+            int p = Partition(a, start, end);
+
+            QuickSort(a, start, p - 1);
+            QuickSort(a, p + 1, end);
         }
     }
 }
