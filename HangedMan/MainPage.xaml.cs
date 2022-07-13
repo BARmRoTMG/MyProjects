@@ -1,11 +1,8 @@
 ﻿using System;
-using Windows.System;
-using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.ViewManagement;
 using Windows.Foundation;
-using Windows.UI.Xaml.Shapes;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Popups;
@@ -19,15 +16,10 @@ namespace HangedMan
         List<BitmapImage> _images;
         List<TextBlock> _charField;
 
+        GameManager gameManager = new GameManager();
+
         string _word;
         int _counter = 0;
-        int difficultyLevel = 0;
-
-        public int DifficultyLevel
-        {
-            get { return difficultyLevel; }
-            set { difficultyLevel = value; }
-        }
 
         public MainPage()
         {
@@ -91,33 +83,15 @@ namespace HangedMan
             }
         }
 
-        private string WordGenerator()
-        {
-            string[] easy = { "chicken", "football", "house", "television", "sugar", "elephant" };
-            string[] normal = { "conversation", "strength", "production", "eliminate", "suspect", "character" };
-            string[] hard = { "achievement", "violation", "continuous", "exhibition", "pedestrian", "atmosphere" };
-
-            Random rnd = new Random();
-
-            if (difficultyLevel == 0)
-                return easy[rnd.Next(easy.Length)];
-            else if (difficultyLevel == 1)
-                return normal[rnd.Next(normal.Length)];
-            else if (difficultyLevel == 2)
-                return hard[rnd.Next(hard.Length)];
-
-            return easy[rnd.Next(easy.Length)];
-        } //Word generator by difficulty
-        
         private void CreateWordArea() //Initializing words
         {
             _counter = 0;
             CreateKeyboard();
-            this._word = WordGenerator();
+            this._word = gameManager.WordGenerator();
             imageHolder.Source = _images[0];
             _charField = new List<TextBlock>();
-            wordArea.Children.Clear(); 
-            
+            wordArea.Children.Clear();
+
             for (int i = 0; i < this._word.Length; i++)
             {
                 TextBlock textBlock = new TextBlock()
@@ -132,6 +106,7 @@ namespace HangedMan
             _charField[0].Text = this._word[0].ToString(); // First char of word
             _charField[this._word.Length - 1].Text = this._word[this._word.Length - 1].ToString(); // Last char of word
         }
+
         private void Keyboard_Click(object sender, RoutedEventArgs e) //Keybaord Input
         {
             Button button = sender as Button;
@@ -185,36 +160,31 @@ namespace HangedMan
             await messageDialog.ShowAsync();
             CreateWordArea(); // Starts new game
         } //General Play Again Button to Dialog Box
+
         private void difficulty_Click(object sender, RoutedEventArgs e)
         {
-            difficultyLevel++;
+            gameManager.DifficultyLevel++;
             textHolder.Text = "Click on 'New Game' for the difficulty change to take effect.";
 
-            switch (difficultyLevel)
+            switch (gameManager.DifficultyLevel)
             {
                 case 0:
                     difficulty.Content = "Easy";
-                    difficultyLevel = 0;
+                    gameManager.DifficultyLevel = 0;
                     break;
                 case 1:
                     difficulty.Content = "Normal";
-                    difficultyLevel = 1;
+                    gameManager.DifficultyLevel = 1;
                     break;
                 case 2:
                     difficulty.Content = "Hard";
-                    difficultyLevel = 2;
+                    gameManager.DifficultyLevel = 2;
                     break;
                 default:
                     difficulty.Content = "Easy";
-                    difficultyLevel = 0;
+                    gameManager.DifficultyLevel = 0;
                     break;
             }
         } //Dynamic Difficulty Button
-
-        private void Button_Click_1(object sender, RoutedEventArgs e) //Hint Button
-        {
-            Random r = new Random();
-            _charField[r.Next(this._word.Length)].Text = this._word[r.Next(this._word.Length - 1)].ToString();
-        }
     }
 }

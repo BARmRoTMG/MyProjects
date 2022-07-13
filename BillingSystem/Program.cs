@@ -12,13 +12,13 @@ namespace BillingSystem
         {
             BillingSystem billingSystem = new BillingSystem(10);
 
-            Customer c1 = new Customer("Bar", 5000);
+            VIPCustomer c1 = new VIPCustomer(); //VIPCustomer("Bar", 5000);
             billingSystem.AddCustomer(c1);
 
-            Customer c2 = new Customer("Shaked", 10000);
+            RegularCustomer c2 = new RegularCustomer(); //("Shaked", 10000);
             billingSystem.AddCustomer(c2);
 
-            Customer c3 = new Customer("Keren");
+            RegularCustomer c3 = new RegularCustomer(); //("Keren");
             billingSystem.AddCustomer(c3);
 
             Console.WriteLine(billingSystem);

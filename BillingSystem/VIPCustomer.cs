@@ -8,7 +8,7 @@ namespace BillingSystem
 {
     internal class VIPCustomer : Customer
     {
-        public VIPCustomer() : base(CustomerName)
+        public VIPCustomer(string customerName, double customerBalance) : base(customerName, customerBalance)
         {
 
         }
