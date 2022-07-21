@@ -1,0 +1,8 @@
+I:\Bar Projects\MyProjects\DataStructures\bin\Debug\DataStructures.exe.config
+I:\Bar Projects\MyProjects\DataStructures\bin\Debug\DataStructures.exe
+I:\Bar Projects\MyProjects\DataStructures\bin\Debug\DataStructures.pdb
+I:\Bar Projects\MyProjects\DataStructures\obj\Debug\DataStructures.csproj.AssemblyReference.cache
+I:\Bar Projects\MyProjects\DataStructures\obj\Debug\DataStructures.csproj.SuggestedBindingRedirects.cache
+I:\Bar Projects\MyProjects\DataStructures\obj\Debug\DataStructures.csproj.CoreCompileInputs.cache
+I:\Bar Projects\MyProjects\DataStructures\obj\Debug\DataStructures.exe
+I:\Bar Projects\MyProjects\DataStructures\obj\Debug\DataStructures.pdb

@@ -11,7 +11,9 @@ namespace VendingMachine
     {
         static void Main(string[] args)
         {
-            Coffee coffee = new Coffee(Size.Medium, 2);
+            VendingMachine vendingMachine = new VendingMachine();
+
+            vendingMachine.Start();
         }
     }
 }

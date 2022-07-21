@@ -8,8 +8,8 @@ namespace VendingMachine
 {
     internal enum Size
     {
-        Small = 0,
-        Medium = 1,
-        Large = 2
+        Small = 1,
+        Medium,
+        Large
     }
 }

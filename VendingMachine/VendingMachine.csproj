@@ -43,8 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Beverages\Coffee.cs" />
+    <Compile Include="Beverages\HotChocolate.cs" />
+    <Compile Include="Beverages\Tea.cs" />
+    <Compile Include="Cup.cs" />
+    <Compile Include="IBeverage.cs" />
+    <Compile Include="Inventory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Size.cs" />
+    <Compile Include="VendingMachine.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

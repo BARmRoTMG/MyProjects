@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BillingSystem
 {
-    abstract internal class Customer
+    abstract internal class Customer : IComparable
     {
         //Fields
         private string _customerName;
@@ -64,6 +64,17 @@ namespace BillingSystem
                 return false;
 
             return other.CustomerId == this.CustomerId;
+        }
+
+        public int CompareTo(object obj) // Comparison method by name.
+        {
+            Customer customer = obj as Customer;
+
+            if (customer == null)
+                throw new ArgumentException();
+
+
+            return customer.CustomerName.CompareTo(this.CustomerName);
         }
     }
 }

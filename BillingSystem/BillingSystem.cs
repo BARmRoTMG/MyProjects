@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+using System.Collections;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace BillingSystem
 {
@@ -106,6 +104,11 @@ namespace BillingSystem
         public void Sort()
         {
             Array.Sort(_customersArr, 0, _index);
+        }
+
+        public void Sort(IComparer com)
+        {
+            Array.Sort(_customersArr, 0, _index, com);
         }
     }
 }

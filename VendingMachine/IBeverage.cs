@@ -9,7 +9,6 @@ namespace VendingMachine
     public interface IBeverage
     {
         string Name { get; set; }
-
         void Prepare(); 
     }
 }

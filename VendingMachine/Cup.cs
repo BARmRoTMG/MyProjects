@@ -8,19 +8,20 @@ namespace VendingMachine
 {
     internal abstract class Cup
     {
-        Size _size;
-        double _sugar;
         double _price;
-
-        public Size Size { get { return _size; } set { _size = value; } }
-        public double Sugar { get { return _sugar; } set { _sugar = value; } }
+        Size _size;
         public double Price { get { return _price; } set { _price = value; } }
+        public Size Size { get { return _size; } set { _size = value; } }
 
-        public Cup(Size size, double sugar, double price)
+        public Cup(Size size, double price)
         {
             _size = size;
-            _sugar = sugar;
             _price = price;
+        }
+
+        public override string ToString()
+        {
+            return "You're drink was @#$@#$@#$";
         }
     }
 }

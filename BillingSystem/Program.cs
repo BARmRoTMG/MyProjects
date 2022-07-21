@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BillingSystem
 {
@@ -12,16 +8,30 @@ namespace BillingSystem
         {
             BillingSystem billingSystem = new BillingSystem(10);
 
-            VIPCustomer c1 = new VIPCustomer(); //VIPCustomer("Bar", 5000);
-            billingSystem.AddCustomer(c1);
+            VIPCustomer c1 = new VIPCustomer("Bar", 5000);
+            VIPCustomer c4 = new VIPCustomer("Bar", -100);
+            RegularCustomer c2 = new RegularCustomer("Shaked", 10000);
+            RegularCustomer c3 = new RegularCustomer("Keren", 0);
 
-            RegularCustomer c2 = new RegularCustomer(); //("Shaked", 10000);
-            billingSystem.AddCustomer(c2);
+            try
+            {;
+                billingSystem.AddCustomer(c1);
+                billingSystem.AddCustomer(c2);
+                billingSystem.AddCustomer(c3);
+                billingSystem.AddCustomer(c4);
 
-            RegularCustomer c3 = new RegularCustomer(); //("Keren");
-            billingSystem.AddCustomer(c3);
+                Console.WriteLine("Before sort -->\n" + billingSystem);
+                billingSystem.Sort();
+                Console.WriteLine("After sort -->\n" + billingSystem);
+            } catch
+            {
+                throw new ArgumentException("There was a problem with adding one or more of the customers.");
+            }
 
-            Console.WriteLine(billingSystem);
+            CompareByBalance compareByBalance = new CompareByBalance();
+            billingSystem.Sort(compareByBalance);
+            Console.WriteLine("Compared by Balance -->\n" + billingSystem);
+
             Console.ReadKey();
         }
     }
