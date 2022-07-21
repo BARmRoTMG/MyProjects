@@ -107,6 +107,84 @@ namespace BinaryTree_DataStructures
                 Console.Write(t.Data + " ");
             }
         }
+        public int countNodes()
+        {
+            return countNodes(root);
+        }
+
+        private int countNodes(Node t)
+        {
+            if (t == null)
+                return 0;
+
+            return countNodes(t.Left) + countNodes(t.Right) + 1;
+        }
+
+        public int countLeaves()
+        {
+            return countLeaves(root);
+        }
+
+        private int countLeaves(Node t)
+        {
+            if (t == null)
+                return 0;
+            else if (t.Right == null && t.Left == null)
+                return 1;
+
+            return countLeaves(t.Left) + countLeaves(t.Right);
+        }
+    }
+
+    class BST
+    {
+        private Node root;
+
+        public BST()
+        {
+            root = null;
+        }
+
+        public void addNode(int x)
+        {
+            if (root == null)
+                root = new Node(x, null, null);
+            else
+                addNode(x, root);
+        }
+
+        private void addNode(int x, Node t)
+        {
+            if (x < t.Data)
+            {
+                if (t.Left == null)
+                    t.Left = new Node(x, null, null);
+                else
+                    addNode(x, t.Left);
+            } else
+            {
+                if (t.Right == null)
+                    t.Right = new Node(x, null, null);
+                else
+                    addNode(x, t.Right);
+            }
+        }
+
+        public bool find(int x)
+        {
+            return find(x, root);
+        }
+
+        private bool find(int x, Node t)
+        {
+            if (t == null)
+                return false;
+            if (t.Data == x)
+                return true;
+            if (x < t.Data)
+                return find(x, t.Left);
+            return find(x, t.Right);
+        }
     }
 
     internal class Program
@@ -144,6 +222,9 @@ namespace BinaryTree_DataStructures
             tree.inOrder();
             Console.WriteLine();
             tree.post();
+            Console.WriteLine();
+            Console.WriteLine(tree.countNodes());
+            Console.WriteLine(tree.countLeaves());
         }
     }
 }

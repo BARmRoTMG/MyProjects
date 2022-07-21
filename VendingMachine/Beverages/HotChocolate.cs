@@ -1,23 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace VendingMachine.Beverages
 {
-    internal class HotChocolate : Cup//, IBeverage
+    internal class HotChocolate : Cup
     {
-        public double _price = 15;
         Inventory inv = new Inventory();
-        public HotChocolate(Size size/*, double price*/) : base(size)//, price) //double cocoPowder, double hotWater, double milk, double sugar, Size size, double price
-        {
-            //Name = "Hot Chocolate";
-            //Price = 5;
-        }
+        public double _price = 5;
+
         public override string Name
         {
-            get { return "Chocolate"; }
+            get { return "Hot Chocolate"; }
         }
         public override double Price
         {
@@ -25,7 +17,9 @@ namespace VendingMachine.Beverages
             set { _price = value; }
         }
 
-        //public string Name { get; set; }
+        public HotChocolate(Size size) : base(size)
+        {
+        }
 
         public override void Prepare()
         {
@@ -40,11 +34,5 @@ namespace VendingMachine.Beverages
             Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine("Drink ready.");
         }
-
-        //public override string ToString()
-        //{
-        //    Console.ForegroundColor = ConsoleColor.Green;
-        //    return $"Here's your {Name}, your bill is {Price} USD.";
-        //}
     }
 }

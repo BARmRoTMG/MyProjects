@@ -24,27 +24,15 @@ namespace VendingMachine
 
         public Inventory()
         {
-            if (_coffeeBeans <= 0)
+            if (_coffeeBeans <= 0 || _milk <= 0 || _sugar <= 0 || _cocoPoweder <= 0 || _teaLeafes <= 0)
             {
-
-            } else if (_milk <= 0)
-            {
-
-            } else if (_sugar <= 0)
-            {
-
-            } else if (_cocoPoweder <= 0)
-            {
-
-            } else if (_teaLeafes <= 0)
-            {
-
+                SendWaring();
             }
         }
 
         private void SendWaring()
         {
-            MessageBox.Show("");
+            MessageBox.Show("Sorry! we ran out of ingredient!");          
         }
     }
 }

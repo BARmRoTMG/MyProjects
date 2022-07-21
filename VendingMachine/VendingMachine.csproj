@@ -48,7 +48,6 @@
     <Compile Include="Beverages\HotChocolate.cs" />
     <Compile Include="Beverages\Tea.cs" />
     <Compile Include="Cup.cs" />
-    <Compile Include="IBeverage.cs" />
     <Compile Include="Inventory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
