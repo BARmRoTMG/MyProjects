@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace VendingMachine
 {
-    public interface IBeverage
-    {
-        string Name { get; set; }
-        void Prepare(); 
-    }
+    //public interface IBeverage
+    //{
+    //    string name { get; set; }
+    //    void Prepare(); 
+    //}
 }

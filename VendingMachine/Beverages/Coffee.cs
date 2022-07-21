@@ -6,18 +6,28 @@ using System.Threading.Tasks;
 
 namespace VendingMachine.Beverages
 {
-    internal class Coffee : Cup, IBeverage
+    internal class Coffee : Cup//, IBeverage
     {
+        double _price = 14;
         Inventory inv = new Inventory();
-        public Coffee(Size size, double price) : base(size, price)
+        public Coffee(Size size/*, double price*/) : base(size)//, price)
         {
-            Name = "Coffee";
+           // Name = "Coffee";
+        }
+        public override string Name
+        {
+            get { return "Coffee"; }
+        }
+        public override double Price
+        {
+            get { return _price; }
+            set { _price = value; }
         }
 
 
-        public string Name { get; set; }
+        //public string Name { get; set; }
 
-        public void Prepare()
+        public override void Prepare()
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("Adding Coffee Beans...");
@@ -33,10 +43,10 @@ namespace VendingMachine.Beverages
             Console.WriteLine("Drink ready.");
         }
 
-        public override string ToString()
-        {
-            Console.ForegroundColor = ConsoleColor.Green;
-            return $"Here's your {Name}, your bill is {Price} USD.";
-        }
+        //public override string ToString()
+        //{
+        //    Console.ForegroundColor = ConsoleColor.Green;
+        //    return $"Here's your {Name}, your bill is {Price} USD.";
+        //}
     }
 }

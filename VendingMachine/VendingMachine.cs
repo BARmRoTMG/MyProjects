@@ -7,14 +7,14 @@ using VendingMachine.Beverages;
 
 namespace VendingMachine
 {
-    public class VendingMachine
+    internal class VendingMachine
     {
         bool isRunning = false;
 
-        IBeverage[] _beverages;
-        public IBeverage[] Beverages { get { return _beverages; } set { _beverages = value; } }
+        Cup[] _beverages;
+        Cup[] Beverages { get { return _beverages; } set { _beverages = value; } }
 
-        public VendingMachine(params IBeverage[] beverages)
+        public VendingMachine(params Cup[] beverages)
         {
             _beverages = beverages;
         }
@@ -41,9 +41,9 @@ namespace VendingMachine
 
             while (isRunning)
             {
-                Coffee coffee = new Coffee(Size.Small, 5);
-                Tea tea = new Tea(Size.Small, 3);
-                HotChocolate hotChocolate = new HotChocolate(Size.Small, 5);
+                Coffee coffee = new Coffee(Size.Small);
+                Tea tea = new Tea(Size.Small);
+                HotChocolate hotChocolate = new HotChocolate(Size.Small);
 
                 Console.ForegroundColor = ConsoleColor.White;
                 Console.WriteLine("1) Coffee\n2) Tea\n3)Hot Chocolate");
@@ -134,6 +134,14 @@ namespace VendingMachine
                 {
                     coffee.Prepare();
                     Console.WriteLine(coffee.ToString());
+                } else if (answer == 2)
+                {
+                    tea.Prepare();
+                    Console.WriteLine(tea.ToString());
+                } else if (answer == 3)
+                {
+                    hotChocolate.Prepare();
+                    Console.WriteLine(hotChocolate.ToString());
                 }
             }
         }

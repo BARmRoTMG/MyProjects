@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{53EE61A0-443F-4DAD-8FF4-AE78D8F9365E}</ProjectGuid>
+    <ProjectGuid>{696951BC-819B-4BD6-8D5F-CBFD39D37440}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>VendingMachine</RootNamespace>
-    <AssemblyName>VendingMachine</AssemblyName>
+    <RootNamespace>BinaryTree_DataStructures</RootNamespace>
+    <AssemblyName>BinaryTree_DataStructures</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,7 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -44,16 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Beverages\Coffee.cs" />
-    <Compile Include="Beverages\HotChocolate.cs" />
-    <Compile Include="Beverages\Tea.cs" />
-    <Compile Include="Cup.cs" />
-    <Compile Include="IBeverage.cs" />
-    <Compile Include="Inventory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Size.cs" />
-    <Compile Include="VendingMachine.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

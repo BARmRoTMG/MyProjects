@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace VendingMachine
 {
@@ -20,5 +21,30 @@ namespace VendingMachine
         public double Sugar { get { return _sugar; } set { _sugar = value; } }
         public double CocoPoweder { get { return _cocoPoweder; } set { _cocoPoweder = value; } }
         public int TeaLeafes { get { return _teaLeafes; } set { _teaLeafes = value; } }
+
+        public Inventory()
+        {
+            if (_coffeeBeans <= 0)
+            {
+
+            } else if (_milk <= 0)
+            {
+
+            } else if (_sugar <= 0)
+            {
+
+            } else if (_cocoPoweder <= 0)
+            {
+
+            } else if (_teaLeafes <= 0)
+            {
+
+            }
+        }
+
+        private void SendWaring()
+        {
+            MessageBox.Show("");
+        }
     }
 }

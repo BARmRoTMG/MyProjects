@@ -6,22 +6,24 @@ using System.Threading.Tasks;
 
 namespace VendingMachine
 {
-    internal abstract class Cup
+    abstract class Cup
     {
-        double _price;
+        public abstract string Name { get; }
+        public abstract double Price { get; set; }
+        //double _price;
         Size _size;
-        public double Price { get { return _price; } set { _price = value; } }
+        //public double Price { get { return _price; } set { _price = value; } }
         public Size Size { get { return _size; } set { _size = value; } }
 
-        public Cup(Size size, double price)
+        public Cup(Size size)//, double price)
         {
             _size = size;
-            _price = price;
+            //_price = price;
         }
-
-        public override string ToString()
+        public abstract void Prepare();
+        public override sealed string ToString()
         {
-            return "You're drink was @#$@#$@#$";
+            return "the name: " + Name + ", the price: " + Price;
         }
     }
 }
