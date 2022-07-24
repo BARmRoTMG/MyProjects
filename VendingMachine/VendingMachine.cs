@@ -48,100 +48,112 @@ namespace VendingMachine
                 Console.ForegroundColor = ConsoleColor.White;
                 Console.WriteLine("1) Coffee\n2) Tea\n3)Hot Chocolate");
                 bool bAnswer = int.TryParse(Console.ReadLine(), out answer);
-
-                if (bAnswer)
+                try
                 {
-                    switch (answer)
+                    if (bAnswer)
                     {
-                        case 1:
-                            Console.WriteLine("Please choose cup size:\nSmall / Medium / Large");
-                            string cupSize = Console.ReadLine();
-                            if (cupSize == "small" || cupSize == "Small")
-                            {
-                                coffee.Size = Size.Small;
-                            } else if (cupSize == "medium" || cupSize == "Medium")
-                            {
-                                coffee.Size = Size.Medium;
-                                coffee.Price++;
-                            } else if (cupSize == "large" || cupSize == "Large")
-                            {
-                                coffee.Size = Size.Large;
-                                coffee.Price += 2;
-                            }
-                            else
-                            {
+                        switch (answer)
+                        {
+                            case 1:
+                                Console.WriteLine("Please choose cup size:\nSmall / Medium / Large");
+                                string cupSize = Console.ReadLine();
+                                if (cupSize == "small" || cupSize == "Small")
+                                {
+                                    coffee.Size = Size.Small;
+                                }
+                                else if (cupSize == "medium" || cupSize == "Medium")
+                                {
+                                    coffee.Size = Size.Medium;
+                                    coffee.Price++;
+                                }
+                                else if (cupSize == "large" || cupSize == "Large")
+                                {
+                                    coffee.Size = Size.Large;
+                                    coffee.Price += 2;
+                                }
+                                else
+                                {
+                                    Console.ForegroundColor = ConsoleColor.Red;
+                                    Console.WriteLine("Please use correct syntax!");
+                                }
+                                break;
+                            case 2:
+                                Console.WriteLine("Please choose cup size:\nSmall / Medium / Large");
+                                cupSize = Console.ReadLine();
+                                if (cupSize == "small" || cupSize == "Small")
+                                {
+                                    tea.Size = Size.Small;
+                                }
+                                else if (cupSize == "medium" || cupSize == "Medium")
+                                {
+                                    tea.Size = Size.Medium;
+                                    tea.Price++;
+                                }
+                                else if (cupSize == "large" || cupSize == "Large")
+                                {
+                                    tea.Size = Size.Large;
+                                    tea.Price += 2;
+                                }
+                                else
+                                {
+                                    Console.ForegroundColor = ConsoleColor.Red;
+                                    Console.WriteLine("Please use correct syntax!");
+                                }
+                                break;
+                            case 3:
+                                Console.WriteLine("Please choose cup size:\nSmall / Medium / Large");
+                                cupSize = Console.ReadLine();
+                                if (cupSize == "small" || cupSize == "Small")
+                                {
+                                    hotChocolate.Size = Size.Small;
+                                }
+                                else if (cupSize == "medium" || cupSize == "Medium")
+                                {
+                                    hotChocolate.Size = Size.Medium;
+                                    hotChocolate.Price++;
+                                }
+                                else if (cupSize == "large" || cupSize == "Large")
+                                {
+                                    hotChocolate.Size = Size.Large;
+                                    hotChocolate.Price += 2;
+                                }
+                                else
+                                {
+                                    Console.ForegroundColor = ConsoleColor.Red;
+                                    Console.WriteLine("Please use correct syntax!");
+                                }
+                                break;
+                            default:
                                 Console.ForegroundColor = ConsoleColor.Red;
-                                Console.WriteLine("Please use correct syntax!");
-                            }
-                            break;
-                        case 2:
-                            Console.WriteLine("Please choose cup size:\nSmall / Medium / Large");
-                            cupSize = Console.ReadLine();
-                            if (cupSize == "small" || cupSize == "Small")
-                            {
-                                tea.Size = Size.Small;
-                            }
-                            else if (cupSize == "medium" || cupSize == "Medium")
-                            {
-                                tea.Size = Size.Medium;
-                                tea.Price++;
-                            }
-                            else if (cupSize == "large" || cupSize == "Large")
-                            {
-                                tea.Size = Size.Large;
-                                tea.Price += 2;
-                            }
-                            else
-                            {
-                                Console.ForegroundColor = ConsoleColor.Red;
-                                Console.WriteLine("Please use correct syntax!");
-                            }
-                            break;
-                        case 3:
-                            Console.WriteLine("Please choose cup size:\nSmall / Medium / Large");
-                            cupSize = Console.ReadLine();
-                            if (cupSize == "small" || cupSize == "Small")
-                            {
-                                hotChocolate.Size = Size.Small;
-                            }
-                            else if (cupSize == "medium" || cupSize == "Medium")
-                            {
-                                hotChocolate.Size = Size.Medium;
-                                hotChocolate.Price++;
-                            }
-                            else if (cupSize == "large" || cupSize == "Large")
-                            {
-                                hotChocolate.Size = Size.Large;
-                                hotChocolate.Price += 2;
-                            } else
-                            {
-                                Console.ForegroundColor = ConsoleColor.Red;
-                                Console.WriteLine("Please use correct syntax!");
-                            }
-                            break;
-                        default:
-                            Console.ForegroundColor = ConsoleColor.Red;
-                            Console.WriteLine("We don't have that drink!");
-                            break;
+                                Console.WriteLine("We don't have that drink!");
+                                break;
+                        }
                     }
-                } else
-                {
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("Please insert valid input, Try again!");
-                }
+                    else
+                    {
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("Please insert valid input, Try again!");
+                    }
 
-                if (answer == 1)
+                    if (answer == 1)
+                    {
+                        coffee.Prepare();
+                        Console.WriteLine(coffee.ToString());
+                    }
+                    else if (answer == 2)
+                    {
+                        tea.Prepare();
+                        Console.WriteLine(tea.ToString());
+                    }
+                    else if (answer == 3)
+                    {
+                        hotChocolate.Prepare();
+                        Console.WriteLine(hotChocolate.ToString());
+                    }
+                }
+                catch
                 {
-                    coffee.Prepare();
-                    Console.WriteLine(coffee.ToString());
-                } else if (answer == 2)
-                {
-                    tea.Prepare();
-                    Console.WriteLine(tea.ToString());
-                } else if (answer == 3)
-                {
-                    hotChocolate.Prepare();
-                    Console.WriteLine(hotChocolate.ToString());
+                    throw new ArgumentException("A drink making proccess was failed to be completed!");
                 }
             }
         }

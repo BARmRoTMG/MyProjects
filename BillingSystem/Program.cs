@@ -20,9 +20,14 @@ namespace BillingSystem
                 billingSystem.AddCustomer(c3);
                 billingSystem.AddCustomer(c4);
 
+
                 Console.WriteLine("Before sort -->\n" + billingSystem);
                 billingSystem.Sort();
                 Console.WriteLine("After sort -->\n" + billingSystem);
+
+
+                CustCond cond1 = new CustCond(Program.BalanceTooHigh);
+                Customer owsTooMuch = billingSystem.First(cond1);
             } catch
             {
                 throw new ArgumentException("There was a problem with adding one or more of the customers.");
@@ -33,6 +38,11 @@ namespace BillingSystem
             Console.WriteLine("Compared by Balance -->\n" + billingSystem);
 
             Console.ReadKey();
+        }
+
+        public static bool BalanceTooHigh(Customer c)
+        {
+            return false;
         }
     }
 }

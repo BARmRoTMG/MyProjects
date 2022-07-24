@@ -1,0 +1,8 @@
+I:\Bar Projects\MyProjects\LambdaSolution\LambdaSolution\LambdaStarter\bin\Debug\LambdaStarter.exe.config
+I:\Bar Projects\MyProjects\LambdaSolution\LambdaSolution\LambdaStarter\bin\Debug\LambdaStarter.exe
+I:\Bar Projects\MyProjects\LambdaSolution\LambdaSolution\LambdaStarter\bin\Debug\LambdaStarter.pdb
+I:\Bar Projects\MyProjects\LambdaSolution\LambdaSolution\LambdaStarter\obj\x86\Debug\LambdaStarter.csproj.AssemblyReference.cache
+I:\Bar Projects\MyProjects\LambdaSolution\LambdaSolution\LambdaStarter\obj\x86\Debug\LambdaStarter.csproj.SuggestedBindingRedirects.cache
+I:\Bar Projects\MyProjects\LambdaSolution\LambdaSolution\LambdaStarter\obj\x86\Debug\LambdaStarter.csproj.CoreCompileInputs.cache
+I:\Bar Projects\MyProjects\LambdaSolution\LambdaSolution\LambdaStarter\obj\x86\Debug\LambdaStarter.exe
+I:\Bar Projects\MyProjects\LambdaSolution\LambdaSolution\LambdaStarter\obj\x86\Debug\LambdaStarter.pdb

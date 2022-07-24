@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BillingSystem
 {
-    abstract internal class Customer : IComparable
+    abstract public class Customer : IComparable
     {
         //Fields
         private string _customerName;

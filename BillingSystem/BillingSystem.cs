@@ -110,5 +110,16 @@ namespace BillingSystem
         {
             Array.Sort(_customersArr, 0, _index, com);
         }
+        
+        public Customer First(CustCond cond)
+        {
+            for (int i = 0; i < _index; i++)
+            {
+                if (cond.Invoke(_customersArr[i]) == true)
+                    return _customersArr[i];
+            }
+            return null;
+        }
     }
+    public delegate bool CustCond(Customer c);
 }

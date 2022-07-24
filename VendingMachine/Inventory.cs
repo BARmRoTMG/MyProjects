@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 
@@ -26,13 +27,23 @@ namespace VendingMachine
         {
             if (_coffeeBeans <= 0 || _milk <= 0 || _sugar <= 0 || _cocoPoweder <= 0 || _teaLeafes <= 0)
             {
-                SendWaring();
+                MessageBox.Show("Sorry! An Ingredient is missing, Wait for restock.");
+                RestockMachine();
             }
         }
 
-        private void SendWaring()
+        public void RestockMachine()
         {
-            MessageBox.Show("Sorry! we ran out of ingredient!");          
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.WriteLine("RESTOCKING VENDING MACHINE!\nStand By...");
+            Thread.Sleep(5000);
+            Console.Clear();
+
+            _coffeeBeans += 5;
+            _milk = +5;
+            _sugar = +5;
+            _cocoPoweder += 5;
+            _teaLeafes += 5;
         }
     }
 }
