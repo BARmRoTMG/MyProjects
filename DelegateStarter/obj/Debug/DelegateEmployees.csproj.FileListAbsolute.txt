@@ -1,0 +1,6 @@
+I:\Bar Projects\MyProjects\DelegateStarter\bin\Debug\DelegateEmployees.exe
+I:\Bar Projects\MyProjects\DelegateStarter\bin\Debug\DelegateEmployees.pdb
+I:\Bar Projects\MyProjects\DelegateStarter\obj\Debug\DelegateEmployees.csproj.AssemblyReference.cache
+I:\Bar Projects\MyProjects\DelegateStarter\obj\Debug\DelegateEmployees.csproj.CoreCompileInputs.cache
+I:\Bar Projects\MyProjects\DelegateStarter\obj\Debug\DelegateEmployees.exe
+I:\Bar Projects\MyProjects\DelegateStarter\obj\Debug\DelegateEmployees.pdb

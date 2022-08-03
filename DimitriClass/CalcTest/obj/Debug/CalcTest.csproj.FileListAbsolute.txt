@@ -1,0 +1,2 @@
+I:\Bar Projects\MyProjects\DimitriClass\CalcTest\obj\Debug\CalcTest.csproj.AssemblyReference.cache
+I:\Bar Projects\MyProjects\DimitriClass\CalcTest\obj\Debug\CalcTest.csproj.CoreCompileInputs.cache

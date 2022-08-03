@@ -1,0 +1,24 @@
+I:\Bar Projects\MyProjects\Library System\Logic Manager\bin\Debug\Logic Manager.dll
+I:\Bar Projects\MyProjects\Library System\Logic Manager\bin\Debug\Logic Manager.pdb
+I:\Bar Projects\MyProjects\Library System\Logic Manager\bin\Debug\Logic Manager.pri
+I:\Bar Projects\MyProjects\Library System\Logic Manager\bin\Debug\Microsoft.UI.Xaml.Markup.winmd
+I:\Bar Projects\MyProjects\Library System\Logic Manager\obj\Debug\Logic Manager.csproj.AssemblyReference.cache
+I:\Bar Projects\MyProjects\Library System\Logic Manager\obj\Debug\Logic Manager.csproj.CoreCompileInputs.cache
+I:\Bar Projects\MyProjects\Library System\Logic Manager\obj\Debug\Logic Manager.csproj.CopyComplete
+I:\Bar Projects\MyProjects\Library System\Logic Manager\obj\Debug\Logic Manager.dll
+I:\Bar Projects\MyProjects\Library System\Logic Manager\obj\Debug\Logic Manager.pdb
+I:\Bar Projects\MyProjects\Library System\Logic Manager\obj\Debug\priconfig.xml
+I:\Bar Projects\MyProjects\Library System\Logic Manager\obj\Debug\priconfig.xml.intermediate
+I:\Bar Projects\MyProjects\Library System\Logic Manager\obj\Debug\unfiltered.layout.resfiles
+I:\Bar Projects\MyProjects\Library System\Logic Manager\obj\Debug\unfiltered.layout.resfiles.intermediate
+I:\Bar Projects\MyProjects\Library System\Logic Manager\obj\Debug\filtered.layout.resfiles
+I:\Bar Projects\MyProjects\Library System\Logic Manager\obj\Debug\filtered.layout.resfiles.intermediate
+I:\Bar Projects\MyProjects\Library System\Logic Manager\obj\Debug\excluded.layout.resfiles
+I:\Bar Projects\MyProjects\Library System\Logic Manager\obj\Debug\excluded.layout.resfiles.intermediate
+I:\Bar Projects\MyProjects\Library System\Logic Manager\obj\Debug\resources.resfiles
+I:\Bar Projects\MyProjects\Library System\Logic Manager\obj\Debug\resources.resfiles.intermediate
+I:\Bar Projects\MyProjects\Library System\Logic Manager\obj\Debug\pri.resfiles
+I:\Bar Projects\MyProjects\Library System\Logic Manager\obj\Debug\pri.resfiles.intermediate
+I:\Bar Projects\MyProjects\Library System\Logic Manager\obj\Debug\qualifiers.txt
+I:\Bar Projects\MyProjects\Library System\Logic Manager\obj\Debug\qualifiers.txt.intermediate
+I:\Bar Projects\MyProjects\Library System\Logic Manager\obj\Debug\MultipleQualifiersPerDimensionFound.txt

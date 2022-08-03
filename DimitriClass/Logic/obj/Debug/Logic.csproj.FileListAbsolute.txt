@@ -1,0 +1,6 @@
+I:\Bar Projects\MyProjects\DimitriClass\Logic\bin\Debug\Logic.dll
+I:\Bar Projects\MyProjects\DimitriClass\Logic\bin\Debug\Logic.pdb
+I:\Bar Projects\MyProjects\DimitriClass\Logic\obj\Debug\Logic.csproj.AssemblyReference.cache
+I:\Bar Projects\MyProjects\DimitriClass\Logic\obj\Debug\Logic.csproj.CoreCompileInputs.cache
+I:\Bar Projects\MyProjects\DimitriClass\Logic\obj\Debug\Logic.dll
+I:\Bar Projects\MyProjects\DimitriClass\Logic\obj\Debug\Logic.pdb

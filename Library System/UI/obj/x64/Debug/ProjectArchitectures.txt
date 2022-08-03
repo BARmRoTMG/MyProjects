@@ -1,0 +1,2 @@
+I:\Bar Projects\MyProjects\Library System\Logic Manager\Logic Manager.csproj;neutral
+I:\Bar Projects\MyProjects\Library System\UI\UI.csproj;x64

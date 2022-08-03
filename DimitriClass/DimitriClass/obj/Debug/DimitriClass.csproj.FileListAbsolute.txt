@@ -1,0 +1,11 @@
+I:\Bar Projects\MyProjects\DimitriClass\DimitriClass\bin\Debug\DimitriClass.exe.config
+I:\Bar Projects\MyProjects\DimitriClass\DimitriClass\bin\Debug\DimitriClass.exe
+I:\Bar Projects\MyProjects\DimitriClass\DimitriClass\bin\Debug\DimitriClass.pdb
+I:\Bar Projects\MyProjects\DimitriClass\DimitriClass\bin\Debug\Logic.dll
+I:\Bar Projects\MyProjects\DimitriClass\DimitriClass\bin\Debug\Logic.pdb
+I:\Bar Projects\MyProjects\DimitriClass\DimitriClass\obj\Debug\DimitriClass.csproj.AssemblyReference.cache
+I:\Bar Projects\MyProjects\DimitriClass\DimitriClass\obj\Debug\DimitriClass.csproj.SuggestedBindingRedirects.cache
+I:\Bar Projects\MyProjects\DimitriClass\DimitriClass\obj\Debug\DimitriClass.csproj.CoreCompileInputs.cache
+I:\Bar Projects\MyProjects\DimitriClass\DimitriClass\obj\Debug\DimitriClass.csproj.CopyComplete
+I:\Bar Projects\MyProjects\DimitriClass\DimitriClass\obj\Debug\DimitriClass.exe
+I:\Bar Projects\MyProjects\DimitriClass\DimitriClass\obj\Debug\DimitriClass.pdb
