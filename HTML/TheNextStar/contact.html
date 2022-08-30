@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>The Next Star</title>
+</head>
+
+<body>
+    
+<div class="topnav" id="myTopnav">
+  <a href="index.html">Home</a>
+  <a href="episodes.html">Episodes</a>
+  <a href="contact.html" class="active">Contact</a>
+  <a href="about.html">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div class="infoContainer">
+    <div>
+        <a class="contactInfo"><span>Adress:</span> Neve Ilian, Jerusalem</a>
+    </div>
+    <div>
+        <a class="contactInfo"><span>Phone:</span> 077-2038104</a>
+    </div>
+    <div>
+        <a class="contactInfo"><span>Email:</span> thenextstarisrael@gmail.com</a>
+    </div>
+</div>
+
+
+<div class="container">
+    <form>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="israel">Israel</option>
+          <option value="uk">United Kingdom</option>
+          <option value="usa">USA</option>
+        </select>
+
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    
+        <input type="submit" value="Submit">
+    </form>
+</div>
+    
+</body>
+
+
+<script>
+    function myFunction() {
+         var x = document.getElementById("myTopnav");
+         if (x.className === "topnav") {
+             x.className += " responsive";
+         } else {
+             x.className = "topnav";
+         }
+    }
+</script>
+</html>

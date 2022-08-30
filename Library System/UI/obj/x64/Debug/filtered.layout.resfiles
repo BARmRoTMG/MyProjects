@@ -10,10 +10,10 @@ Assets\StoreLogo.png
 Assets\Wide310x150Logo.scale-200.png
 Assets\windows.jpg
 App.xbf
-CustomerPage.xbf
-LibrarianAdd.xbf
-LibrarianEdit.xbf
-MainMenu.xbf
-MainPage.xbf
+Pages\CustomerPage.xbf
+Pages\LibrarianAdd.xbf
+Pages\LibrarianEdit.xbf
+Pages\MainMenu.xbf
+Pages\MainPage.xbf
 UI.xr.xml
 Properties\Default.rd.xml

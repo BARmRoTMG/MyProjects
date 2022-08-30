@@ -1,0 +1,13 @@
+I:\Bar Projects\MyProjects\MessageQueue\MessageQueue\obj\Debug\MessageQueue.csproj.AssemblyReference.cache
+I:\Bar Projects\MyProjects\MessageQueue\MessageQueue\obj\Debug\MessageQueue.csproj.SuggestedBindingRedirects.cache
+I:\Bar Projects\MyProjects\MessageQueue\MessageQueue\obj\Debug\MessageQueue.csproj.CoreCompileInputs.cache
+I:\Bar Projects\MyProjects\MessageQueue\MessageQueue\bin\Debug\MessageQueue.exe.config
+I:\Bar Projects\MyProjects\MessageQueue\MessageQueue\bin\Debug\MessageQueue.exe
+I:\Bar Projects\MyProjects\MessageQueue\MessageQueue\bin\Debug\MessageQueue.pdb
+I:\Bar Projects\MyProjects\MessageQueue\MessageQueue\bin\Debug\DataStructures.dll
+I:\Bar Projects\MyProjects\MessageQueue\MessageQueue\bin\Debug\Logic.dll
+I:\Bar Projects\MyProjects\MessageQueue\MessageQueue\bin\Debug\DataStructures.pdb
+I:\Bar Projects\MyProjects\MessageQueue\MessageQueue\bin\Debug\Logic.pdb
+I:\Bar Projects\MyProjects\MessageQueue\MessageQueue\obj\Debug\MessageQueue.csproj.CopyComplete
+I:\Bar Projects\MyProjects\MessageQueue\MessageQueue\obj\Debug\MessageQueue.exe
+I:\Bar Projects\MyProjects\MessageQueue\MessageQueue\obj\Debug\MessageQueue.pdb

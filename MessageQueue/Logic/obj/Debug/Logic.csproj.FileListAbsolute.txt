@@ -1,0 +1,9 @@
+I:\Bar Projects\MyProjects\MessageQueue\Logic\obj\Debug\Logic.csproj.AssemblyReference.cache
+I:\Bar Projects\MyProjects\MessageQueue\Logic\obj\Debug\Logic.csproj.CoreCompileInputs.cache
+I:\Bar Projects\MyProjects\MessageQueue\Logic\bin\Debug\Logic.dll
+I:\Bar Projects\MyProjects\MessageQueue\Logic\bin\Debug\Logic.pdb
+I:\Bar Projects\MyProjects\MessageQueue\Logic\bin\Debug\DataStructures.dll
+I:\Bar Projects\MyProjects\MessageQueue\Logic\bin\Debug\DataStructures.pdb
+I:\Bar Projects\MyProjects\MessageQueue\Logic\obj\Debug\Logic.csproj.CopyComplete
+I:\Bar Projects\MyProjects\MessageQueue\Logic\obj\Debug\Logic.dll
+I:\Bar Projects\MyProjects\MessageQueue\Logic\obj\Debug\Logic.pdb

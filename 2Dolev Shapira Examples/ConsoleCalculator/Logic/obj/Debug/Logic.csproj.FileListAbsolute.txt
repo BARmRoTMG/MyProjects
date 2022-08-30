@@ -1,0 +1,6 @@
+C:\Users\97254\source\repos\ConsoleCalculator\Logic\bin\Debug\Logic.dll
+C:\Users\97254\source\repos\ConsoleCalculator\Logic\bin\Debug\Logic.pdb
+C:\Users\97254\source\repos\ConsoleCalculator\Logic\obj\Debug\Logic.csproj.AssemblyReference.cache
+C:\Users\97254\source\repos\ConsoleCalculator\Logic\obj\Debug\Logic.csproj.CoreCompileInputs.cache
+C:\Users\97254\source\repos\ConsoleCalculator\Logic\obj\Debug\Logic.dll
+C:\Users\97254\source\repos\ConsoleCalculator\Logic\obj\Debug\Logic.pdb

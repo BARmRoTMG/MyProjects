@@ -1,0 +1,6 @@
+I:\Bar Projects\MyProjects\MessageQueue\DataStructures\bin\Debug\DataStructures.dll
+I:\Bar Projects\MyProjects\MessageQueue\DataStructures\bin\Debug\DataStructures.pdb
+I:\Bar Projects\MyProjects\MessageQueue\DataStructures\obj\Debug\DataStructures.csproj.AssemblyReference.cache
+I:\Bar Projects\MyProjects\MessageQueue\DataStructures\obj\Debug\DataStructures.csproj.CoreCompileInputs.cache
+I:\Bar Projects\MyProjects\MessageQueue\DataStructures\obj\Debug\DataStructures.dll
+I:\Bar Projects\MyProjects\MessageQueue\DataStructures\obj\Debug\DataStructures.pdb

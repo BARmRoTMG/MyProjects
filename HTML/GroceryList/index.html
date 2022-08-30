@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Grocery List Website</title>
+</head>
+<body>
+    <h1>My Grocery List</h1>
+    <label for="itemName">Item:</label><input onkeyup="CheckInput(this.value, itemPrice.value)" type="text" id="itemName">
+    <label for="itemPrice">Price:</label><input onkeyup="CheckInput(itemName.value, this.value)" type="text" id="itemPrice">
+    <button disabled id="addBtn" onclick="AddItem(itemName.value, itemPrice.value)">Add</button>
+    <br>
+    <table id="myTable">
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th style="text-align: center;">Action</th>
+            <th>Check</th>
+        </tr>
+    </table>
+
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+C:\Users\97254\source\repos\ConsoleCalculator\ConsoleCalculator\bin\Debug\ConsoleCalculator.exe.config
+C:\Users\97254\source\repos\ConsoleCalculator\ConsoleCalculator\bin\Debug\ConsoleCalculator.exe
+C:\Users\97254\source\repos\ConsoleCalculator\ConsoleCalculator\bin\Debug\ConsoleCalculator.pdb
+C:\Users\97254\source\repos\ConsoleCalculator\ConsoleCalculator\bin\Debug\Logic.dll
+C:\Users\97254\source\repos\ConsoleCalculator\ConsoleCalculator\bin\Debug\Logic.pdb
+C:\Users\97254\source\repos\ConsoleCalculator\ConsoleCalculator\obj\Debug\ConsoleCalculator.csproj.AssemblyReference.cache
+C:\Users\97254\source\repos\ConsoleCalculator\ConsoleCalculator\obj\Debug\ConsoleCalculator.csproj.SuggestedBindingRedirects.cache
+C:\Users\97254\source\repos\ConsoleCalculator\ConsoleCalculator\obj\Debug\ConsoleCalculator.csproj.CoreCompileInputs.cache
+C:\Users\97254\source\repos\ConsoleCalculator\ConsoleCalculator\obj\Debug\ConsoleCalculator.csproj.CopyComplete
+C:\Users\97254\source\repos\ConsoleCalculator\ConsoleCalculator\obj\Debug\ConsoleCalculator.exe
+C:\Users\97254\source\repos\ConsoleCalculator\ConsoleCalculator\obj\Debug\ConsoleCalculator.pdb

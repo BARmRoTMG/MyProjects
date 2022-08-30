@@ -22,3 +22,7 @@ I:\Bar Projects\MyProjects\Library System\Logic Manager\obj\Debug\pri.resfiles.i
 I:\Bar Projects\MyProjects\Library System\Logic Manager\obj\Debug\qualifiers.txt
 I:\Bar Projects\MyProjects\Library System\Logic Manager\obj\Debug\qualifiers.txt.intermediate
 I:\Bar Projects\MyProjects\Library System\Logic Manager\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+I:\Bar Projects\MyProjects\Library System\Logic Manager\bin\Debug\Database.dll
+I:\Bar Projects\MyProjects\Library System\Logic Manager\bin\Debug\Database.pdb
+I:\Bar Projects\MyProjects\Library System\Logic Manager\bin\Debug\Database.pri
+I:\Bar Projects\MyProjects\Library System\Logic Manager\obj\Debug\Database.pri.xml

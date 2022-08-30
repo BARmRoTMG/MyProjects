@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="settings.css">
+    <title>Bar's Website</title>
+</head>
+
+<body>
+    <h1>Welcome to Bar's Website!</h1>
+
+    <label for="fname">First Name:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Last Name:</label><br>
+    <input type="text" id="lname" name="lname"><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="Enter your email here"><br>
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" placeholder="Enter your password here"><br>
+    <input type="submit" value="SUBMIT" onclick="ShowInput()">
+
+    <p id="Time">Current Time</p>
+    <button onclick="document.getElementById('Time').innerHTML=Date()">Show Current Time</button>
+
+
+    <div id="Box"></div><br>
+    <input onchange="ChangeRange(this)" type="range" min="0" max="400"><br>
+    <input type="radio" onclick="ChangeColor('yellow')">Yellow</input>
+    <input type="radio" onclick="ChangeColor('green')">Green</input>
+    <input type="radio" onclick="ChangeColor('brown')">Brown</input>
+    <input type="radio" onclick="ChangeColor('purple')">Purple</input>
+    <button onclick="ChangeSize('200px', '200px')">Increase</button>
+    <button onclick="ChangeSize('100px', '100px')">Decrease</button>
+
+    <img src="Assets/barpic.jpeg" id="myImage">
+    <button onclick="ChangeImage(this)">Change Image</button>
+
+    <h3>Location</h3>
+    <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13525.178975590154!2d34.88416026218067!3d32.061275884136144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d358d635e5dd5%3A0x2e09d45b98270407!2z15LXoNeZINeq16fXldeV15Q!5e0!3m2!1siw!2sil!4v1660647719838!5m2!1siw!2sil" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div>
+        <h2>Biography</h2>
+        <ul>
+            <li id="default-link">23 years old. &#129496;</li>
+            <li class="pink-color">Student at: Sela &#128110;</li>
+            <li>Occupation: DJ &#127938;</li>
+            <li><a href="https://www.instagram.com/barmashiach/">My Instagram</a></li>
+        </ul>
+    </div>
+
+    <div>
+        <iframe style="float: center;" width="560" height="315" src="https://www.youtube.com/embed/ZWK9Px6xDuI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</body>
+
+
+
+
+<script>
+    function ChangeColor(color){
+        document.getElementById("Box").style.background = color;
+    }
+
+    function ChangeSize(width, height){
+        document.getElementById("Box").style.width = width;
+        document.getElementById("Box").style.height = height;
+    }
+
+    function ChangeRange(range){
+        document.getElementById("Box").style.width = range.value + 'px';
+        document.getElementById("Box").style.height = range.value + 'px';
+    }
+
+    function ShowInput(){
+        var  firstName = document.getElementById("fname").value;
+        var  lastName = document.getElementById("lname").value;
+        var  email = document.getElementById("email").value;
+        var  password = document.getElementById("password").value;
+        document.getElementById("Time").innerHTML = firstName + ",  " +  lastName + ",  " +  email + ",  " +  password;
+    }
+
+    function ChangeImage(){
+        var x = document.getElementById("myImage").src= "Assets/Background.jpg";
+    }
+</script>
+
+
+</html>

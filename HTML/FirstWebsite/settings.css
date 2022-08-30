@@ -1,0 +1,55 @@
+h1 
+{
+    color:red;
+    text-align: center;
+}
+h2 
+{
+    color:black;
+    text-align: center;
+}
+h3 {
+   text-align: center;
+}
+div {     
+    text-align: center;
+}
+body {
+    text-align: center;
+    /* background-image: url(Assets/Background.jpg) */
+}
+
+#default-link {
+    color: cyan;
+}
+
+.pink-color { 
+    color: green;
+}
+
+.rect {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+}
+
+.red-color {
+background-color: red;
+}
+
+.green-color{
+    background-color: green;
+}
+
+#Box {
+    border: 3px solid black;
+    background-color: white;
+    width: 100px;
+    height: 100px;
+}
+
+img{
+    text-align: center;
+    width: 150px;
+    height: 150px;
+}

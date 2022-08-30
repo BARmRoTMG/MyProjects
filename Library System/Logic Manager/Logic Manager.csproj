@@ -120,10 +120,18 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Book.cs" />
-    <Compile Include="Items.cs" />
-    <Compile Include="Manager.cs" />
-    <Compile Include="Journal.cs" />
+    <Compile Include="Classes\Book.cs" />
+    <Compile Include="Classes\Database.cs" />
+    <Compile Include="Classes\IManager.cs" />
+    <Compile Include="Enums\Genre.cs" />
+    <Compile Include="Enums\SearchBy.cs" />
+    <Compile Include="Classes\Items.cs" />
+    <Compile Include="Classes\Manager.cs" />
+    <Compile Include="Classes\Journal.cs" />
+    <Compile Include="Exceptions\AmountMinException.cs" />
+    <Compile Include="Exceptions\ItemAlreadyExistsException.cs" />
+    <Compile Include="Exceptions\PriceMinOrMaxException.cs" />
+    <Compile Include="Exceptions\ServerErrorException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Logic_Manager.rd.xml" />
   </ItemGroup>
@@ -131,6 +139,12 @@
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.2.13</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Database\Database.csproj">
+      <Project>{013ca395-07a7-4ac7-8cf8-f09ca8470ebf}</Project>
+      <Name>Database</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

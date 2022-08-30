@@ -1,0 +1,8 @@
+C:\Users\97254\source\repos\ConsoleUnitTests\ConsoleUnitTests\bin\Release\ConsoleUnitTests.exe.config
+C:\Users\97254\source\repos\ConsoleUnitTests\ConsoleUnitTests\bin\Release\ConsoleUnitTests.exe
+C:\Users\97254\source\repos\ConsoleUnitTests\ConsoleUnitTests\bin\Release\ConsoleUnitTests.pdb
+C:\Users\97254\source\repos\ConsoleUnitTests\ConsoleUnitTests\obj\Release\ConsoleUnitTests.csproj.AssemblyReference.cache
+C:\Users\97254\source\repos\ConsoleUnitTests\ConsoleUnitTests\obj\Release\ConsoleUnitTests.csproj.SuggestedBindingRedirects.cache
+C:\Users\97254\source\repos\ConsoleUnitTests\ConsoleUnitTests\obj\Release\ConsoleUnitTests.csproj.CoreCompileInputs.cache
+C:\Users\97254\source\repos\ConsoleUnitTests\ConsoleUnitTests\obj\Release\ConsoleUnitTests.exe
+C:\Users\97254\source\repos\ConsoleUnitTests\ConsoleUnitTests\obj\Release\ConsoleUnitTests.pdb

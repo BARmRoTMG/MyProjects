@@ -1,0 +1,1 @@
+I:\Bar Projects\MyProjects\2Dolev Shapira Examples\ListView + Serialize\App3\App3.csproj;x86
