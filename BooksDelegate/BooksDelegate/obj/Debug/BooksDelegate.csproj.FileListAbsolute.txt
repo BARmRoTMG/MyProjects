@@ -1,0 +1,13 @@
+I:\Bar Projects\MyProjects\BooksDelegate\BooksDelegate\bin\Debug\BooksDelegate.exe.config
+I:\Bar Projects\MyProjects\BooksDelegate\BooksDelegate\bin\Debug\BooksDelegate.exe
+I:\Bar Projects\MyProjects\BooksDelegate\BooksDelegate\bin\Debug\BooksDelegate.pdb
+I:\Bar Projects\MyProjects\BooksDelegate\BooksDelegate\bin\Debug\EntityFramework.dll
+I:\Bar Projects\MyProjects\BooksDelegate\BooksDelegate\bin\Debug\EntityFramework.SqlServer.dll
+I:\Bar Projects\MyProjects\BooksDelegate\BooksDelegate\bin\Debug\EntityFramework.xml
+I:\Bar Projects\MyProjects\BooksDelegate\BooksDelegate\bin\Debug\EntityFramework.SqlServer.xml
+I:\Bar Projects\MyProjects\BooksDelegate\BooksDelegate\obj\Debug\BooksDelegate.csproj.AssemblyReference.cache
+I:\Bar Projects\MyProjects\BooksDelegate\BooksDelegate\obj\Debug\BooksDelegate.csproj.SuggestedBindingRedirects.cache
+I:\Bar Projects\MyProjects\BooksDelegate\BooksDelegate\obj\Debug\BooksDelegate.csproj.CoreCompileInputs.cache
+I:\Bar Projects\MyProjects\BooksDelegate\BooksDelegate\obj\Debug\BooksDelegate.csproj.CopyComplete
+I:\Bar Projects\MyProjects\BooksDelegate\BooksDelegate\obj\Debug\BooksDelegate.exe
+I:\Bar Projects\MyProjects\BooksDelegate\BooksDelegate\obj\Debug\BooksDelegate.pdb

@@ -1,0 +1,11 @@
+I:\Bar Projects\MyProjects\CubeOfNumber\CubeOfNumber\bin\Debug\CubeOfNumber.exe.config
+I:\Bar Projects\MyProjects\CubeOfNumber\CubeOfNumber\bin\Debug\CubeOfNumber.exe
+I:\Bar Projects\MyProjects\CubeOfNumber\CubeOfNumber\bin\Debug\CubeOfNumber.pdb
+I:\Bar Projects\MyProjects\CubeOfNumber\CubeOfNumber\bin\Debug\Logic.dll
+I:\Bar Projects\MyProjects\CubeOfNumber\CubeOfNumber\bin\Debug\Logic.pdb
+I:\Bar Projects\MyProjects\CubeOfNumber\CubeOfNumber\obj\Debug\CubeOfNumber.csproj.AssemblyReference.cache
+I:\Bar Projects\MyProjects\CubeOfNumber\CubeOfNumber\obj\Debug\CubeOfNumber.csproj.SuggestedBindingRedirects.cache
+I:\Bar Projects\MyProjects\CubeOfNumber\CubeOfNumber\obj\Debug\CubeOfNumber.csproj.CoreCompileInputs.cache
+I:\Bar Projects\MyProjects\CubeOfNumber\CubeOfNumber\obj\Debug\CubeOfNumber.csproj.CopyComplete
+I:\Bar Projects\MyProjects\CubeOfNumber\CubeOfNumber\obj\Debug\CubeOfNumber.exe
+I:\Bar Projects\MyProjects\CubeOfNumber\CubeOfNumber\obj\Debug\CubeOfNumber.pdb

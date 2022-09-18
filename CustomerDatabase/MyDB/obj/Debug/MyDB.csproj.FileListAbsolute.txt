@@ -1,0 +1,13 @@
+I:\Bar Projects\MyProjects\CustomerDatabase\MyDB\bin\Debug\MyDB.exe.config
+I:\Bar Projects\MyProjects\CustomerDatabase\MyDB\bin\Debug\MyDB.exe
+I:\Bar Projects\MyProjects\CustomerDatabase\MyDB\bin\Debug\MyDB.pdb
+I:\Bar Projects\MyProjects\CustomerDatabase\MyDB\bin\Debug\EntityFramework.dll
+I:\Bar Projects\MyProjects\CustomerDatabase\MyDB\bin\Debug\EntityFramework.SqlServer.dll
+I:\Bar Projects\MyProjects\CustomerDatabase\MyDB\bin\Debug\EntityFramework.xml
+I:\Bar Projects\MyProjects\CustomerDatabase\MyDB\bin\Debug\EntityFramework.SqlServer.xml
+I:\Bar Projects\MyProjects\CustomerDatabase\MyDB\obj\Debug\MyDB.csproj.AssemblyReference.cache
+I:\Bar Projects\MyProjects\CustomerDatabase\MyDB\obj\Debug\MyDB.csproj.SuggestedBindingRedirects.cache
+I:\Bar Projects\MyProjects\CustomerDatabase\MyDB\obj\Debug\MyDB.csproj.CoreCompileInputs.cache
+I:\Bar Projects\MyProjects\CustomerDatabase\MyDB\obj\Debug\MyDB.csproj.CopyComplete
+I:\Bar Projects\MyProjects\CustomerDatabase\MyDB\obj\Debug\MyDB.exe
+I:\Bar Projects\MyProjects\CustomerDatabase\MyDB\obj\Debug\MyDB.pdb
