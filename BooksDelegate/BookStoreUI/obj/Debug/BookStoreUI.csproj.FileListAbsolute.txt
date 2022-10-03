@@ -22,3 +22,27 @@ I:\Bar Projects\MyProjects\BooksDelegate\BookStoreUI\obj\Debug\BookStoreUI.exe
 I:\Bar Projects\MyProjects\BooksDelegate\BookStoreUI\obj\Debug\BookStoreUI.pdb
 I:\Bar Projects\MyProjects\BooksDelegate\BookStoreUI\bin\Debug\EntityFramework.SqlServer.dll
 I:\Bar Projects\MyProjects\BooksDelegate\BookStoreUI\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Documents\GitHub\MyProjects\BooksDelegate\BookStoreUI\bin\Debug\BookStoreUI.exe.config
+C:\Users\User\Documents\GitHub\MyProjects\BooksDelegate\BookStoreUI\bin\Debug\BookStoreUI.exe
+C:\Users\User\Documents\GitHub\MyProjects\BooksDelegate\BookStoreUI\bin\Debug\BookStoreUI.pdb
+C:\Users\User\Documents\GitHub\MyProjects\BooksDelegate\BookStoreUI\bin\Debug\BooksDelegate.exe
+C:\Users\User\Documents\GitHub\MyProjects\BooksDelegate\BookStoreUI\bin\Debug\EntityFramework.dll
+C:\Users\User\Documents\GitHub\MyProjects\BooksDelegate\BookStoreUI\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Documents\GitHub\MyProjects\BooksDelegate\BookStoreUI\bin\Debug\BooksDelegate.pdb
+C:\Users\User\Documents\GitHub\MyProjects\BooksDelegate\BookStoreUI\bin\Debug\BooksDelegate.exe.config
+C:\Users\User\Documents\GitHub\MyProjects\BooksDelegate\BookStoreUI\bin\Debug\EntityFramework.xml
+C:\Users\User\Documents\GitHub\MyProjects\BooksDelegate\BookStoreUI\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Documents\GitHub\MyProjects\BooksDelegate\BookStoreUI\obj\Debug\BookStoreUI.csproj.AssemblyReference.cache
+C:\Users\User\Documents\GitHub\MyProjects\BooksDelegate\BookStoreUI\obj\Debug\BookStoreUI.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\Documents\GitHub\MyProjects\BooksDelegate\BookStoreUI\obj\Debug\MainWindow.g.cs
+C:\Users\User\Documents\GitHub\MyProjects\BooksDelegate\BookStoreUI\obj\Debug\App.g.cs
+C:\Users\User\Documents\GitHub\MyProjects\BooksDelegate\BookStoreUI\obj\Debug\BookStoreUI_MarkupCompile.cache
+C:\Users\User\Documents\GitHub\MyProjects\BooksDelegate\BookStoreUI\obj\Debug\BookStoreUI_MarkupCompile.lref
+C:\Users\User\Documents\GitHub\MyProjects\BooksDelegate\BookStoreUI\obj\Debug\MainWindow.baml
+C:\Users\User\Documents\GitHub\MyProjects\BooksDelegate\BookStoreUI\obj\Debug\BookStoreUI.g.resources
+C:\Users\User\Documents\GitHub\MyProjects\BooksDelegate\BookStoreUI\obj\Debug\BookStoreUI.Properties.Resources.resources
+C:\Users\User\Documents\GitHub\MyProjects\BooksDelegate\BookStoreUI\obj\Debug\BookStoreUI.csproj.GenerateResource.cache
+C:\Users\User\Documents\GitHub\MyProjects\BooksDelegate\BookStoreUI\obj\Debug\BookStoreUI.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\MyProjects\BooksDelegate\BookStoreUI\obj\Debug\BookStoreUI.csproj.CopyComplete
+C:\Users\User\Documents\GitHub\MyProjects\BooksDelegate\BookStoreUI\obj\Debug\BookStoreUI.exe
+C:\Users\User\Documents\GitHub\MyProjects\BooksDelegate\BookStoreUI\obj\Debug\BookStoreUI.pdb

@@ -11,3 +11,16 @@ I:\Bar Projects\MyProjects\BooksDelegate\BooksDelegate\obj\Debug\BooksDelegate.c
 I:\Bar Projects\MyProjects\BooksDelegate\BooksDelegate\obj\Debug\BooksDelegate.csproj.CopyComplete
 I:\Bar Projects\MyProjects\BooksDelegate\BooksDelegate\obj\Debug\BooksDelegate.exe
 I:\Bar Projects\MyProjects\BooksDelegate\BooksDelegate\obj\Debug\BooksDelegate.pdb
+C:\Users\User\Documents\GitHub\MyProjects\BooksDelegate\BooksDelegate\bin\Debug\BooksDelegate.exe.config
+C:\Users\User\Documents\GitHub\MyProjects\BooksDelegate\BooksDelegate\bin\Debug\BooksDelegate.exe
+C:\Users\User\Documents\GitHub\MyProjects\BooksDelegate\BooksDelegate\bin\Debug\BooksDelegate.pdb
+C:\Users\User\Documents\GitHub\MyProjects\BooksDelegate\BooksDelegate\bin\Debug\EntityFramework.dll
+C:\Users\User\Documents\GitHub\MyProjects\BooksDelegate\BooksDelegate\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Documents\GitHub\MyProjects\BooksDelegate\BooksDelegate\bin\Debug\EntityFramework.xml
+C:\Users\User\Documents\GitHub\MyProjects\BooksDelegate\BooksDelegate\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Documents\GitHub\MyProjects\BooksDelegate\BooksDelegate\obj\Debug\BooksDelegate.csproj.AssemblyReference.cache
+C:\Users\User\Documents\GitHub\MyProjects\BooksDelegate\BooksDelegate\obj\Debug\BooksDelegate.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\Documents\GitHub\MyProjects\BooksDelegate\BooksDelegate\obj\Debug\BooksDelegate.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\MyProjects\BooksDelegate\BooksDelegate\obj\Debug\BooksDelegate.csproj.CopyComplete
+C:\Users\User\Documents\GitHub\MyProjects\BooksDelegate\BooksDelegate\obj\Debug\BooksDelegate.exe
+C:\Users\User\Documents\GitHub\MyProjects\BooksDelegate\BooksDelegate\obj\Debug\BooksDelegate.pdb
