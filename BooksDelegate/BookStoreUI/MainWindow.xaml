@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BookStoreUI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="My Delegated Library" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -15,23 +15,7 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <ListView x:Name="lvBooks" Grid.Column="1">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <StackPanel>
-                        <TextBlock Text="{Binding Title}" FontWeight="Bold"></TextBlock>
-                        <TextBlock Text="{Binding Author}" FontSize="11"></TextBlock>
-                    </StackPanel>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-
-        <StackPanel VerticalAlignment="Center">
-            <TextBlock Text="Book Title:" FontSize="15"></TextBlock>
-            <TextBox x:Name="bookTitletb" Height="30"></TextBox>
-            <TextBlock Text="Author:" FontSize="15"></TextBlock>
-            <TextBox x:Name="authorTb" Height="30"></TextBox>
-            <Button Content="Add Book" Height="25" FontSize="15"></Button>
-        </StackPanel>
+        <local:BooksListViewUC Grid.Column="1"/>
+        <local:InterfaceControls/>
     </Grid>
 </Window>

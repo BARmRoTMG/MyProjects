@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<ArrayOfCustomer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Customer name="First">
+    <custId>0</custId>
+    <ords>
+      <or>
+        <Code>2334a884-bfb2-40c6-9232-9ba13de11622</Code>
+        <Status>Silver</Status>
+        <CreationDate>2022-09-19T14:48:14.2117329+03:00</CreationDate>
+        <Products>
+          <Product>
+            <Valid>true</Valid>
+            <Price>12.5</Price>
+          </Product>
+        </Products>
+      </or>
+      <or>
+        <Code>6a6302ba-1b9c-4a17-b1ad-22eaba0152f7</Code>
+        <Status>Platinum</Status>
+        <CreationDate>2017-09-19T14:48:14.218731+03:00</CreationDate>
+        <Products>
+          <Product>
+            <Valid>false</Valid>
+            <Price>67.9</Price>
+          </Product>
+        </Products>
+      </or>
+    </ords>
+  </Customer>
+  <Customer name="Second">
+    <custId>0</custId>
+    <ords>
+      <or>
+        <Code>5cb04ae9-631c-4dd9-87a6-60c3d41c5591</Code>
+        <Status>Gold</Status>
+        <CreationDate>2022-09-12T14:48:14.218731+03:00</CreationDate>
+        <Products>
+          <Product>
+            <Valid xsi:nil="true" />
+            <Price>855</Price>
+          </Product>
+          <Product>
+            <Valid xsi:nil="true" />
+            <Price>99.2</Price>
+          </Product>
+        </Products>
+      </or>
+    </ords>
+  </Customer>
+  <Customer name="Third">
+    <custId>0</custId>
+    <ords>
+      <or>
+        <Code>516d7e74-4aaf-47d9-bbee-3768a05d653b</Code>
+        <Status>Platinum</Status>
+        <CreationDate>2022-09-17T06:48:14.218731+03:00</CreationDate>
+        <Products>
+          <Product>
+            <Valid>false</Valid>
+            <Price>53.9</Price>
+          </Product>
+        </Products>
+      </or>
+      <or>
+        <Code>1b05d925-20b4-40c8-b8e7-dbcc7762cc0f</Code>
+        <Status>Gold</Status>
+        <CreationDate>2016-09-19T14:48:14.218731+03:00</CreationDate>
+        <Products>
+          <Product>
+            <Valid xsi:nil="true" />
+            <Price>67.9</Price>
+          </Product>
+          <Product>
+            <Valid xsi:nil="true" />
+            <Price>898.9</Price>
+          </Product>
+        </Products>
+      </or>
+    </ords>
+  </Customer>
+</ArrayOfCustomer>

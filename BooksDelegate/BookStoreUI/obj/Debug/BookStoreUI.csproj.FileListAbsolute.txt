@@ -22,3 +22,8 @@ I:\Bar Projects\MyProjects\BooksDelegate\BookStoreUI\obj\Debug\BookStoreUI.exe
 I:\Bar Projects\MyProjects\BooksDelegate\BookStoreUI\obj\Debug\BookStoreUI.pdb
 I:\Bar Projects\MyProjects\BooksDelegate\BookStoreUI\bin\Debug\EntityFramework.SqlServer.dll
 I:\Bar Projects\MyProjects\BooksDelegate\BookStoreUI\bin\Debug\EntityFramework.SqlServer.xml
+I:\Bar Projects\MyProjects\BooksDelegate\BookStoreUI\obj\Debug\GeneratedInternalTypeHelper.g.cs
+I:\Bar Projects\MyProjects\BooksDelegate\BookStoreUI\obj\Debug\Views\BooksListViewUC.baml
+I:\Bar Projects\MyProjects\BooksDelegate\BookStoreUI\obj\Debug\Views\BooksListViewUC.g.cs
+I:\Bar Projects\MyProjects\BooksDelegate\BookStoreUI\obj\Debug\Views\InterfaceControls.g.cs
+I:\Bar Projects\MyProjects\BooksDelegate\BookStoreUI\obj\Debug\Views\InterfaceControls.baml

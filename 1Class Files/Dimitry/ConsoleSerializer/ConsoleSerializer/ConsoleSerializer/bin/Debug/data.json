@@ -1,0 +1,88 @@
+[
+  {
+    "cuId": 0,
+    "Name": "First",
+    "Orders": [
+      {
+        "Code": "2334a884-bfb2-40c6-9232-9ba13de11622",
+        "Status": 2,
+        "CreationDate": "2022-09-19T14:48:14.2117329+03:00",
+        "Products": [
+          {
+            "Valid": true,
+            "Price": 12.5
+          }
+        ],
+        "CountChecks": 0
+      },
+      {
+        "Code": "6a6302ba-1b9c-4a17-b1ad-22eaba0152f7",
+        "Status": 0,
+        "CreationDate": "2017-09-19T14:48:14.218731+03:00",
+        "Products": [
+          {
+            "Valid": false,
+            "Price": 67.9
+          }
+        ],
+        "CountChecks": 0
+      }
+    ]
+  },
+  {
+    "cuId": 0,
+    "Name": "Second",
+    "Orders": [
+      {
+        "Code": "5cb04ae9-631c-4dd9-87a6-60c3d41c5591",
+        "Status": 1,
+        "CreationDate": "2022-09-12T14:48:14.218731+03:00",
+        "Products": [
+          {
+            "Valid": null,
+            "Price": 855.0
+          },
+          {
+            "Valid": null,
+            "Price": 99.2
+          }
+        ],
+        "CountChecks": 0
+      }
+    ]
+  },
+  {
+    "cuId": 0,
+    "Name": "Third",
+    "Orders": [
+      {
+        "Code": "516d7e74-4aaf-47d9-bbee-3768a05d653b",
+        "Status": 0,
+        "CreationDate": "2022-09-17T06:48:14.218731+03:00",
+        "Products": [
+          {
+            "Valid": false,
+            "Price": 53.9
+          }
+        ],
+        "CountChecks": 0
+      },
+      {
+        "Code": "1b05d925-20b4-40c8-b8e7-dbcc7762cc0f",
+        "Status": 1,
+        "CreationDate": "2016-09-19T14:48:14.218731+03:00",
+        "Products": [
+          {
+            "Valid": null,
+            "Price": 67.9
+          },
+          {
+            "Valid": null,
+            "Price": 898.9
+          }
+        ],
+        "CountChecks": 0
+      }
+    ]
+  }
+]
