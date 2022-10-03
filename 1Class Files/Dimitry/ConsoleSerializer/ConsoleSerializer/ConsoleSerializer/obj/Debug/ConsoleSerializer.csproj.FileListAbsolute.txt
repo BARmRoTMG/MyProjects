@@ -1,0 +1,22 @@
+C:\Users\antid\source\repos\ConsoleSerializer\ConsoleSerializer\bin\Debug\ConsoleSerializer.exe.config
+C:\Users\antid\source\repos\ConsoleSerializer\ConsoleSerializer\bin\Debug\ConsoleSerializer.exe
+C:\Users\antid\source\repos\ConsoleSerializer\ConsoleSerializer\bin\Debug\ConsoleSerializer.pdb
+C:\Users\antid\source\repos\ConsoleSerializer\ConsoleSerializer\obj\Debug\ConsoleSerializer.csproj.AssemblyReference.cache
+C:\Users\antid\source\repos\ConsoleSerializer\ConsoleSerializer\obj\Debug\ConsoleSerializer.csproj.SuggestedBindingRedirects.cache
+C:\Users\antid\source\repos\ConsoleSerializer\ConsoleSerializer\obj\Debug\ConsoleSerializer.csproj.CoreCompileInputs.cache
+C:\Users\antid\source\repos\ConsoleSerializer\ConsoleSerializer\obj\Debug\ConsoleSerializer.exe
+C:\Users\antid\source\repos\ConsoleSerializer\ConsoleSerializer\obj\Debug\ConsoleSerializer.pdb
+C:\Users\antid\source\repos\ConsoleSerializer\ConsoleSerializer\bin\Debug\Newtonsoft.Json.dll
+C:\Users\antid\source\repos\ConsoleSerializer\ConsoleSerializer\bin\Debug\Newtonsoft.Json.xml
+C:\Users\antid\source\repos\ConsoleSerializer\ConsoleSerializer\obj\Debug\ConsoleSerializer.csproj.CopyComplete
+I:\Bar Projects\MyProjects\1Class Files\Dimitry\ConsoleSerializer\ConsoleSerializer\ConsoleSerializer\bin\Debug\ConsoleSerializer.exe.config
+I:\Bar Projects\MyProjects\1Class Files\Dimitry\ConsoleSerializer\ConsoleSerializer\ConsoleSerializer\bin\Debug\ConsoleSerializer.exe
+I:\Bar Projects\MyProjects\1Class Files\Dimitry\ConsoleSerializer\ConsoleSerializer\ConsoleSerializer\bin\Debug\ConsoleSerializer.pdb
+I:\Bar Projects\MyProjects\1Class Files\Dimitry\ConsoleSerializer\ConsoleSerializer\ConsoleSerializer\bin\Debug\Newtonsoft.Json.dll
+I:\Bar Projects\MyProjects\1Class Files\Dimitry\ConsoleSerializer\ConsoleSerializer\ConsoleSerializer\bin\Debug\Newtonsoft.Json.xml
+I:\Bar Projects\MyProjects\1Class Files\Dimitry\ConsoleSerializer\ConsoleSerializer\ConsoleSerializer\obj\Debug\ConsoleSerializer.csproj.AssemblyReference.cache
+I:\Bar Projects\MyProjects\1Class Files\Dimitry\ConsoleSerializer\ConsoleSerializer\ConsoleSerializer\obj\Debug\ConsoleSerializer.csproj.SuggestedBindingRedirects.cache
+I:\Bar Projects\MyProjects\1Class Files\Dimitry\ConsoleSerializer\ConsoleSerializer\ConsoleSerializer\obj\Debug\ConsoleSerializer.csproj.CoreCompileInputs.cache
+I:\Bar Projects\MyProjects\1Class Files\Dimitry\ConsoleSerializer\ConsoleSerializer\ConsoleSerializer\obj\Debug\ConsoleSerializer.csproj.CopyComplete
+I:\Bar Projects\MyProjects\1Class Files\Dimitry\ConsoleSerializer\ConsoleSerializer\ConsoleSerializer\obj\Debug\ConsoleSerializer.exe
+I:\Bar Projects\MyProjects\1Class Files\Dimitry\ConsoleSerializer\ConsoleSerializer\ConsoleSerializer\obj\Debug\ConsoleSerializer.pdb

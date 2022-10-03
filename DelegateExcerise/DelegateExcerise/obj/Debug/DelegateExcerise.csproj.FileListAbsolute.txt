@@ -1,0 +1,11 @@
+I:\Bar Projects\MyProjects\DelegateExcerise\DelegateExcerise\bin\Debug\DelegateExcerise.exe.config
+I:\Bar Projects\MyProjects\DelegateExcerise\DelegateExcerise\bin\Debug\DelegateExcerise.exe
+I:\Bar Projects\MyProjects\DelegateExcerise\DelegateExcerise\bin\Debug\DelegateExcerise.pdb
+I:\Bar Projects\MyProjects\DelegateExcerise\DelegateExcerise\bin\Debug\Logic.dll
+I:\Bar Projects\MyProjects\DelegateExcerise\DelegateExcerise\bin\Debug\Logic.pdb
+I:\Bar Projects\MyProjects\DelegateExcerise\DelegateExcerise\obj\Debug\DelegateExcerise.csproj.AssemblyReference.cache
+I:\Bar Projects\MyProjects\DelegateExcerise\DelegateExcerise\obj\Debug\DelegateExcerise.csproj.SuggestedBindingRedirects.cache
+I:\Bar Projects\MyProjects\DelegateExcerise\DelegateExcerise\obj\Debug\DelegateExcerise.csproj.CoreCompileInputs.cache
+I:\Bar Projects\MyProjects\DelegateExcerise\DelegateExcerise\obj\Debug\DelegateExcerise.csproj.CopyComplete
+I:\Bar Projects\MyProjects\DelegateExcerise\DelegateExcerise\obj\Debug\DelegateExcerise.exe
+I:\Bar Projects\MyProjects\DelegateExcerise\DelegateExcerise\obj\Debug\DelegateExcerise.pdb
