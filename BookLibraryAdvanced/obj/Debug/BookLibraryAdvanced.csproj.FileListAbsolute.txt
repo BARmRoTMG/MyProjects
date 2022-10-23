@@ -11,3 +11,16 @@ C:\Users\User\Documents\GitHub\MyProjects\BookLibraryAdvanced\obj\Debug\BookLibr
 C:\Users\User\Documents\GitHub\MyProjects\BookLibraryAdvanced\obj\Debug\BookLibraryAdvanced.csproj.CopyComplete
 C:\Users\User\Documents\GitHub\MyProjects\BookLibraryAdvanced\obj\Debug\BookLibraryAdvanced.exe
 C:\Users\User\Documents\GitHub\MyProjects\BookLibraryAdvanced\obj\Debug\BookLibraryAdvanced.pdb
+I:\Bar Projects\MyProjects\BookLibraryAdvanced\bin\Debug\BookLibraryAdvanced.exe.config
+I:\Bar Projects\MyProjects\BookLibraryAdvanced\bin\Debug\BookLibraryAdvanced.exe
+I:\Bar Projects\MyProjects\BookLibraryAdvanced\bin\Debug\BookLibraryAdvanced.pdb
+I:\Bar Projects\MyProjects\BookLibraryAdvanced\bin\Debug\EntityFramework.dll
+I:\Bar Projects\MyProjects\BookLibraryAdvanced\bin\Debug\EntityFramework.SqlServer.dll
+I:\Bar Projects\MyProjects\BookLibraryAdvanced\bin\Debug\EntityFramework.xml
+I:\Bar Projects\MyProjects\BookLibraryAdvanced\bin\Debug\EntityFramework.SqlServer.xml
+I:\Bar Projects\MyProjects\BookLibraryAdvanced\obj\Debug\BookLibraryAdvanced.csproj.AssemblyReference.cache
+I:\Bar Projects\MyProjects\BookLibraryAdvanced\obj\Debug\BookLibraryAdvanced.csproj.SuggestedBindingRedirects.cache
+I:\Bar Projects\MyProjects\BookLibraryAdvanced\obj\Debug\BookLibraryAdvanced.csproj.CoreCompileInputs.cache
+I:\Bar Projects\MyProjects\BookLibraryAdvanced\obj\Debug\BookLibraryAdvanced.csproj.CopyComplete
+I:\Bar Projects\MyProjects\BookLibraryAdvanced\obj\Debug\BookLibraryAdvanced.exe
+I:\Bar Projects\MyProjects\BookLibraryAdvanced\obj\Debug\BookLibraryAdvanced.pdb

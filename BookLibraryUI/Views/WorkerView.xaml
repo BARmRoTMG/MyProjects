@@ -7,6 +7,27 @@
         mc:Ignorable="d"
         Title="WorkerView" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="1" Text="Title:"/>
+        <TextBlock Grid.Row="2" Text="Author Name:"/>
+        <TextBlock Grid.Row="3" Text="Price:"/>
+
+        <TextBox Grid.Row="1" Grid.Column="1" x:Name="tbTitle"/>
+        <TextBox Grid.Row="2" Grid.Column="1" x:Name="tbAuthor"/>
+        <TextBox Grid.Row="3" Grid.Column="1" x:Name="tbPrice"/>
+
+        <Button Grid.Row="4" Grid.Column="1" Content="Add Item" FontSize="30" Click="AddItemBtn"/>
     </Grid>
 </Window>

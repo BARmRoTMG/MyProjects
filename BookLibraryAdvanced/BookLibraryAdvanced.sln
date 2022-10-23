@@ -5,8 +5,6 @@ VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookLibraryAdvanced", "BookLibraryAdvanced.csproj", "{977A7084-08E4-4F92-8297-C4A70F9A7D98}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logic", "..\Logic\Logic.csproj", "{19AEAC27-46E6-424F-9406-A85AD6B9543D}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookLibraryUI", "..\BookLibraryUI\BookLibraryUI.csproj", "{BCC84B4E-23AE-4C2B-AF13-E4E506BF0651}"
 EndProject
 Global
@@ -19,10 +17,6 @@ Global
 		{977A7084-08E4-4F92-8297-C4A70F9A7D98}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{977A7084-08E4-4F92-8297-C4A70F9A7D98}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{977A7084-08E4-4F92-8297-C4A70F9A7D98}.Release|Any CPU.Build.0 = Release|Any CPU
-		{19AEAC27-46E6-424F-9406-A85AD6B9543D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{19AEAC27-46E6-424F-9406-A85AD6B9543D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{19AEAC27-46E6-424F-9406-A85AD6B9543D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{19AEAC27-46E6-424F-9406-A85AD6B9543D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BCC84B4E-23AE-4C2B-AF13-E4E506BF0651}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BCC84B4E-23AE-4C2B-AF13-E4E506BF0651}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCC84B4E-23AE-4C2B-AF13-E4E506BF0651}.Release|Any CPU.ActiveCfg = Release|Any CPU

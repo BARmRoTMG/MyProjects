@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\User\Documents\GitHub\MyProjects\BookLibraryUI\obj\Debug\
+I:\Bar Projects\MyProjects\BookLibraryUI\obj\Debug\
 BookLibraryUI
 none
 false
 DEBUG;TRACE
-C:\Users\User\Documents\GitHub\MyProjects\BookLibraryUI\App.xaml
+I:\Bar Projects\MyProjects\BookLibraryUI\App.xaml
 3220450925
 
 8-1209095826
-15184055662
+14544398782
 MainWindow.xaml;Views\CustomerView.xaml;Views\WorkerView.xaml;
 
 True

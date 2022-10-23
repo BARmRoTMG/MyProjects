@@ -108,5 +108,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BookLibraryAdvanced\BookLibraryAdvanced.csproj">
+      <Project>{977a7084-08e4-4f92-8297-c4a70f9a7d98}</Project>
+      <Name>BookLibraryAdvanced</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
