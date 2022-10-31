@@ -1,0 +1,13 @@
+﻿.multi-line-cell {
+    font-size: 0.8em;
+}
+
+.person-addresses {
+    border: 1px solid #505080;
+    border-radius: 0.5em;
+}
+
+.address-container {
+    display: flex;
+    flex-flow: wrap;
+}

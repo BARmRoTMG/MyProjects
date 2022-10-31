@@ -1,0 +1,15 @@
+I:\Bar Projects\MyProjects\DesignPatterns\DesignPatterns\bin\Debug\net6.0\DesignPatterns.exe
+I:\Bar Projects\MyProjects\DesignPatterns\DesignPatterns\bin\Debug\net6.0\DesignPatterns.deps.json
+I:\Bar Projects\MyProjects\DesignPatterns\DesignPatterns\bin\Debug\net6.0\DesignPatterns.runtimeconfig.json
+I:\Bar Projects\MyProjects\DesignPatterns\DesignPatterns\bin\Debug\net6.0\DesignPatterns.dll
+I:\Bar Projects\MyProjects\DesignPatterns\DesignPatterns\bin\Debug\net6.0\DesignPatterns.pdb
+I:\Bar Projects\MyProjects\DesignPatterns\DesignPatterns\obj\Debug\net6.0\DesignPatterns.csproj.AssemblyReference.cache
+I:\Bar Projects\MyProjects\DesignPatterns\DesignPatterns\obj\Debug\net6.0\DesignPatterns.GeneratedMSBuildEditorConfig.editorconfig
+I:\Bar Projects\MyProjects\DesignPatterns\DesignPatterns\obj\Debug\net6.0\DesignPatterns.AssemblyInfoInputs.cache
+I:\Bar Projects\MyProjects\DesignPatterns\DesignPatterns\obj\Debug\net6.0\DesignPatterns.AssemblyInfo.cs
+I:\Bar Projects\MyProjects\DesignPatterns\DesignPatterns\obj\Debug\net6.0\DesignPatterns.csproj.CoreCompileInputs.cache
+I:\Bar Projects\MyProjects\DesignPatterns\DesignPatterns\obj\Debug\net6.0\DesignPatterns.dll
+I:\Bar Projects\MyProjects\DesignPatterns\DesignPatterns\obj\Debug\net6.0\refint\DesignPatterns.dll
+I:\Bar Projects\MyProjects\DesignPatterns\DesignPatterns\obj\Debug\net6.0\DesignPatterns.pdb
+I:\Bar Projects\MyProjects\DesignPatterns\DesignPatterns\obj\Debug\net6.0\DesignPatterns.genruntimeconfig.cache
+I:\Bar Projects\MyProjects\DesignPatterns\DesignPatterns\obj\Debug\net6.0\ref\DesignPatterns.dll

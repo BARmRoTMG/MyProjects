@@ -25,14 +25,15 @@ namespace AdventureWorks.Client.Controllers
         // GET: PeopleController/Details/5
         public ActionResult Details(int id)
         {
-            var person = _personRepository.Get(id);
-            var model = ModelMapper.MapToViewModel(person);
+            ViewBag.Title = "Person Details";
+            var model = ModelMapper.MapToDetailsViewModel(_personRepository.Get(id));
             return View(model);
         }
 
         // GET: PeopleController/Create
         public ActionResult Create()
         {
+            ViewBag.Title = "Create";
             return View();
         }
 
@@ -43,17 +44,27 @@ namespace AdventureWorks.Client.Controllers
         {
             try
             {
-                return RedirectToAction(nameof(Index));
+                Person p1 = new Person
+                {
+                    FirstName = collection["First Name"],
+                    MiddleName = collection["Middle Name"],
+                    LastName = collection["Last Name"],
+                    AdditionalContactInfo = collection["Address"]
+                };
+                var newPerson = _personRepository.Add(p1);
+                var model = ModelMapper.MapToViewModel(newPerson);
+               return RedirectToAction(nameof(Index));
             }
-            catch
+            catch (Exception ex)
             {
-                return View();
+                return View(ex.Message);
             }
         }
 
         // GET: PeopleController/Edit/5
         public ActionResult Edit(int id)
         {
+            ViewBag.Title = "Edit";
             return View();
         }
 
@@ -75,7 +86,9 @@ namespace AdventureWorks.Client.Controllers
         // GET: PeopleController/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            ViewBag.Title = "Delete Person";
+            var model = ModelMapper.MapToDetailsViewModel(_personRepository.Get(id));
+            return View(model);
         }
 
         // POST: PeopleController/Delete/5
@@ -85,11 +98,12 @@ namespace AdventureWorks.Client.Controllers
         {
             try
             {
+                _personRepository.Delete(id);
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch (Exception ex)
             {
-                return View();
+                return View(ex.Message);
             }
         }
     }

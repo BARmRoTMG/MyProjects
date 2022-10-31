@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "33FiLp28gvFmgOTHrsJq0rkLICu0u7VkYLx3ex1aPQ4=",
+  "Hash": "UuoNf/QHJ83QsLZqZrtRherPwh+FusCEgDq+cAltlTo=",
   "Source": "AdventureWorks.Client",
   "BasePath": "_content/AdventureWorks.Client",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "I:\\Bar Projects\\MyProjects\\AdventureWorks\\AdventureWorks.Client\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\AdventureWorks.Client.bundle.scp.css"
+    },
+    {
+      "Identity": "I:\\Bar Projects\\MyProjects\\AdventureWorks\\AdventureWorks.Client\\wwwroot\\css\\people.css",
+      "SourceId": "AdventureWorks.Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "I:\\Bar Projects\\MyProjects\\AdventureWorks\\AdventureWorks.Client\\wwwroot\\",
+      "BasePath": "_content/AdventureWorks.Client",
+      "RelativePath": "css/people.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\people.css"
     },
     {
       "Identity": "I:\\Bar Projects\\MyProjects\\AdventureWorks\\AdventureWorks.Client\\wwwroot\\css\\site.css",
