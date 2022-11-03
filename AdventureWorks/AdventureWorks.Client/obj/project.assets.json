@@ -9414,6 +9414,7 @@
     "net6.0": [
       "AdventureWorks.Data >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.10",
+      "Microsoft.Extensions.Caching.Memory >= 6.0.1",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.10"
     ]
   },
@@ -9424,11 +9425,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "I:\\Bar Projects\\MyProjects\\AdventureWorks\\AdventureWorks.Client\\AdventureWorks.Client.csproj",
+      "projectUniqueName": "C:\\Users\\barba\\OneDrive\\Desktop\\AdventureWorks\\AdventureWorks.Client\\AdventureWorks.Client.csproj",
       "projectName": "AdventureWorks.Client",
-      "projectPath": "I:\\Bar Projects\\MyProjects\\AdventureWorks\\AdventureWorks.Client\\AdventureWorks.Client.csproj",
+      "projectPath": "C:\\Users\\barba\\OneDrive\\Desktop\\AdventureWorks\\AdventureWorks.Client\\AdventureWorks.Client.csproj",
       "packagesPath": "C:\\Users\\barba\\.nuget\\packages\\",
-      "outputPath": "I:\\Bar Projects\\MyProjects\\AdventureWorks\\AdventureWorks.Client\\obj\\",
+      "outputPath": "C:\\Users\\barba\\OneDrive\\Desktop\\AdventureWorks\\AdventureWorks.Client\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -9449,8 +9450,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "I:\\Bar Projects\\MyProjects\\AdventureWorks\\AdventureWorks.Data\\AdventureWorks.Data.csproj": {
-              "projectPath": "I:\\Bar Projects\\MyProjects\\AdventureWorks\\AdventureWorks.Data\\AdventureWorks.Data.csproj"
+            "C:\\Users\\barba\\OneDrive\\Desktop\\AdventureWorks\\AdventureWorks.Data\\AdventureWorks.Data.csproj": {
+              "projectPath": "C:\\Users\\barba\\OneDrive\\Desktop\\AdventureWorks\\AdventureWorks.Data\\AdventureWorks.Data.csproj"
             }
           }
         }
@@ -9470,6 +9471,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[6.0.10, )"
+          },
+          "Microsoft.Extensions.Caching.Memory": {
+            "target": "Package",
+            "version": "[6.0.1, )"
           },
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",

@@ -12,8 +12,8 @@ namespace AdventureWorks.Data.Models.Person
     {
         [NotMapped]
         public EnumPersonType PersonTypeKey 
-        {
-            get
+        { 
+            get 
             {
                 EnumPersonType type;
                 if (Enum.TryParse(this.PersonType, out type))
@@ -22,15 +22,15 @@ namespace AdventureWorks.Data.Models.Person
                 }
                 return EnumPersonType.GC;
             }
-            set
+            set 
             {
                 this.PersonType = value.ToString();
-            }
+            } 
         }
 
         [NotMapped]
-        public EnumEmailPromotion EmailPromotionKey
-        {
+        public EnumEmailPromotion EmailPromotionKey 
+        { 
             get
             {
                 return (EnumEmailPromotion)this.EmailPromotion;
@@ -44,29 +44,58 @@ namespace AdventureWorks.Data.Models.Person
 
     public enum EnumEmailPromotion
     {
+        /// <summary>
+        /// Contact does not wish to receive e-mail promotions
+        /// </summary>
         Non = 0,
-        Self = 1, 
+
+        /// <summary>
+        /// Contact does wish to receive e-mail promotions from AdventureWorks
+        /// </summary>
+        Self = 1,
+
+        /// <summary>
+        /// Contact does wish to receive e-mail promotions from AdventureWorks and selected partners
+        /// </summary>
         All = 2
     }
 
     public enum EnumPersonType
     {
+        /// <summary>
+        /// Store Contact
+        /// </summary>
         [Display(Name = "Store Contact")]
         SC = 1,
 
-        [Display(Name = "Individual (retail) Customer")]
+        /// <summary>
+        /// Individual(retail) customer
+        /// </summary>
+        [Display(Name = "Individual(retail) customer")]
         IN = 2,
 
+        /// <summary>
+        /// Sales person
+        /// </summary>
         [Display(Name = "Sales person")]
         SP = 4,
 
-        [Display(Name = "Employee (non-sales)")]
+        /// <summary>
+        /// Employee(non - sales)
+        /// </summary>
+        [Display(Name = "Employee(non - sales)")]
         EM = 8,
 
-        [Display(Name = "Vendor Contact")]
+        /// <summary>
+        /// Vendor contact
+        /// </summary>
+        [Display(Name = "Vendor contact")]
         VC = 16,
 
+        /// <summary>
+        /// General contact
+        /// </summary>
         [Display(Name = "General contact")]
-        GC = 32,
+        GC = 32
     }
 }

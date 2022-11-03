@@ -1,7 +1,11 @@
-﻿using AdventureWorks.Data.Contexts;
-using AdventureWorks.Data.Exceptions;
+﻿using AdventureWorks.Data.Exceptions;
 using AdventureWorks.Data.Models.Person;
 using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace AdventureWorks.Data.Repositories
 {
@@ -14,85 +18,103 @@ namespace AdventureWorks.Data.Repositories
             _context = context;
         }
 
-        public Person Add(Person entity)
+        public async Task<Person> Add(Person entity)
         {
-            try
+            if (entity.BusinessEntity == null)
             {
-                if (entity.BusinessEntity == null)
-                {
-                    entity.BusinessEntity = new BusinessEntity { ModifiedDate = DateTime.Now, Rowguid = Guid.NewGuid() };
-                }
-                else if (_context.People.Any(p => p.BusinessEntityId == entity.BusinessEntityId))
-                {
-                    throw new DuplicateEntityException($"Person with Business entity id {entity.BusinessEntityId} already exists.");
-                }
-                _context.People.Add(entity);
-                _context.SaveChanges();
-                _context.Entry<Person>(entity).Reload();
-                return entity;
-            } catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
+                entity.BusinessEntity = new BusinessEntity { ModifiedDate = DateTime.Now, Rowguid = Guid.NewGuid() };
             }
+            else if (_context.People.Any(p => p.BusinessEntityId == entity.BusinessEntityId))
+            {
+                throw new DuplicateEntityException($"Person with Business entity id {entity.BusinessEntityId} already exists");
+            }
+            _context.People.Add(entity);
+            var res = await _context.SaveChangesAsync();
+            
+            if (res > 0)
+                _context.Entry(entity).Reload();
+
+            return entity;
         }
 
-        public Person Delete(int id)
+        public async Task<Person> Delete(int id)
         {
-            var person = Get(id);
-            person.PersonPhones.Clear();
-            person.EmailAddresses.Clear();
-            person.BusinessEntityContacts.Clear();
-            person.BusinessEntity.BusinessEntityAddresses.Clear();
-            person.BusinessEntity.BusinessEntityContacts.Clear();
+            var person = await Get(id);
 
             _context.BusinessEntities.Remove(person.BusinessEntity);
             _context.People.Remove(person);
 
-            _context.SaveChanges();
+            var res = await _context.SaveChangesAsync();
+
+            //if (res > 0)
+            //    _context.Entry(person).Reload();
+
             return person;
         }
 
-        public Person Get(int id)
+        public async Task<Person> Get(int id)
         {
-            var person = _context.People
+            var person = await _context.People
                 .Include(p => p.BusinessEntity)
                 .ThenInclude(businessEntity => businessEntity.BusinessEntityAddresses)
                 .ThenInclude(businessEntityAddress => businessEntityAddress.Address)
                 .ThenInclude(address => address.StateProvince)
-
                 .Include(p => p.BusinessEntity)
                 .ThenInclude(businessEntity => businessEntity.BusinessEntityAddresses)
-                .ThenInclude(adress => adress.AddressType)
-
+                .ThenInclude(address => address.AddressType)
                 .Include(p => p.EmailAddresses)
-
                 .Include(p => p.PersonPhones)
                 .ThenInclude(phone => phone.PhoneNumberType)
-
-                .FirstOrDefault(p => p.BusinessEntityId == id);
+                .SingleOrDefaultAsync(p => p.BusinessEntityId == id);
             if (person == null)
-                throw new EntityNotFoundException($"Person with id {id} was not found.");
+                throw new EntityNotFoundException($"person with id {id} was not found");
 
             return person;
         }
 
-        public IEnumerable<Person> Get()
+        public async Task<PageResponse<Person>> Get(Filter filter = null)
         {
-            return _context.People
-                .Include(p => p.BusinessEntity)
-                .ThenInclude(businessEntity => businessEntity.BusinessEntityAddresses)
-                .ThenInclude(businessEntityAddress => businessEntityAddress.Address)
-                .ThenInclude(address => address.StateProvince)
-                .Include(p => p.EmailAddresses)
-                .Include(p => p.PersonPhones)
-                .Take(50);
+            if (filter == null)
+                filter = new Filter
+                {
+                    PageNumber = 1,
+                    PageSize = 10
+                };
+
+            var all = _context.People.Where(p => 
+                (filter.PersonType.HasValue
+                    ? p.PersonType == filter.PersonType.Value.ToString()
+                    : true) &&
+                (string.IsNullOrEmpty(filter.FirstName)
+                    ? true
+                    : p.FirstName.Contains(filter.FirstName)) &&
+                (string.IsNullOrEmpty(filter.MiddleName)
+                    ? true
+                    : p.LastName.Contains(filter.MiddleName)) &&
+                (string.IsNullOrEmpty(filter.LastName)
+                    ? true
+                    : p.LastName.Contains(filter.LastName)));
+
+            //Thread.Sleep(3000);
+            return new PageResponse<Person>
+            {
+                PageNumber = filter.PageNumber,
+                PageSize = filter.PageSize,
+                Data = await all
+                    .Skip((filter.PageNumber - 1) * filter.PageSize)
+                    .Take(filter.PageSize).ToListAsync(),
+                TotalCount = await all.CountAsync()
+            };
         }
 
-        public Person Update(Person entity)
+        public async Task<Person> Update(Person entity)
         {
             _context.Update(entity);
-            _context.SaveChanges();
-            _context.Entry(entity).Reload();
+            var res = await _context.SaveChangesAsync();
+            
+            if (res > 0)
+                _context.Entry(entity).Reload();
+
             return entity;
         }
     }

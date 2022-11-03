@@ -1,17 +1,18 @@
-using AdventureWorks.Data.Contexts;
+using AdventureWorks.Data;
 using AdventureWorks.Data.Models.Person;
 using AdventureWorks.Data.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
 // Add services to the container.
-builder.Services.AddDbContext<AdventureWorksDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("Main")));
 
-builder.Services.AddDbContext<AdventureWorksDbContext>();
+builder.Services.AddDbContext<AdventureWorksDbContext>(options => 
+    options.UseSqlServer(builder.Configuration.GetConnectionString("Main")));
 
 builder.Services.AddScoped<IRepository<Person>, PersonRepository>();
+
+builder.Services.AddMemoryCache();
 
 builder.Services.AddControllersWithViews();
 
@@ -34,21 +35,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=People}/{action=Index}/{id?}");
 
 app.Run();
-
-
-
-
-
-
-
-
-
-
-
-
-
-////THE PACKAGE MANAGER CODE
-////Scaffold-DbContext "Data Source=(localdb)\mssqllocaldb;Initial Catalog=AdventureWorks2017;Integrated Security=True" Microsoft.EntityFrameworkCore.SqlServer -d -context AdventureWorksDbContext -contextDir Contexts -outputDir Models/Person -schema Person -project AdventureWorks.Data -startupProject AdventureWorks.Client

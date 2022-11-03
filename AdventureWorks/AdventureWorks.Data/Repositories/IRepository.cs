@@ -8,10 +8,10 @@ namespace AdventureWorks.Data.Repositories
 {
     public interface IRepository<T> where T : class
     {
-        T Get(int id);
-        IEnumerable<T> Get();
-        T Update(T entity);
-        T Add(T entity);
-        T Delete(int id);
+        Task<T> Get(int id);
+        Task<PageResponse<T>> Get(Filter filter = null);
+        Task<T> Update(T entity);
+        Task<T> Add(T entity);
+        Task<T> Delete(int id);
     }
 }

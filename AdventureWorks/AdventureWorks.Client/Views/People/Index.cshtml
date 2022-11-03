@@ -1,84 +1,58 @@
-﻿@model IEnumerable<AdventureWorks.Client.Models.PersonViewModel>
+﻿@model IEnumerable<AdventureWorks.Client.Models.PersonBaseViewModel>
 
 @{
     ViewData["Title"] = ViewBag.Title;
 }
+
 <link rel="stylesheet" href="~/css/people.css" />
 <div class="view-container people-list-view">
-<h1>@ViewBag.Title</h1>
+    <h1>@ViewBag.Title</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table people-list">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.FirstName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.MiddleName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.LastName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Addresses)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.EmailAddresses)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.PhoneNumbers)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+    @Html.Partial("PageControl", ViewData["PageControl"])
+    <table class="list people-list">
+        <thead>
             <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.FirstName)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.MiddleName)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.LastName)
-                </td>
-                <td class="multi-line-cell address-cell">
-                    @foreach (var adderss in item.Addresses)
-                    {
-                        <p>@adderss</p>
-                    }
-                </td>
-                <td class="multi-line-cell email-cell">
-                    @foreach(var email in item.EmailAddresses)
-                    {
-                        <p>@email</p>
-                    }
-                </td>
-                <td class="multi-line-cell phone-cell">
-                    @foreach(var number in item.PhoneNumbers)
-                    {
-                        <p>@number</p>
-                    }
-                </td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-                </td>
+                <th>
+                    @Html.DisplayNameFor(m => m.PersonType)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FirstName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.MiddleName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.LastName)
+                </th>
+                <th></th>
             </tr>
-        }
-    </tbody>
-    <tfoot>
-        <tr>
-            <td>
-                <a asp-action="Index" asp-route-id=""></a>
-            </td>
-        </tr>
-    </tfoot>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PersonType)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FirstName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MiddleName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.LastName)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
 </div>

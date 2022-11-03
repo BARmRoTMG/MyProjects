@@ -3,108 +3,67 @@ using AdventureWorks.Data.Models.Person;
 using AdventureWorks.Data.Repositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Caching.Memory;
 
 namespace AdventureWorks.Client.Controllers
 {
     public class PeopleController : Controller
     {
-        private readonly IRepository<Person> _personRepository;
-        public PeopleController(IRepository<Person> personRepository)
+        private readonly IRepository<Person> _repository;
+        private readonly IMemoryCache _cache;
+
+        public PeopleController(IRepository<Person> personRepository, IMemoryCache cache)
         {
-            _personRepository = personRepository;
+            _repository = personRepository;
+            _cache = cache;
+        }
+        
+        public async Task<ActionResult> Index(int id = 1)
+        {
+            var model = new PageControlViewModel
+            {
+                PageNumber = id > 0 ? id : 1,
+                PageSize = 10
+            };
+            return await DisplayList(model);
         }
 
-        // GET: PeopleController
-        public ActionResult Index()
+        [HttpPost]
+        public async Task<ActionResult> Index(PageControlViewModel model)
+        {
+            return await DisplayList(model);
+        }
+
+        private async Task<ActionResult> DisplayList(PageControlViewModel model)
         {
             ViewBag.Title = "People List";
-            var people = _personRepository.Get().Select(p => ModelMapper.MapToViewModel(p));
-            return View(people);
-        }
-
-        // GET: PeopleController/Details/5
-        public ActionResult Details(int id)
-        {
-            ViewBag.Title = "Person Details";
-            var model = ModelMapper.MapToDetailsViewModel(_personRepository.Get(id));
-            return View(model);
-        }
-
-        // GET: PeopleController/Create
-        public ActionResult Create()
-        {
-            ViewBag.Title = "Create";
-            return View();
-        }
-
-        // POST: PeopleController/Create
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
-        {
-            try
+            ViewBag.PersonTypeOptions = Enum.GetValues<EnumPersonType>();
+            var filter = new Filter
             {
-                Person p1 = new Person
-                {
-                    FirstName = collection["First Name"],
-                    MiddleName = collection["Middle Name"],
-                    LastName = collection["Last Name"],
-                    AdditionalContactInfo = collection["Address"]
-                };
-                var newPerson = _personRepository.Add(p1);
-                var model = ModelMapper.MapToViewModel(newPerson);
-               return RedirectToAction(nameof(Index));
-            }
-            catch (Exception ex)
-            {
-                return View(ex.Message);
-            }
-        }
+                PageNumber = model.PageNumber > 0 ? model.PageNumber : 1,
+                PageSize = model.PageSize > 0 ? model.PageSize : 10,
+                PersonType = model.PersonType,
+                FirstName = model.FirstName,
+                MiddleName = model.MiddleName,
+                LastName = model.LastName
+            };
 
-        // GET: PeopleController/Edit/5
-        public ActionResult Edit(int id)
-        {
-            ViewBag.Title = "Edit";
-            return View();
-        }
+            var key = filter.ToString();
+            PageResponse<Person> res;
+            if (!_cache.TryGetValue(key, out res))
+            {
+                res = await _repository.Get(filter);
+                _cache.Set(key, res, TimeSpan.FromSeconds(180));
+            }
 
-        // POST: PeopleController/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
-        {
-            try
+            ViewData.Add("PageControl", new PageControlViewModel
             {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
+                PageNumber = res.PageNumber,
+                PageSize = res.PageSize,
+                TotalCount = res.TotalCount
+            });
 
-        // GET: PeopleController/Delete/5
-        public ActionResult Delete(int id)
-        {
-            ViewBag.Title = "Delete Person";
-            var model = ModelMapper.MapToDetailsViewModel(_personRepository.Get(id));
-            return View(model);
-        }
-
-        // POST: PeopleController/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                _personRepository.Delete(id);
-                return RedirectToAction(nameof(Index));
-            }
-            catch (Exception ex)
-            {
-                return View(ex.Message);
-            }
+            return View("Index", res.Data.Select(p => ModelMapper.MapToBaseViewModel(p)));
         }
     }
 }

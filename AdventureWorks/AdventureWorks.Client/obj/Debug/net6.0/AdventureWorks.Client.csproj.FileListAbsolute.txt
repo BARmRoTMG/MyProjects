@@ -1,266 +1,266 @@
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\appsettings.Development.json
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\appsettings.json
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\AdventureWorks.Client.staticwebassets.runtime.json
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\AdventureWorks.Client.exe
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\AdventureWorks.Client.deps.json
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\AdventureWorks.Client.runtimeconfig.json
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\AdventureWorks.Client.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\AdventureWorks.Client.pdb
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\AdventureWorks.Data.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\AdventureWorks.Data.pdb
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\obj\Debug\net6.0\AdventureWorks.Client.csproj.AssemblyReference.cache
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\obj\Debug\net6.0\AdventureWorks.Client.GeneratedMSBuildEditorConfig.editorconfig
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\obj\Debug\net6.0\AdventureWorks.Client.AssemblyInfoInputs.cache
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\obj\Debug\net6.0\AdventureWorks.Client.AssemblyInfo.cs
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\obj\Debug\net6.0\AdventureWorks.Client.csproj.CoreCompileInputs.cache
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\obj\Debug\net6.0\AdventureWorks.Client.MvcApplicationPartsAssemblyInfo.cache
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\obj\Debug\net6.0\AdventureWorks.Client.RazorAssemblyInfo.cache
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\obj\Debug\net6.0\AdventureWorks.Client.RazorAssemblyInfo.cs
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\obj\Debug\net6.0\staticwebassets.build.json
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\obj\Debug\net6.0\staticwebassets.development.json
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\obj\Debug\net6.0\scopedcss\bundle\AdventureWorks.Client.styles.css
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\obj\Debug\net6.0\scopedcss\projectbundle\AdventureWorks.Client.bundle.scp.css
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\obj\Debug\net6.0\AdventureWorks.Client.csproj.CopyComplete
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\obj\Debug\net6.0\AdventureWorks.Client.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\obj\Debug\net6.0\refint\AdventureWorks.Client.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\obj\Debug\net6.0\AdventureWorks.Client.pdb
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\obj\Debug\net6.0\AdventureWorks.Client.genruntimeconfig.cache
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\obj\Debug\net6.0\ref\AdventureWorks.Client.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Humanizer.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.Identity.Client.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\System.Drawing.Common.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\System.Runtime.Caching.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\System.Security.Permissions.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\System.Windows.Extensions.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\MessagePack.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\MessagePack.Annotations.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.AspNetCore.Razor.Language.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.Build.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.Build.Framework.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.CodeAnalysis.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.CodeAnalysis.CSharp.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.CodeAnalysis.CSharp.Features.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.CodeAnalysis.Features.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.CodeAnalysis.Razor.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.CodeAnalysis.Scripting.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.CodeAnalysis.VisualBasic.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.CodeAnalysis.VisualBasic.Features.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.CodeAnalysis.Workspaces.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.DiaSymReader.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.DotNet.Scaffolding.Shared.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.NET.StringTools.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.VisualStudio.Debugger.Contracts.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\dotnet-aspnet-codegenerator-design.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Newtonsoft.Json.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\NuGet.Common.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\NuGet.Configuration.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\NuGet.DependencyResolver.Core.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\NuGet.Frameworks.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\NuGet.LibraryModel.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\NuGet.Packaging.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\NuGet.ProjectModel.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\NuGet.Protocol.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\NuGet.Versioning.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\System.Composition.AttributedModel.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\System.Composition.Convention.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\System.Composition.Hosting.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\System.Composition.Runtime.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\System.Composition.TypedParts.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.Features.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.Features.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.Features.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.Features.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.Features.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.Features.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.Features.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.Features.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.Features.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.Features.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.Features.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.Features.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.Features.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.Scripting.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.Scripting.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.Scripting.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.VisualBasic.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.VisualBasic.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.VisualBasic.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.VisualBasic.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.VisualBasic.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.VisualBasic.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.VisualBasic.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.VisualBasic.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.VisualBasic.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.VisualBasic.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.VisualBasic.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
-I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\appsettings.json
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\AdventureWorks.Client.staticwebassets.runtime.json
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\AdventureWorks.Client.exe
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\AdventureWorks.Client.deps.json
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\AdventureWorks.Client.runtimeconfig.json
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\AdventureWorks.Client.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\AdventureWorks.Client.pdb
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Humanizer.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\MessagePack.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\MessagePack.Annotations.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.Build.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.Build.Framework.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.CodeAnalysis.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.CodeAnalysis.CSharp.Features.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.CodeAnalysis.Features.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.CodeAnalysis.VisualBasic.Features.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.DiaSymReader.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.DotNet.Scaffolding.Shared.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.NET.StringTools.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.VisualStudio.Debugger.Contracts.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\dotnet-aspnet-codegenerator-design.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\NuGet.Common.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\NuGet.Configuration.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\NuGet.DependencyResolver.Core.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\NuGet.Frameworks.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\NuGet.LibraryModel.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\NuGet.Packaging.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\NuGet.ProjectModel.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\NuGet.Protocol.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\NuGet.Versioning.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\System.Composition.AttributedModel.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\System.Composition.Convention.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\System.Composition.Hosting.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\System.Composition.Runtime.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\System.Composition.TypedParts.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\AdventureWorks.Data.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\AdventureWorks.Data.pdb
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\obj\Debug\net6.0\AdventureWorks.Client.csproj.AssemblyReference.cache
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\obj\Debug\net6.0\AdventureWorks.Client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\obj\Debug\net6.0\AdventureWorks.Client.AssemblyInfoInputs.cache
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\obj\Debug\net6.0\AdventureWorks.Client.AssemblyInfo.cs
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\obj\Debug\net6.0\AdventureWorks.Client.csproj.CoreCompileInputs.cache
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\obj\Debug\net6.0\AdventureWorks.Client.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\obj\Debug\net6.0\AdventureWorks.Client.RazorAssemblyInfo.cache
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\obj\Debug\net6.0\AdventureWorks.Client.RazorAssemblyInfo.cs
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\obj\Debug\net6.0\scopedcss\bundle\AdventureWorks.Client.styles.css
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\obj\Debug\net6.0\scopedcss\projectbundle\AdventureWorks.Client.bundle.scp.css
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\obj\Debug\net6.0\AdventureWorks.Client.csproj.CopyComplete
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\obj\Debug\net6.0\AdventureWorks.Client.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\obj\Debug\net6.0\refint\AdventureWorks.Client.dll
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\obj\Debug\net6.0\AdventureWorks.Client.pdb
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\obj\Debug\net6.0\AdventureWorks.Client.genruntimeconfig.cache
+C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Client\obj\Debug\net6.0\ref\AdventureWorks.Client.dll

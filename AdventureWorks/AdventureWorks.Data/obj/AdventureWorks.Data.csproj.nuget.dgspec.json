@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "I:\\Bar Projects\\MyProjects\\AdventureWorks\\AdventureWorks.Data\\AdventureWorks.Data.csproj": {}
+    "C:\\Users\\barba\\OneDrive\\Desktop\\AdventureWorks\\AdventureWorks.Data\\AdventureWorks.Data.csproj": {}
   },
   "projects": {
-    "I:\\Bar Projects\\MyProjects\\AdventureWorks\\AdventureWorks.Data\\AdventureWorks.Data.csproj": {
+    "C:\\Users\\barba\\OneDrive\\Desktop\\AdventureWorks\\AdventureWorks.Data\\AdventureWorks.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "I:\\Bar Projects\\MyProjects\\AdventureWorks\\AdventureWorks.Data\\AdventureWorks.Data.csproj",
+        "projectUniqueName": "C:\\Users\\barba\\OneDrive\\Desktop\\AdventureWorks\\AdventureWorks.Data\\AdventureWorks.Data.csproj",
         "projectName": "AdventureWorks.Data",
-        "projectPath": "I:\\Bar Projects\\MyProjects\\AdventureWorks\\AdventureWorks.Data\\AdventureWorks.Data.csproj",
+        "projectPath": "C:\\Users\\barba\\OneDrive\\Desktop\\AdventureWorks\\AdventureWorks.Data\\AdventureWorks.Data.csproj",
         "packagesPath": "C:\\Users\\barba\\.nuget\\packages\\",
-        "outputPath": "I:\\Bar Projects\\MyProjects\\AdventureWorks\\AdventureWorks.Data\\obj\\",
+        "outputPath": "C:\\Users\\barba\\OneDrive\\Desktop\\AdventureWorks\\AdventureWorks.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

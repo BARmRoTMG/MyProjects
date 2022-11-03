@@ -1,13 +1,18 @@
 ﻿.multi-line-cell {
-    font-size: 0.8em;
+    font-size:0.8em;
 }
 
-.person-addresses {
+.collection-value {
     border: 1px solid #505080;
     border-radius: 0.5em;
 }
 
-.address-container {
+.value-in-collection {
     display: flex;
     flex-flow: wrap;
 }
+
+    .value-in-collection .title {
+        width: 100%;
+        font-weight: 300;
+    }

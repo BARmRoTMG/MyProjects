@@ -1,0 +1,31 @@
+﻿@using AdventureWorks.Data.Models.Person
+@model AdventureWorks.Client.Models.PageControlViewModel
+
+<div class="page-contrtol">
+    <form asp-action="Index" asp-controller="People" method="post">
+        <input type="button" id="firstPage" value="&#60;&#60;" />
+        <input type="button" id="previousPage" value="&#60;" />
+        
+        <input asp-for="PageNumber" id="pageNumber" name="pageNumber" type="number" min="1" max="@((Model.TotalCount / Model.PageSize)+((Model.TotalCount % Model.PageSize > 0)? 1: 0))" step="1" />
+        
+        <input type="button" id="nextPage" value="&#62;" />
+        <input type="button" id="lastPage" value="&#62;&#62;" />
+        
+        <p class="pagination-data">@($"{((Model.PageNumber - 1) * Model.PageSize) + 1} - {Model.PageNumber * Model.PageSize} of {Model.TotalCount}")</p>
+        <input asp-for="PageSize" id="pageSize" name="pageSize" type="number" min="5" max="100" step="5"/>
+        <input asp-for="TotalCount" id="totalCount" name="totalCount" type="hidden"/>
+        <br/>
+        <input asp-for="PersonType" id="personType" name="personType" type="hidden"/>
+        <select id="selectPersonType">
+            <option value="0">All</option>
+            @foreach (EnumPersonType opt in ViewBag.PersonTypeOptions)
+            {
+                <option value="@opt">@opt.ToString()</option>
+            }
+        </select>
+
+        <input asp-for="FirstName" id="firstName" name="firstName" type="text" placeholder="First Name"/>
+        <input asp-for="MiddleName" id="middleName" name="middleName" type="text" placeholder="Middle Name"/>
+        <input asp-for="LastName" id="lastName" name="lastName" type="text" placeholder="Last Name"/>
+    </form>
+</div>

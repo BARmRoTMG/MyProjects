@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace AdventureWorks.Data.Exceptions
 {
-    public class DuplicateEntityException : Exception
+    public class DuplicateEntityException :Exception
     {
-        public DuplicateEntityException() { }
-        public DuplicateEntityException(string message) : base(message) { }
-        public DuplicateEntityException(string message, Exception innerException) : base(message, innerException) { }
+        public DuplicateEntityException(string? message = null, Exception? inner = null)
+            :base(message, inner) { }
     }
 }

@@ -1,24 +1,14 @@
-﻿using System.Runtime.Serialization;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace AdventureWorks.Data.Exceptions
 {
-    [Serializable]
-    internal class EntityNotFoundException : Exception
+    public class EntityNotFoundException :Exception
     {
-        public EntityNotFoundException()
-        {
-        }
-
-        public EntityNotFoundException(string? message) : base(message)
-        {
-        }
-
-        public EntityNotFoundException(string? message, Exception? innerException) : base(message, innerException)
-        {
-        }
-
-        protected EntityNotFoundException(SerializationInfo info, StreamingContext context) : base(info, context)
-        {
-        }
+        public EntityNotFoundException(string? message = null, Exception? inner = null)
+            : base(message, inner) { }
     }
 }
