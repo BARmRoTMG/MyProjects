@@ -12,3 +12,17 @@ C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Data\obj\Debug\net
 C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Data\obj\Debug\net6.0\AdventureWorks.Data.pdb
 C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Data\obj\Debug\net6.0\AdventureWorks.Data.genruntimeconfig.cache
 C:\Users\barba\OneDrive\Desktop\AdventureWorks\AdventureWorks.Data\obj\Debug\net6.0\ref\AdventureWorks.Data.dll
+I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Data\bin\Debug\net6.0\AdventureWorks.Data.deps.json
+I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Data\bin\Debug\net6.0\AdventureWorks.Data.runtimeconfig.json
+I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Data\bin\Debug\net6.0\AdventureWorks.Data.dll
+I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Data\bin\Debug\net6.0\AdventureWorks.Data.pdb
+I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Data\obj\Debug\net6.0\AdventureWorks.Data.csproj.AssemblyReference.cache
+I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Data\obj\Debug\net6.0\AdventureWorks.Data.GeneratedMSBuildEditorConfig.editorconfig
+I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Data\obj\Debug\net6.0\AdventureWorks.Data.AssemblyInfoInputs.cache
+I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Data\obj\Debug\net6.0\AdventureWorks.Data.AssemblyInfo.cs
+I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Data\obj\Debug\net6.0\AdventureWorks.Data.csproj.CoreCompileInputs.cache
+I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Data\obj\Debug\net6.0\AdventureWorks.Data.dll
+I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Data\obj\Debug\net6.0\refint\AdventureWorks.Data.dll
+I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Data\obj\Debug\net6.0\AdventureWorks.Data.pdb
+I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Data\obj\Debug\net6.0\AdventureWorks.Data.genruntimeconfig.cache
+I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Data\obj\Debug\net6.0\ref\AdventureWorks.Data.dll

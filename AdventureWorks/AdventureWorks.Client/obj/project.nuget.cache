@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Y1R2uraEfgJ8ZA+LitA2AwYhIKsI3nqTvO9ouZpvEPWhdRAvkEKdfstaXVGZuaGCufkFxjE+rvvU3RYGsQq95Q==",
+  "dgSpecHash": "+xooeioRBmBOw6ZM+WFIYmlXSpP+stpW4NEfwMRtZlWh0BolHkGfbrlXNBWqrt/iggjikSM/m7qQXD4NKmmhNw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\barba\\OneDrive\\Desktop\\AdventureWorks\\AdventureWorks.Client\\AdventureWorks.Client.csproj",
+  "projectFilePath": "I:\\Bar Projects\\MyProjects\\AdventureWorks\\AdventureWorks.Client\\AdventureWorks.Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\barba\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\barba\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

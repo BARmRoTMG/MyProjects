@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "a6Cp3OXrF+CgSPN1G2ccVGEwNfg9yf0izHZmHYRcQ+O1ERvF5s/9VFLUz8MKiwhojLazVUIqiIUFg48mKlJzmA==",
+  "dgSpecHash": "VxnnkMa+t/gJ1d+99yMB0ti7E2LsPL8dThV8XuswRvSMGwDPTqJPH736VdzCQB6DWzhvTMvYqWhJqUnYQwWU0A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\barba\\OneDrive\\Desktop\\AdventureWorks\\AdventureWorks.Data\\AdventureWorks.Data.csproj",
+  "projectFilePath": "I:\\Bar Projects\\MyProjects\\AdventureWorks\\AdventureWorks.Data\\AdventureWorks.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\barba\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\barba\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
