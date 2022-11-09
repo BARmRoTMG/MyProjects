@@ -30,7 +30,7 @@ namespace AdventureWorks.Data.Repositories
             }
             _context.People.Add(entity);
             var res = await _context.SaveChangesAsync();
-            
+
             if (res > 0)
                 _context.Entry(entity).Reload();
 
@@ -81,7 +81,7 @@ namespace AdventureWorks.Data.Repositories
                     PageSize = 10
                 };
 
-            var all = _context.People.Where(p => 
+            var all = _context.People.Where(p =>
                 (filter.PersonType.HasValue
                     ? p.PersonType == filter.PersonType.Value.ToString()
                     : true) &&
@@ -109,9 +109,24 @@ namespace AdventureWorks.Data.Repositories
 
         public async Task<Person> Update(Person entity)
         {
+            var existingEmails = _context.EmailAddresses.Where(a => a.BusinessEntityId == entity.BusinessEntityId);
+
+            foreach (var newEmail in entity.EmailAddresses)
+            {
+                foreach (var email in existingEmails)
+                {
+                    //if (newEmail.EmailAddress1.Equals(email.EmailAddress1, StringComparison(newEmail.EmailAddress1, ))
+                    //{
+                    //    entity.EmailAddresses.Remove(newEmail);
+                    //    //entity.EmailAddresses.Add(email);
+                    //    break;
+                    //}
+                }
+            }
+
             _context.Update(entity);
             var res = await _context.SaveChangesAsync();
-            
+
             if (res > 0)
                 _context.Entry(entity).Reload();
 

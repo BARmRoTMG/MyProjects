@@ -2,11 +2,8 @@
 
 namespace AdventureWorks.Client.Models
 {
-    public class PersonDetailsViewModel
+    public class PersonDetailsViewModel : PersonBaseViewModel
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public EnumPersonType PersonType { get; set; }
         public List<Tuple<string, AddressViewModel>> Addresses { get; set; }
         public List<string> EmailAddresses { get; set; }
         public List<Tuple<string, string>> PhoneNumbers { get; set; }

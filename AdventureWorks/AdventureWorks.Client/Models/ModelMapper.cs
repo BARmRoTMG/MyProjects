@@ -21,10 +21,10 @@ namespace AdventureWorks.Client.Models
             return new PersonDetailsViewModel
             {
                 Id = entity.BusinessEntityId,
-                Name = entity.NameStyle ?
-                    $"{entity.Title} {entity.LastName} {entity.FirstName} {entity.MiddleName} {entity.Suffix}"
-                    : $"{entity.Title} {entity.FirstName} {entity.MiddleName} {entity.LastName} {entity.Suffix}",
-                PersonType = entity.PersonTypeKey,
+                FirstName = entity.FirstName,
+                MiddleName = entity.MiddleName,
+                LastName = entity.LastName,
+                PersonType = entity.PersonType,
                 EmailAddresses = entity.EmailAddresses
                     .Where(emailAddress => !string.IsNullOrEmpty(emailAddress.EmailAddress1))
                     .Select(emailAddress => emailAddress.EmailAddress1).ToList(),
@@ -33,14 +33,42 @@ namespace AdventureWorks.Client.Models
                 EmailPromotion = entity.EmailPromotionKey,
                 Addresses = entity.BusinessEntity.BusinessEntityAddresses.Select(address => new Tuple<string, AddressViewModel>(address.AddressType.Name, new AddressViewModel
                 {
-                    Id = address.AddressId, 
-                    StateProvince = address.Address.StateProvince.Name, 
-                    City = address.Address.City, 
+                    Id = address.AddressId,
+                    StateProvince = address.Address.StateProvince.Name,
+                    City = address.Address.City,
                     Line1 = address.Address.AddressLine1,
                     Line2 = address.Address.AddressLine2,
                     PostalCode = address.Address.PostalCode
                 })).ToList()
             };
+        }
+
+        public static Person MapToEntity(PersonDetailsViewModel model)
+        {
+            return new Person
+            {
+                BusinessEntityId = model.Id,
+                FirstName = model.FirstName,
+                MiddleName = model.MiddleName,
+                LastName = model.LastName,
+                PersonType = model.PersonType,
+                EmailAddresses = model.EmailAddresses.Select(eAddress =>
+                new EmailAddress
+                {
+                    BusinessEntityId = model.Id,
+                    EmailAddress1 = eAddress
+                }).ToList(),
+                EmailPromotionKey = model.EmailPromotion??,
+                PersonPhones = model.PhoneNumbers.Select(phone => 
+                new PersonPhone
+                {
+                    BusinessEntityId = model.Id,
+                    PhoneNumber = phone.Item2,
+                    PhoneNumberType = new PhoneNumberType { Name = phone.Item1 }
+                }).ToList()
+               
+            };
+
         }
     }
 }

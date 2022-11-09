@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SelaPetShop.Client", "SelaPetShop.Client\SelaPetShop.Client.csproj", "{C5AE45EA-0BDC-4313-8C9D-A20D09A721CE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SelaPetShop.Data", "SelaPetShop.Data\SelaPetShop.Data.csproj", "{9E607DD1-0197-45B1-B8AE-3972FDB25D72}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C5AE45EA-0BDC-4313-8C9D-A20D09A721CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5AE45EA-0BDC-4313-8C9D-A20D09A721CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5AE45EA-0BDC-4313-8C9D-A20D09A721CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5AE45EA-0BDC-4313-8C9D-A20D09A721CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E607DD1-0197-45B1-B8AE-3972FDB25D72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E607DD1-0197-45B1-B8AE-3972FDB25D72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E607DD1-0197-45B1-B8AE-3972FDB25D72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E607DD1-0197-45B1-B8AE-3972FDB25D72}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AA237A82-CC2B-4248-87B9-539F03A0227B}
+	EndGlobalSection
+EndGlobal

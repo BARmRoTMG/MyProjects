@@ -17,7 +17,7 @@ namespace AdventureWorks.Client.Controllers
             _repository = personRepository;
             _cache = cache;
         }
-        
+
         public async Task<ActionResult> Index(int id = 1)
         {
             var model = new PageControlViewModel
@@ -64,6 +64,39 @@ namespace AdventureWorks.Client.Controllers
             });
 
             return View("Index", res.Data.Select(p => ModelMapper.MapToBaseViewModel(p)));
+        }
+
+        [HttpGet]
+        public async Task<ActionResult> Edit(int id)
+        {
+            ViewBag.PersonTypeOptions = Enum.GetValues<EnumPersonType>();
+            var person = await _repository.Get(id);
+
+            ViewBag.Title = $"Edit {person.FirstName}";
+            return View(ModelMapper.MapToDetails(person));
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<ActionResult> Edit(PersonDetailsViewModel model)
+        {
+            // validate request, save data, redirect to list
+            if (model == null)
+                return BadRequest();
+
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            try
+            {
+                var person = ModelMapper.MapToEntity(model);
+                person = await _repository.Update(person);
+                return RedirectToAction("Index");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, ex);
+            }
         }
     }
 }

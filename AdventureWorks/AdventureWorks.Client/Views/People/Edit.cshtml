@@ -1,0 +1,28 @@
+﻿@model AdventureWorks.Client.Models.PersonDetailsViewModel
+
+@{
+    ViewData["Title"] = ViewBag.Title;
+}
+
+<div class="view-container edit-person">
+    <a asp-action="Index">Back To List</a>
+    <form asp-action="Edit" asp-controller="People" method="post">
+        <div class="field">
+            <label class="field-name" asp-for="FirstName">@Html.DisplayNameFor(m => m.FirstName)</label>
+            <input class="field-editor" asp-for="FirstName" />
+        </div>
+        <div class="field">
+            <label class="field-name" asp-for="MiddleName">@Html.DisplayNameFor(m => m.MiddleName)</label>
+            <input class="field-editor" asp-for="MiddleName" />
+        </div>
+        <div class="field">
+            <label class="field-name" asp-for="LastName">@Html.DisplayNameFor(m => m.LastName)</label>
+            <input class="field-editor" asp-for="LastName" />
+        </div>
+        <div class="field">
+            <label class="field-name" asp-for="PersonType">@Html.DisplayNameFor(m => m.PersonType)</label>
+            <input class="field-editor" type="hidden" asp-for="PersonType" />
+        </div>
+        <input type="submit" value="Save" />
+    </form>
+</div>
