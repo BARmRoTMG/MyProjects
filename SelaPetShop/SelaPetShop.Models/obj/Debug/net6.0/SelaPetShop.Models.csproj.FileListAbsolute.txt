@@ -1,0 +1,12 @@
+I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Models\bin\Debug\net6.0\SelaPetShop.Models.deps.json
+I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Models\bin\Debug\net6.0\SelaPetShop.Models.dll
+I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Models\bin\Debug\net6.0\SelaPetShop.Models.pdb
+I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Models\obj\Debug\net6.0\SelaPetShop.Models.csproj.AssemblyReference.cache
+I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Models\obj\Debug\net6.0\SelaPetShop.Models.GeneratedMSBuildEditorConfig.editorconfig
+I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Models\obj\Debug\net6.0\SelaPetShop.Models.AssemblyInfoInputs.cache
+I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Models\obj\Debug\net6.0\SelaPetShop.Models.AssemblyInfo.cs
+I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Models\obj\Debug\net6.0\SelaPetShop.Models.csproj.CoreCompileInputs.cache
+I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Models\obj\Debug\net6.0\SelaPetShop.Models.dll
+I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Models\obj\Debug\net6.0\refint\SelaPetShop.Models.dll
+I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Models\obj\Debug\net6.0\SelaPetShop.Models.pdb
+I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Models\obj\Debug\net6.0\ref\SelaPetShop.Models.dll

@@ -1,0 +1,17 @@
+I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Services\bin\Debug\net6.0\SelaPetShop.Services.deps.json
+I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Services\bin\Debug\net6.0\SelaPetShop.Services.dll
+I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Services\bin\Debug\net6.0\SelaPetShop.Services.pdb
+I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Services\bin\Debug\net6.0\SelaPetShop.Data.dll
+I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Services\bin\Debug\net6.0\SelaPetShop.Models.dll
+I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Services\bin\Debug\net6.0\SelaPetShop.Data.pdb
+I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Services\bin\Debug\net6.0\SelaPetShop.Models.pdb
+I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Services\obj\Debug\net6.0\SelaPetShop.Services.csproj.AssemblyReference.cache
+I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Services\obj\Debug\net6.0\SelaPetShop.Services.GeneratedMSBuildEditorConfig.editorconfig
+I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Services\obj\Debug\net6.0\SelaPetShop.Services.AssemblyInfoInputs.cache
+I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Services\obj\Debug\net6.0\SelaPetShop.Services.AssemblyInfo.cs
+I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Services\obj\Debug\net6.0\SelaPetShop.Services.csproj.CoreCompileInputs.cache
+I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Services\obj\Debug\net6.0\SelaPetShop.Services.csproj.CopyComplete
+I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Services\obj\Debug\net6.0\SelaPetShop.Services.dll
+I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Services\obj\Debug\net6.0\refint\SelaPetShop.Services.dll
+I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Services\obj\Debug\net6.0\SelaPetShop.Services.pdb
+I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Services\obj\Debug\net6.0\ref\SelaPetShop.Services.dll

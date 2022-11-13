@@ -2,11 +2,14 @@ I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Data\bin\Debug\net6.0\SelaPet
 I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Data\bin\Debug\net6.0\SelaPetShop.Data.runtimeconfig.json
 I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Data\bin\Debug\net6.0\SelaPetShop.Data.dll
 I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Data\bin\Debug\net6.0\SelaPetShop.Data.pdb
+I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Data\bin\Debug\net6.0\SelaPetShop.Models.dll
+I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Data\bin\Debug\net6.0\SelaPetShop.Models.pdb
 I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Data\obj\Debug\net6.0\SelaPetShop.Data.csproj.AssemblyReference.cache
 I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Data\obj\Debug\net6.0\SelaPetShop.Data.GeneratedMSBuildEditorConfig.editorconfig
 I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Data\obj\Debug\net6.0\SelaPetShop.Data.AssemblyInfoInputs.cache
 I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Data\obj\Debug\net6.0\SelaPetShop.Data.AssemblyInfo.cs
 I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Data\obj\Debug\net6.0\SelaPetShop.Data.csproj.CoreCompileInputs.cache
+I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Data\obj\Debug\net6.0\SelaPetShop.Data.csproj.CopyComplete
 I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Data\obj\Debug\net6.0\SelaPetShop.Data.dll
 I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Data\obj\Debug\net6.0\refint\SelaPetShop.Data.dll
 I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Data\obj\Debug\net6.0\SelaPetShop.Data.pdb
