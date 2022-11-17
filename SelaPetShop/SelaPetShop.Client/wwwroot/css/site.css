@@ -59,3 +59,40 @@ li {
 .active {
     background-color: #4CAF50;
 }
+
+
+/*ANIMAL CARDS*/
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    width: 300px;
+    height: 400px;
+    margin: 70px;
+    border-radius: 15px;
+}
+
+.card-image {
+    height: 150px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+}
+
+.animal-1 {
+    background-image: url('/lib/Animals/shitzu.jpg');
+}
+
+.animal-2 {
+    background-image: url('/lib/Animals/owl.png');
+}
+
+h3 {
+    text-align: center;
+    color: white;
+    text-shadow: 40px;
+}

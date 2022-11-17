@@ -13,8 +13,11 @@ namespace SelaPetShop.Services.Mappers
             {
                 AnimalId = model.Id,
                 Name = model.Name,
+                //Category = model.Category != null ? model.Category.CategoryName.ToString() : "",
                 Age = model.Age,
-                Description = model.Description
+                Description = model.Description,
+                //Comments = model.Comments.Where(c => !string.IsNullOrEmpty(c.Comment1)).Select(c => c.Comment1).ToList(),
+                //Photo = model.PictureUrls != null ? model.PictureUrls.ToString() : ""
             };
         }
 
@@ -24,10 +27,12 @@ namespace SelaPetShop.Services.Mappers
             {
                 Id = entity.AnimalId,
                 Name = entity.Name,
+                //Category = entity.Category.Select(c => c
+                Category = entity.Category != null ? entity.Category.CategoryName.ToString() : "",
                 Age = entity.Age,
                 Description = entity.Description,
-                Comments = entity.Comments.Where(p => !string.IsNullOrEmpty(p.Comment1)).Select(p => p.Comment1).ToList(),
-                //PictureUrls = entity.PictureName.Select(p => p).ToList();
+                Comments = entity.Comments.Where(c => !string.IsNullOrEmpty(c.Comment1)).Select(c => c.Comment1).ToList(),
+                PictureUrls = entity.Photo != null ? entity.Photo.ToString() : ""
             };
         }
     }

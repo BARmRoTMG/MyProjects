@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3+kmXsGJiHbGuD4MLdYQ4iX5DO+uss7F3ZU212ab96I=",
+  "Hash": "Jdd9nczzkwXfovu9oQHeInHMEufZxiyIklvFt0igmsc=",
   "Source": "SelaPetShop.Client",
   "BasePath": "_content/SelaPetShop.Client",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "I:\\Bar Projects\\MyProjects\\SelaPetShop\\SelaPetShop.Client\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\SelaPetShop.Client.bundle.scp.css"
+    },
+    {
+      "Identity": "I:\\Bar Projects\\MyProjects\\SelaPetShop\\SelaPetShop.Client\\wwwroot\\css\\animals.css",
+      "SourceId": "SelaPetShop.Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "I:\\Bar Projects\\MyProjects\\SelaPetShop\\SelaPetShop.Client\\wwwroot\\",
+      "BasePath": "_content/SelaPetShop.Client",
+      "RelativePath": "css/animals.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\animals.css"
     },
     {
       "Identity": "I:\\Bar Projects\\MyProjects\\SelaPetShop\\SelaPetShop.Client\\wwwroot\\css\\site.css",
@@ -134,6 +151,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\animalbanner.jpg"
+    },
+    {
+      "Identity": "I:\\Bar Projects\\MyProjects\\SelaPetShop\\SelaPetShop.Client\\wwwroot\\lib\\Animals\\owl.png",
+      "SourceId": "SelaPetShop.Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "I:\\Bar Projects\\MyProjects\\SelaPetShop\\SelaPetShop.Client\\wwwroot\\",
+      "BasePath": "_content/SelaPetShop.Client",
+      "RelativePath": "lib/Animals/owl.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\Animals\\owl.png"
+    },
+    {
+      "Identity": "I:\\Bar Projects\\MyProjects\\SelaPetShop\\SelaPetShop.Client\\wwwroot\\lib\\Animals\\shitzu.jpg",
+      "SourceId": "SelaPetShop.Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "I:\\Bar Projects\\MyProjects\\SelaPetShop\\SelaPetShop.Client\\wwwroot\\",
+      "BasePath": "_content/SelaPetShop.Client",
+      "RelativePath": "lib/Animals/shitzu.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\Animals\\shitzu.jpg"
     },
     {
       "Identity": "I:\\Bar Projects\\MyProjects\\SelaPetShop\\SelaPetShop.Client\\wwwroot\\lib\\background.jpg",

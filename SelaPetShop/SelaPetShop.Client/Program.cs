@@ -4,13 +4,16 @@ using SelaPetShop.Models.Dtos;
 using SelaPetShop.Models.Entities;
 using SelaPetShop.Models.Interfaces;
 using SelaPetShop.Services.Mappers;
+using SelaPetShop.Services.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container. DEPENDENCY INJECTORS
 builder.Services.AddDbContext<PetShopDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("Main")));
 
+builder.Services.AddScoped<IRepository<Animal>, AnimalRepository>();
 builder.Services.AddScoped<IMapper<Animal, AnimalDto>, ModelMapper>();
+builder.Services.AddScoped<IAnimalService, AnimalService>();
 
 builder.Services.AddMemoryCache();
 

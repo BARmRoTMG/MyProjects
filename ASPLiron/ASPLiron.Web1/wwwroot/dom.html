@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <input id="childID" type="number" style="width:60px" placeholder="ID"/>
+    <input id="childName" placeholder="Name"/>
+    <button onclick="addChild()">Add</button>
+    <ul>
+    </ul>
+</body>
+
+<script>
+    const family =
+        [
+            {
+                id: 1,
+                name: 'Bar Mashiach'
+            }
+        ];
+
+    draw();
+
+    setInterval(function () {
+        draw();
+    }, 1000);
+
+    function addChild() {
+        const tbId = document.getElementById('childID');
+        const tbName = document.getElementById('childName');
+
+        const id = tbId.value;
+        const name = tbName.value;
+
+        if (!(!!id) || id <= 0) {
+            alert('Please enter ID!');
+            return;
+        }
+        if (!!!name) {
+            alert('Please enter a name!')
+            return;
+        }
+
+        family.push({ id: id, name: name });
+        //draw();
+
+        tbId.value++;
+        tbName.value = '';
+        tbName.focus();
+    }
+    function draw() {
+        const list = document.getElementsByTagName('ul')[0];
+
+        list.innerHTML = '';
+
+        for (var item of family) {
+            list.appendChild(buildItem(item));
+        }
+    }
+    function buildItem(item) {
+        const b = document.createElement('b');
+        b.innerText = item.id;
+
+        const span = document.createElement('span');
+        span.innerText = ' - ' + item.name;
+
+        const li = document.createElement('li');
+        li.appendChild(b);
+        li.appendChild(span);
+
+        return li;
+    }
+</script>
+</html>

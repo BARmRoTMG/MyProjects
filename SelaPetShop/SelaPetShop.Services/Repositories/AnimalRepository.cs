@@ -16,9 +16,15 @@ namespace SelaPetShop.Services.Repositories
             _context = context;
         }
 
-        public Task<Animal> Add(Animal entity)
+        public async Task<Animal> Add(Animal entity)
         {
-            throw new NotImplementedException();
+            _context.Animals.Add(entity);
+            var res = await _context.SaveChangesAsync();
+
+            if (res > 0)
+                await _context.Entry(entity).ReloadAsync();
+
+            return entity;
         }
 
         public async Task<Animal> Delete(int id)
@@ -34,7 +40,6 @@ namespace SelaPetShop.Services.Repositories
         public async Task<Animal> Get(int id)
         {
             var animal = await _context.Animals
-                .Include(a => a.PictureName)
                 .Include(a => a.Category)
                 .Include(a => a.Comments)
                 .SingleOrDefaultAsync(a => a.AnimalId == id);
@@ -43,11 +48,6 @@ namespace SelaPetShop.Services.Repositories
                 throw new Exception($"Animal with id {id} was not found.");
 
             return animal;
-
-            //return await _context.Animals
-            //    .Include(p => p.Category)
-            //    .ThenInclude(c => c.CategoryId)
-            //    .SingleOrDefaultAsync(p => p.AnimalId == id);
         }
 
         public async Task<FilterResponse<Animal>> Get(Filter filter = null)
@@ -71,7 +71,7 @@ namespace SelaPetShop.Services.Repositories
             };
         }
 
-        public Task<Animal> Update(Animal entity)
+        public async Task<Animal> Update(Animal entity)
         {
             throw new NotImplementedException();
         }
