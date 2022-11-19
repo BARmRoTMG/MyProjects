@@ -11,13 +11,17 @@ namespace SelaPetShop.Services.Mappers
         {
             return new Animal
             {
-                AnimalId = model.Id,
+                AnimalId = model.AnimalId,
                 Name = model.Name,
-                //Category = model.Category != null ? model.Category.CategoryName.ToString() : "",
-                Age = model.Age,
+                Birthdate = model.Birthdate,
                 Description = model.Description,
+                //Comments = model.Comments.Select(c => new UserCommentDto
+                //{
+                //    CommentId = c.CommentId,
+                //    Value = c.Value
+                //})
+                //Category = model.Category != null ? model.Category.CategoryName.ToString() : "",
                 //Comments = model.Comments.Where(c => !string.IsNullOrEmpty(c.Comment1)).Select(c => c.Comment1).ToList(),
-                //Photo = model.PictureUrls != null ? model.PictureUrls.ToString() : ""
             };
         }
 
@@ -25,14 +29,13 @@ namespace SelaPetShop.Services.Mappers
         {
             return new AnimalDto
             {
-                Id = entity.AnimalId,
+                AnimalId = entity.AnimalId,
                 Name = entity.Name,
-                //Category = entity.Category.Select(c => c
-                Category = entity.Category != null ? entity.Category.CategoryName.ToString() : "",
-                Age = entity.Age,
+                Birthdate = entity.Birthdate,
                 Description = entity.Description,
-                Comments = entity.Comments.Where(c => !string.IsNullOrEmpty(c.Comment1)).Select(c => c.Comment1).ToList(),
-                PictureUrls = entity.Photo != null ? entity.Photo.ToString() : ""
+                Category = entity.AnimalCategories.Select(c => c.Category.Name).ToString(),
+                Comments = entity.Comments.Where(c => !string.IsNullOrEmpty(c.Value)).Select(c => c.Value).ToList(),
+                ImageUrls = entity.AnimalImages.Select(i => i.Image.Url).ToList()
             };
         }
     }

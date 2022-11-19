@@ -40,8 +40,11 @@ namespace SelaPetShop.Services.Repositories
         public async Task<Animal> Get(int id)
         {
             var animal = await _context.Animals
-                .Include(a => a.Category)
-                .Include(a => a.Comments)
+                .Include(c => c.AnimalCategories)
+                .ThenInclude(c => c.Category)
+                .Include(i => i.AnimalImages)
+                .ThenInclude(i => i.Image)
+                .Include(c => c.Comments)
                 .SingleOrDefaultAsync(a => a.AnimalId == id);
 
             if (animal == null)

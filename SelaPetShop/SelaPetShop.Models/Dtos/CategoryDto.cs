@@ -1,18 +1,18 @@
-﻿using System;
+﻿using SelaPetShop.Models.Entities;
+using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SelaPetShop.Models.Dtos
 {
     public class CategoryDto
     {
-        [Key]
         [Required]
-        [Display(Name = "Id")]
-        public int CategoryId { get; set; }
+        [Display(Name = "Animal ID")]
+        public int AnimalId { get; set; }
 
         [Required]
-        [StringLength(50)]
-        [Display(Name = "Category Name")]
-        public string? Name { get; set; }
+        [Display(Name = "Category ID")]
+        public int CategoryId { get; set; }
     }
 }

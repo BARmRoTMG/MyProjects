@@ -1,23 +1,33 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-namespace SelaPetShop.Models.Entities;
-
-public partial class Animal
+namespace SelaPetShop.Models.Entities
 {
-    public int AnimalId { get; set; }
+    public partial class Animal
+    {
+        public Animal()
+        {
+            Comments = new HashSet<Comment>();
+            AnimalCategories = new HashSet<AnimalCategory>();
+            AnimalImages = new HashSet<AnimalImage>();
+        }
 
-    public string? Name { get; set; }
+        [Key]
+        public int AnimalId { get; set; }
+        [StringLength(50)]
+        public string? Name { get; set; }
+        [Column(TypeName = "date")]
+        public DateTime? Birthdate { get; set; }
+        public string? Description { get; set; }
 
-    public double? Age { get; set; }
+        [InverseProperty("Animal")]
+        public virtual ICollection<Comment> Comments { get; set; }
 
-    public byte[]? Photo { get; set; }
+        [InverseProperty("Animal")]
+        public virtual ICollection<AnimalCategory> AnimalCategories { get; set; }
 
-    public string? Description { get; set; }
-
-    public int? CategoryId { get; set; }
-    //public virtual ICollection<Category> Category { get; set; }
-    public virtual Category? Category { get; set; }
-
-    public virtual ICollection<Comment> Comments { get; } = new List<Comment>();
+        [InverseProperty("Animal")]
+        public virtual ICollection<AnimalImage> AnimalImages { get; set; }
+    }
 }

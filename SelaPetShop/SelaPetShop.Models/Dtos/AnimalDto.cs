@@ -1,5 +1,7 @@
-﻿using System;
+﻿using SelaPetShop.Models.Entities;
+using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SelaPetShop.Models.Dtos
 {
@@ -8,33 +10,31 @@ namespace SelaPetShop.Models.Dtos
         public AnimalDto()
         {
             Comments = new List<string>();
+            ImageUrls = new List<string>();
         }
-
-        [Key]
-        [Display(Name = "Animal Id")]
-        public int Id { get; set; }
+        public int AnimalId { get; set; }
 
         [Required]
         [StringLength(50)]
-        [Display(Name = "Name")]
+        [Display(Name = "Animal Name")]
         public string? Name { get; set; }
 
         [Required]
-        [StringLength(50)]
-        [Display(Name = "Category")]
-        public string Category { get; set; }
-        //public ICollection<CategoryDto> Category { get; set; }
-
-        [Display(Name = "Age")]
-        public double? Age { get; set; }
+        [Display(Name = "Birthdate")]
+        public DateTime? Birthdate { get; set; }
 
         [Display(Name = "Description")]
-        public string? Description { get; set; }
+        public string Description { get; set; }
+
+        [Display(Name = "Category")]
+        public string Category { get; set; }
 
         [Display(Name = "Comments")]
-        public List<string>? Comments { get; set; }
+        public List<string> Comments { get; set; }
 
-        [Display(Name = "Picture URL")]
-        public string? PictureUrls { get; set; }
+        [Required]
+        [StringLength(1000)]
+        [Display(Name = "Photo")]
+        public List<string> ImageUrls { get; set; }
     }
 }

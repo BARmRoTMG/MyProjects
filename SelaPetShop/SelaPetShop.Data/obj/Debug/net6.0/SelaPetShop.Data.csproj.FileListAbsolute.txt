@@ -1,5 +1,4 @@
 I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Data\bin\Debug\net6.0\SelaPetShop.Data.deps.json
-I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Data\bin\Debug\net6.0\SelaPetShop.Data.runtimeconfig.json
 I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Data\bin\Debug\net6.0\SelaPetShop.Data.dll
 I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Data\bin\Debug\net6.0\SelaPetShop.Data.pdb
 I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Data\bin\Debug\net6.0\SelaPetShop.Models.dll
@@ -13,5 +12,6 @@ I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Data\obj\Debug\net6.0\SelaPet
 I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Data\obj\Debug\net6.0\SelaPetShop.Data.dll
 I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Data\obj\Debug\net6.0\refint\SelaPetShop.Data.dll
 I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Data\obj\Debug\net6.0\SelaPetShop.Data.pdb
-I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Data\obj\Debug\net6.0\SelaPetShop.Data.genruntimeconfig.cache
 I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Data\obj\Debug\net6.0\ref\SelaPetShop.Data.dll
+I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Data\bin\Debug\net6.0\SelaPetShop.Data.runtimeconfig.json
+I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Data\obj\Debug\net6.0\SelaPetShop.Data.genruntimeconfig.cache

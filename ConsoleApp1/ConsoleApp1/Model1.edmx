@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="SelaPetShopDatabaseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'SelaPetShopDatabase.dbo.AnimalCategory' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="AnimalCategory">
+          <Key>
+            <PropertyRef Name="AnimalId" />
+            <PropertyRef Name="CategoryId" />
+          </Key>
+          <Property Name="AnimalId" Type="int" Nullable="false" />
+          <Property Name="CategoryId" Type="int" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'SelaPetShopDatabase.dbo.AnimalImage' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="AnimalImage">
+          <Key>
+            <PropertyRef Name="AnimalId" />
+            <PropertyRef Name="ImageId" />
+          </Key>
+          <Property Name="AnimalId" Type="int" Nullable="false" />
+          <Property Name="ImageId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Animals">
+          <Key>
+            <PropertyRef Name="AnimalId" />
+          </Key>
+          <Property Name="AnimalId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="Birthdate" Type="date" />
+          <Property Name="Description" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Categories">
+          <Key>
+            <PropertyRef Name="CategoryId" />
+          </Key>
+          <Property Name="CategoryId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="Value" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Comments">
+          <Key>
+            <PropertyRef Name="CommentId" />
+          </Key>
+          <Property Name="CommentId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AnimalId" Type="int" Nullable="false" />
+          <Property Name="Value" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Images">
+          <Key>
+            <PropertyRef Name="ImageId" />
+          </Key>
+          <Property Name="ImageId" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="Url" Type="nvarchar(max)" />
+          <Property Name="Description" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Users">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Username" Type="nvarchar" MaxLength="50" />
+          <Property Name="Password" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK_AnimalCategory_Animals">
+          <End Role="Animals" Type="Self.Animals" Multiplicity="1" />
+          <End Role="AnimalCategory" Type="Self.AnimalCategory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Animals">
+              <PropertyRef Name="AnimalId" />
+            </Principal>
+            <Dependent Role="AnimalCategory">
+              <PropertyRef Name="AnimalId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AnimalCategory_Categories">
+          <End Role="Categories" Type="Self.Categories" Multiplicity="1" />
+          <End Role="AnimalCategory" Type="Self.AnimalCategory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Categories">
+              <PropertyRef Name="CategoryId" />
+            </Principal>
+            <Dependent Role="AnimalCategory">
+              <PropertyRef Name="CategoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AnimalImage_Animals">
+          <End Role="Animals" Type="Self.Animals" Multiplicity="1" />
+          <End Role="AnimalImage" Type="Self.AnimalImage" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Animals">
+              <PropertyRef Name="AnimalId" />
+            </Principal>
+            <Dependent Role="AnimalImage">
+              <PropertyRef Name="AnimalId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AnimalImage_Images">
+          <End Role="Images" Type="Self.Images" Multiplicity="1" />
+          <End Role="AnimalImage" Type="Self.AnimalImage" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Images">
+              <PropertyRef Name="ImageId" />
+            </Principal>
+            <Dependent Role="AnimalImage">
+              <PropertyRef Name="ImageId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Comments_Animals">
+          <End Role="Animals" Type="Self.Animals" Multiplicity="1" />
+          <End Role="Comments" Type="Self.Comments" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Animals">
+              <PropertyRef Name="AnimalId" />
+            </Principal>
+            <Dependent Role="Comments">
+              <PropertyRef Name="AnimalId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="SelaPetShopDatabaseModelStoreContainer">
+          <EntitySet Name="Animals" EntityType="Self.Animals" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Categories" EntityType="Self.Categories" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Comments" EntityType="Self.Comments" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Images" EntityType="Self.Images" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AnimalCategory" EntityType="Self.AnimalCategory" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [AnimalCategory].[AnimalId] AS [AnimalId], 
+    [AnimalCategory].[CategoryId] AS [CategoryId]
+    FROM [dbo].[AnimalCategory] AS [AnimalCategory]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="AnimalImage" EntityType="Self.AnimalImage" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [AnimalImage].[AnimalId] AS [AnimalId], 
+    [AnimalImage].[ImageId] AS [ImageId]
+    FROM [dbo].[AnimalImage] AS [AnimalImage]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK_AnimalCategory_Animals" Association="Self.FK_AnimalCategory_Animals">
+            <End Role="Animals" EntitySet="Animals" />
+            <End Role="AnimalCategory" EntitySet="AnimalCategory" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AnimalCategory_Categories" Association="Self.FK_AnimalCategory_Categories">
+            <End Role="Categories" EntitySet="Categories" />
+            <End Role="AnimalCategory" EntitySet="AnimalCategory" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AnimalImage_Animals" Association="Self.FK_AnimalImage_Animals">
+            <End Role="Animals" EntitySet="Animals" />
+            <End Role="AnimalImage" EntitySet="AnimalImage" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AnimalImage_Images" Association="Self.FK_AnimalImage_Images">
+            <End Role="Images" EntitySet="Images" />
+            <End Role="AnimalImage" EntitySet="AnimalImage" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Comments_Animals" Association="Self.FK_Comments_Animals">
+            <End Role="Animals" EntitySet="Animals" />
+            <End Role="Comments" EntitySet="Comments" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SelaPetShopDatabaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Animal">
+          <Key>
+            <PropertyRef Name="AnimalId" />
+          </Key>
+          <Property Name="AnimalId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Birthdate" Type="DateTime" Precision="0" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Comments" Relationship="Self.FK_Comments_Animals" FromRole="Animals" ToRole="Comments" />
+          <NavigationProperty Name="Categories" Relationship="Self.AnimalCategory" FromRole="Animals" ToRole="Categories" />
+          <NavigationProperty Name="Images" Relationship="Self.AnimalImage" FromRole="Animals" ToRole="Images" />
+        </EntityType>
+        <EntityType Name="Categorie">
+          <Key>
+            <PropertyRef Name="CategoryId" />
+          </Key>
+          <Property Name="CategoryId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Value" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Animals" Relationship="Self.AnimalCategory" FromRole="Categories" ToRole="Animals" />
+        </EntityType>
+        <EntityType Name="Comment">
+          <Key>
+            <PropertyRef Name="CommentId" />
+          </Key>
+          <Property Name="CommentId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AnimalId" Type="Int32" Nullable="false" />
+          <Property Name="Value" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Animals" Relationship="Self.FK_Comments_Animals" FromRole="Comments" ToRole="Animals" />
+        </EntityType>
+        <EntityType Name="Image">
+          <Key>
+            <PropertyRef Name="ImageId" />
+          </Key>
+          <Property Name="ImageId" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Url" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Animals" Relationship="Self.AnimalImage" FromRole="Images" ToRole="Animals" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <Association Name="FK_Comments_Animals">
+          <End Role="Animals" Type="SelaPetShopDatabaseModel.Animal" Multiplicity="1" />
+          <End Role="Comments" Type="SelaPetShopDatabaseModel.Comment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Animals">
+              <PropertyRef Name="AnimalId" />
+            </Principal>
+            <Dependent Role="Comments">
+              <PropertyRef Name="AnimalId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="AnimalCategory">
+          <End Role="Animals" Type="SelaPetShopDatabaseModel.Animal" Multiplicity="*" />
+          <End Role="Categories" Type="SelaPetShopDatabaseModel.Categorie" Multiplicity="*" />
+        </Association>
+        <Association Name="AnimalImage">
+          <End Role="Animals" Type="SelaPetShopDatabaseModel.Animal" Multiplicity="*" />
+          <End Role="Images" Type="SelaPetShopDatabaseModel.Image" Multiplicity="*" />
+        </Association>
+        <EntityContainer Name="SelaPetShopDatabaseEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Animals" EntityType="SelaPetShopDatabaseModel.Animal" />
+          <EntitySet Name="Categories" EntityType="SelaPetShopDatabaseModel.Categorie" />
+          <EntitySet Name="Comments" EntityType="SelaPetShopDatabaseModel.Comment" />
+          <EntitySet Name="Images" EntityType="SelaPetShopDatabaseModel.Image" />
+          <EntitySet Name="Users" EntityType="SelaPetShopDatabaseModel.User" />
+          <AssociationSet Name="FK_Comments_Animals" Association="Self.FK_Comments_Animals">
+            <End Role="Animals" EntitySet="Animals" />
+            <End Role="Comments" EntitySet="Comments" />
+          </AssociationSet>
+          <AssociationSet Name="AnimalCategory" Association="Self.AnimalCategory">
+            <End Role="Animals" EntitySet="Animals" />
+            <End Role="Categories" EntitySet="Categories" />
+          </AssociationSet>
+          <AssociationSet Name="AnimalImage" Association="Self.AnimalImage">
+            <End Role="Animals" EntitySet="Animals" />
+            <End Role="Images" EntitySet="Images" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SelaPetShopDatabaseModelStoreContainer" CdmEntityContainer="SelaPetShopDatabaseEntities">
+          <EntitySetMapping Name="Animals">
+            <EntityTypeMapping TypeName="SelaPetShopDatabaseModel.Animal">
+              <MappingFragment StoreEntitySet="Animals">
+                <ScalarProperty Name="AnimalId" ColumnName="AnimalId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Birthdate" ColumnName="Birthdate" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Categories">
+            <EntityTypeMapping TypeName="SelaPetShopDatabaseModel.Categorie">
+              <MappingFragment StoreEntitySet="Categories">
+                <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Value" ColumnName="Value" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Comments">
+            <EntityTypeMapping TypeName="SelaPetShopDatabaseModel.Comment">
+              <MappingFragment StoreEntitySet="Comments">
+                <ScalarProperty Name="CommentId" ColumnName="CommentId" />
+                <ScalarProperty Name="AnimalId" ColumnName="AnimalId" />
+                <ScalarProperty Name="Value" ColumnName="Value" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Images">
+            <EntityTypeMapping TypeName="SelaPetShopDatabaseModel.Image">
+              <MappingFragment StoreEntitySet="Images">
+                <ScalarProperty Name="ImageId" ColumnName="ImageId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Url" ColumnName="Url" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Users">
+            <EntityTypeMapping TypeName="SelaPetShopDatabaseModel.User">
+              <MappingFragment StoreEntitySet="Users">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="AnimalCategory" TypeName="SelaPetShopDatabaseModel.AnimalCategory" StoreEntitySet="AnimalCategory">
+            <EndProperty Name="Animals">
+              <ScalarProperty Name="AnimalId" ColumnName="AnimalId" />
+            </EndProperty>
+            <EndProperty Name="Categories">
+              <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="AnimalImage" TypeName="SelaPetShopDatabaseModel.AnimalImage" StoreEntitySet="AnimalImage">
+            <EndProperty Name="Animals">
+              <ScalarProperty Name="AnimalId" ColumnName="AnimalId" />
+            </EndProperty>
+            <EndProperty Name="Images">
+              <ScalarProperty Name="ImageId" ColumnName="ImageId" />
+            </EndProperty>
+          </AssociationSetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
