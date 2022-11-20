@@ -35,6 +35,11 @@ namespace SelaPetShop.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Animal>(entity =>
+            {
+                entity.Property(e => e.AnimalId).ValueGeneratedNever();
+            });
+
             modelBuilder.Entity<AnimalCategory>(entity =>
             {
                 entity.HasOne(d => d.Animal)

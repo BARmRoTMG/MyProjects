@@ -44,7 +44,7 @@ namespace SelaPetShop.Services.Repositories
                 .ThenInclude(c => c.Category)
                 .Include(i => i.AnimalImages)
                 .ThenInclude(i => i.Image)
-                .Include(c => c.Comments)
+                .Include(c => c.Comments) //Maybe not necessary
                 .SingleOrDefaultAsync(a => a.AnimalId == id);
 
             if (animal == null)
@@ -74,9 +74,21 @@ namespace SelaPetShop.Services.Repositories
             };
         }
 
+        public async Task<int> GetLastId()
+        {
+            return _context.Animals.Count();
+        }
+
         public async Task<Animal> Update(Animal entity)
         {
-            throw new NotImplementedException();
+            var res = _context.Animals.Update(entity);
+            _context.SaveChanges();
+            _context.Entry(entity).Reload();
+
+            if (res == null)
+                _context.Entry(entity).Reload();
+
+            return entity;
         }
     }
 }

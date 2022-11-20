@@ -33,7 +33,7 @@ namespace SelaPetShop.Services.Mappers
                 Name = entity.Name,
                 Birthdate = entity.Birthdate,
                 Description = entity.Description,
-                Category = entity.AnimalCategories.Select(c => c.Category.Name).ToString(),
+                //Category = entity.AnimalCategories.Select(c => c.Category).ToString(),
                 Comments = entity.Comments.Where(c => !string.IsNullOrEmpty(c.Value)).Select(c => c.Value).ToList(),
                 ImageUrls = entity.AnimalImages.Select(i => i.Image.Url).ToList()
             };

@@ -10,5 +10,6 @@ namespace SelaPetShop.Models.Interfaces
         Task<Tentity> Get(int id);
         Task<FilterResponse<Tentity>> Get(Filter filter = null);
         Task<Tentity> Update(Tentity entity);
+        Task<int> GetLastId();
     }
 }

@@ -33,11 +33,6 @@ namespace SelaPetShop.Client.Controllers
             return View();
         }
 
-        public IActionResult AnimalPage()
-        {
-            return View();
-        }
-
         public IActionResult Login()
         {
             return View();

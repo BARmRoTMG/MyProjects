@@ -6,6 +6,7 @@ using SelaPetShop.Models.Entities;
 using SelaPetShop.Models.Helpers;
 using SelaPetShop.Models.Interfaces;
 using SelaPetShop.Services.Mappers;
+using System;
 
 namespace SelaPetShop.Client.Controllers
 {
@@ -54,6 +55,58 @@ namespace SelaPetShop.Client.Controllers
             catch (Exception ex)
             {
                 throw ex;
+            }
+        }
+
+        [HttpGet]
+        public async Task<ActionResult> Edit(int id)
+        {
+            return View(_mapper.Map(await _context.Get(id)));
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<ActionResult> Edit(AnimalDto model)
+        {
+            // validate request, save data, redirect to list
+            if (model == null)
+                return BadRequest();
+
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            try
+            {
+                var animal = _context.Update(await _mapper.Map(model));
+                return RedirectToAction("Index");
+            } catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, ex);
+            }
+        }
+
+
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<ActionResult> Create(AnimalDto model)
+        {
+            try
+            {
+                model.AnimalId = await _context.GetLastId() + 1;
+                //entity.Comments.Add(new Comment
+                //{
+                //    CommentId = entity.Comments.Count + 1,
+                //    AnimalId = entity.AnimalId,
+                //    Value = entity.Comments
+                //});
+                
+                _context.Add(await _mapper.Map(model));
+
+                return RedirectToAction(nameof(Index));
+            } catch
+            {
+                return View();
             }
         }
     }

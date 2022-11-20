@@ -1,0 +1,24 @@
+﻿@model SelaPetShop.Models.Dtos.AnimalDto
+
+<div class="view-container edit-animal">
+    <a asp-action="Index">Back To List</a>
+    <form asp-action="Edit" asp-controller="Animal" method="post">
+        <div class="field">
+            <label class="field-name" asp-for="Name">@Html.DisplayNameFor(m => m.Name)</label>
+            <input class="field-editor" asp-for="Name" />
+        </div>
+        <div class="field">
+            <label class="field-name" asp-for="Description">@Html.DisplayNameFor(m => m.Description)</label>
+            <input class="field-editor" asp-for="Description" />
+        </div>
+        <div class="field">
+            <label class="field-name" asp-for="Birthdate">@Html.DisplayNameFor(m => m.Birthdate)</label>
+            <input class="field-editor" asp-for="Birthdate" />
+        </div>
+        <div class="field">
+            <label class="field-name" asp-for="Category">@Html.DisplayNameFor(m => m.Category)</label>
+            <input class="field-editor" type="hidden" asp-for="Category" />
+        </div>
+        <input type="submit" value="Save" />
+    </form>
+</div>
