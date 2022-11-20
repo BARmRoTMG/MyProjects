@@ -85,7 +85,10 @@ namespace SelaPetShop.Client.Controllers
             }
         }
 
-
+        public async Task<ActionResult> Details(int id)
+        {
+            return View(_mapper.Map(await _context.Get(id)));
+        }
 
         [HttpPost]
         [ValidateAntiForgeryToken]

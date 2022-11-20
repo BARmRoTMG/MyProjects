@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Client
 build_property._RazorSourceGeneratorDebug = 
 
+[I:/Bar Projects/MyProjects/SelaPetShop/SelaPetShop.Client/Views/Animals/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [I:/Bar Projects/MyProjects/SelaPetShop/SelaPetShop.Client/Views/Animals/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
