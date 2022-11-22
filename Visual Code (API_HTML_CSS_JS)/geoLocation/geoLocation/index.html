@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geo Location Sample</title>
+</head>
+<body>
+    <div id="coords"></div>
+    <script>
+        if (navigator.geolocation){
+            navigator.geolocation.getCurrentPosition(function(pos){
+                console.log(pos);
+                const lat = pos.coords.latitude;
+                const lng = pos.coords.longitude;
+
+                const div = document.querySelector('#coords');
+                
+                let html = '<p>${lat}, ${lng}';
+
+                const url = 'https://ul.waze.com/ul?11=${lat}%2C${lng}&navigate=yes&zoom=14';
+                
+            });
+        } else {
+            alert('Your device does not support geo location');
+        }
+    </script>
+</body>
+</html>

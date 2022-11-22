@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Hosting.Server;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
 using SelaPetShop.Client.Models;
 using SelaPetShop.Models.Dtos;
@@ -6,7 +7,10 @@ using SelaPetShop.Models.Entities;
 using SelaPetShop.Models.Helpers;
 using SelaPetShop.Models.Interfaces;
 using SelaPetShop.Services.Mappers;
+
 using System;
+using System.IO;
+using System.Web;
 
 namespace SelaPetShop.Client.Controllers
 {
@@ -15,6 +19,7 @@ namespace SelaPetShop.Client.Controllers
         private readonly IRepository<Animal> _context;
         private readonly IMapper<Animal, AnimalDto> _mapper;
         private readonly IMemoryCache _cache;
+        private IWebHostEnvironment _environment;
 
         public AnimalsController(IRepository<Animal> context, IMemoryCache cache, IMapper<Animal, AnimalDto> mapper)
         {
@@ -61,7 +66,8 @@ namespace SelaPetShop.Client.Controllers
         [HttpGet]
         public async Task<ActionResult> Edit(int id)
         {
-            return View(_mapper.Map(await _context.Get(id)));
+            return View();
+            //return View(_mapper.Map(await _context.Get(id)));
         }
 
         [HttpPost]
@@ -87,7 +93,8 @@ namespace SelaPetShop.Client.Controllers
 
         public async Task<ActionResult> Details(int id)
         {
-            return View(_mapper.Map(await _context.Get(id)));
+            return View();
+            //return View(_mapper.Map(await _context.Get(id)));
         }
 
         [HttpPost]
@@ -97,13 +104,13 @@ namespace SelaPetShop.Client.Controllers
             try
             {
                 model.AnimalId = await _context.GetLastId() + 1;
-                //entity.Comments.Add(new Comment
+                //model.Comments.Add(new Comment
                 //{
-                //    CommentId = entity.Comments.Count + 1,
-                //    AnimalId = entity.AnimalId,
-                //    Value = entity.Comments
+                //    CommentId = model.Comments.Count + 1,
+                //    AnimalId = model.AnimalId,
+                //    Value = model.Comments.ToString(),
                 //});
-                
+
                 _context.Add(await _mapper.Map(model));
 
                 return RedirectToAction(nameof(Index));
@@ -111,6 +118,32 @@ namespace SelaPetShop.Client.Controllers
             {
                 return View();
             }
+        }
+
+        [HttpPost]
+        public async Task<ActionResult> UploadFiles(List<IFormFile> postedFiles)
+        {
+            string wwwPath = this._environment.WebRootPath;
+            string contentPath = this._environment.ContentRootPath;
+
+            string path = Path.Combine(this._environment.WebRootPath, "Uploads");
+            if (!Directory.Exists(path))
+            {
+                Directory.CreateDirectory(path);
+            }
+
+            List<string> uploadedFiles = new List<string>();
+            foreach (IFormFile postedFile in postedFiles)
+            {
+                string fileName = Path.GetFileName(postedFile.FileName);
+                using (FileStream stream = new FileStream(Path.Combine(path, fileName), FileMode.Create))
+                {
+                    postedFile.CopyTo(stream);
+                    uploadedFiles.Add(fileName);
+                    ViewBag.Message += fileName + ",";
+                }
+            }
+            return View();
         }
     }
 }

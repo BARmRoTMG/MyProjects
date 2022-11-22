@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\lib\Animals\" />
+    <Folder Include="wwwroot\Uploads\" />
   </ItemGroup>
 
   <ItemGroup>

@@ -33,12 +33,13 @@
                 <th></th>
             </tr>
         </thead>
+        <img />
         <tbody>
             @foreach (var item in Model)
             {
                 <tr>
                     <td>
-                        @Html.DisplayFor(modelItem => item.ImageUrls)
+                        <img src="@Html.DisplayFor(modelItem=> item.ImageUrls)" />
                     </td>
                     <td>
                         @Html.DisplayFor(modelItem => item.Category)
