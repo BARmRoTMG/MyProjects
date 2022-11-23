@@ -12,6 +12,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<PetShopDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("Main")));
 
 builder.Services.AddScoped<IRepository<Animal>, AnimalRepository>();
+builder.Services.AddScoped<IRepository<Image>, ImageRepository>();
+builder.Services.AddScoped<IRepository<Category>, CategoryRepository>();
 builder.Services.AddScoped<IMapper<Animal, AnimalDto>, ModelMapper>();
 builder.Services.AddScoped<IAnimalService, AnimalService>();
 

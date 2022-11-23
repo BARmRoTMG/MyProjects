@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -9,8 +8,9 @@ namespace SelaPetShop.Models.Entities
     {
         public Image()
         {
-            AnimalImages = new HashSet<AnimalImage>();
+            Animals = new HashSet<Animal>();
         }
+
         [Key]
         public int ImageId { get; set; }
         [StringLength(50)]
@@ -19,6 +19,6 @@ namespace SelaPetShop.Models.Entities
         public string? Description { get; set; }
 
         [InverseProperty("Image")]
-        public virtual ICollection<AnimalImage> AnimalImages { get; set; }
+        public virtual ICollection<Animal> Animals { get; set; }
     }
 }

@@ -16,16 +16,20 @@ namespace SelaPetShop.Client.Controllers
 {
     public class AnimalsController : Controller
     {
-        private readonly IRepository<Animal> _context;
+        private readonly IRepository<Animal> _contextAnimal;
+        private readonly IRepository<Category> _contextCategory;
+        private readonly IRepository<Image> _contextImage;
         private readonly IMapper<Animal, AnimalDto> _mapper;
         private readonly IMemoryCache _cache;
         private IWebHostEnvironment _environment;
 
-        public AnimalsController(IRepository<Animal> context, IMemoryCache cache, IMapper<Animal, AnimalDto> mapper)
+        public AnimalsController(IRepository<Animal> context, IMemoryCache cache, IMapper<Animal, AnimalDto> mapper, IRepository<Category> contextCategory, IRepository<Image> contextImage)
         {
-            _context = context;
+            _contextAnimal = context;
             _cache = cache;
             _mapper = mapper;
+            _contextCategory = contextCategory;
+            _contextImage = contextImage;
         }
 
         public async Task<IActionResult> Index(int id = 1)
@@ -51,7 +55,7 @@ namespace SelaPetShop.Client.Controllers
                 FilterResponse<Animal> res;
                 if (!_cache.TryGetValue(key, out res))
                 {
-                    res = await _context.Get(filter);
+                    res = await _contextAnimal.Get(filter);
                     _cache.Set(key, res, TimeSpan.FromSeconds(180));
                 };
 
@@ -67,7 +71,7 @@ namespace SelaPetShop.Client.Controllers
         public async Task<ActionResult> Edit(int id)
         {
             return View();
-            //return View(_mapper.Map(await _context.Get(id)));
+            //return View(_mapper.Map(await _contextAnimal.Get(id)));
         }
 
         [HttpPost]
@@ -83,9 +87,10 @@ namespace SelaPetShop.Client.Controllers
 
             try
             {
-                var animal = _context.Update(await _mapper.Map(model));
+                var animal = _contextAnimal.Update(await _mapper.Map(model));
                 return RedirectToAction("Index");
-            } catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, ex);
             }
@@ -93,8 +98,7 @@ namespace SelaPetShop.Client.Controllers
 
         public async Task<ActionResult> Details(int id)
         {
-            return View();
-            //return View(_mapper.Map(await _context.Get(id)));
+            return View(_mapper.Map(await _contextAnimal.Get(id)));
         }
 
         [HttpPost]
@@ -103,18 +107,18 @@ namespace SelaPetShop.Client.Controllers
         {
             try
             {
-                model.AnimalId = await _context.GetLastId() + 1;
-                //model.Comments.Add(new Comment
-                //{
-                //    CommentId = model.Comments.Count + 1,
-                //    AnimalId = model.AnimalId,
-                //    Value = model.Comments.ToString(),
-                //});
+                model.Comments.Add(new Comment
+                {
+                    CommentId = model.Comments.Count + 1,
+                    AnimalId = model.AnimalId,
+                    Value = model.Comments.ToString(),
+                });
 
-                _context.Add(await _mapper.Map(model));
+                await _contextAnimal.Add(await _mapper.Map(model));
 
                 return RedirectToAction(nameof(Index));
-            } catch
+            }
+            catch
             {
                 return View();
             }

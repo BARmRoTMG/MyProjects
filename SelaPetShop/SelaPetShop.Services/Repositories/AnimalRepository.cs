@@ -37,13 +37,11 @@ namespace SelaPetShop.Services.Repositories
             return animal;
         }
 
-        public async Task<Animal> Get(int id)
+        public async Task<Animal> Get(int? id)
         {
             var animal = await _context.Animals
-                .Include(c => c.AnimalCategories)
-                .ThenInclude(c => c.Category)
-                .Include(i => i.AnimalImages)
-                .ThenInclude(i => i.Image)
+                .Include(c => c.Category)
+                .Include(i => i.Image)
                 .Include(c => c.Comments) //Maybe not necessary
                 .SingleOrDefaultAsync(a => a.AnimalId == id);
 
@@ -67,16 +65,14 @@ namespace SelaPetShop.Services.Repositories
                 PageNumber = filter.PageNumber,
                 PageSize = filter.PageSize,
                 Data = _context.Animals
+                .Include(c => c.Category)
+                .Include(i => i.Image)
+                .Include(c => c.Comments)
                 .Skip((filter.PageNumber - 1) * filter.PageSize)
                 .Take(filter.PageSize)
                 .ToList(),
                 Count = _context.Animals.Count()
             };
-        }
-
-        public async Task<int> GetLastId()
-        {
-            return _context.Animals.Count();
         }
 
         public async Task<Animal> Update(Animal entity)

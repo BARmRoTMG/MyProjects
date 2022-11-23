@@ -1,11 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.EntityFrameworkCore;
 
 namespace SelaPetShop.Models.Entities
 {
-    //[Index("AnimalId", Name = "IX_FK_Comments_Animals")]
+    [Index("AnimalId", Name = "IX_FK_Comments_Animals")]
     public partial class Comment
     {
         [Key]

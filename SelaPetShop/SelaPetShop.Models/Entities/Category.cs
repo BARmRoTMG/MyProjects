@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.EntityFrameworkCore;
 
 namespace SelaPetShop.Models.Entities
 {
@@ -9,7 +10,7 @@ namespace SelaPetShop.Models.Entities
     {
         public Category()
         {
-            AnimalCategories = new HashSet<AnimalCategory>();
+            Animals = new HashSet<Animal>();
         }
 
         [Key]
@@ -20,6 +21,6 @@ namespace SelaPetShop.Models.Entities
         public string? Value { get; set; }
 
         [InverseProperty("Category")]
-        public virtual ICollection<AnimalCategory> AnimalCategories { get; set; }
+        public virtual ICollection<Animal> Animals { get; set; }
     }
 }

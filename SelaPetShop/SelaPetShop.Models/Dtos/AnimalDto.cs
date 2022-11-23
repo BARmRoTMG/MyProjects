@@ -9,8 +9,8 @@ namespace SelaPetShop.Models.Dtos
     {
         public AnimalDto()
         {
-            Comments = new List<string>();
-            ImageUrls = new List<string>();
+            Comments = new List<Comment>();
+            //ImageUrls = new List<string>();
         }
         public int AnimalId { get; set; }
 
@@ -27,14 +27,20 @@ namespace SelaPetShop.Models.Dtos
         public string Description { get; set; }
 
         [Display(Name = "Category")]
-        public string Category { get; set; }
+        public Category Category { get; set; }
 
         [Display(Name = "Comments")]
-        public List<string> Comments { get; set; }
+        public ICollection<Comment> Comments { get; set; }
+        [Display(Name = "Comment")]
+        public string comment { get; set; }
 
-        [Required]
-        [StringLength(1000)]
-        [Display(Name = "Photo")]
-        public List<string> ImageUrls { get; set; }
+        [Display(Name = "Image")]
+        public Image Image { get; set; }
+
+        //[Required]
+        //[StringLength(1000)]
+        //[Display(Name = "Photo")]
+        //public string ImageUrl { get; set; }
+        ////public List<string> ImageUrls { get; set; }
     }
 }

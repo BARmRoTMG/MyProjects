@@ -9,8 +9,6 @@ namespace SelaPetShop.Models.Entities
         public Animal()
         {
             Comments = new HashSet<Comment>();
-            AnimalCategories = new HashSet<AnimalCategory>();
-            AnimalImages = new HashSet<AnimalImage>();
         }
 
         [Key]
@@ -20,14 +18,18 @@ namespace SelaPetShop.Models.Entities
         [Column(TypeName = "date")]
         public DateTime? Birthdate { get; set; }
         public string? Description { get; set; }
+        public int CategoryId { get; set; }
+        public int? ImageId { get; set; }
+
+        [ForeignKey("CategoryId")]
+        [InverseProperty("Animals")]
+        public virtual Category Category { get; set; } = null!;
+
+        [ForeignKey("ImageId")]
+        [InverseProperty("Animals")]
+        public virtual Image? Image { get; set; }
 
         [InverseProperty("Animal")]
         public virtual ICollection<Comment> Comments { get; set; }
-
-        [InverseProperty("Animal")]
-        public virtual ICollection<AnimalCategory> AnimalCategories { get; set; }
-
-        [InverseProperty("Animal")]
-        public virtual ICollection<AnimalImage> AnimalImages { get; set; }
     }
 }

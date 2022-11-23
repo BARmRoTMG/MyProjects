@@ -39,6 +39,12 @@ table tbody td{
     box-shadow:1px solid rgba(0,0,0,0.1);
 }
 
+.table tbody img {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+}
+
 
 
 

@@ -15,13 +15,9 @@ namespace SelaPetShop.Services.Mappers
                 Name = model.Name,
                 Birthdate = model.Birthdate,
                 Description = model.Description,
-                //Comments = model.Comments.Select(c => new UserCommentDto
-                //{
-                //    CommentId = c.CommentId,
-                //    Value = c.Value
-                //})
-                //Category = model.Category != null ? model.Category.CategoryName.ToString() : "",
-                //Comments = model.Comments.Where(c => !string.IsNullOrEmpty(c.Comment1)).Select(c => c.Comment1).ToList(),
+                Comments = model.Comments,
+                Category = model.Category,
+                Image = model.Image,
             };
         }
 
@@ -33,9 +29,9 @@ namespace SelaPetShop.Services.Mappers
                 Name = entity.Name,
                 Birthdate = entity.Birthdate,
                 Description = entity.Description,
-                //Category = entity.AnimalCategories.Select(c => c.Category).ToString(),
-                Comments = entity.Comments.Where(c => !string.IsNullOrEmpty(c.Value)).Select(c => c.Value).ToList(),
-                ImageUrls = entity.AnimalImages.Select(i => i.Image.Url).ToList()
+                Category = entity.Category,
+                Comments = entity.Comments,
+                Image = entity.Image,
             };
         }
     }

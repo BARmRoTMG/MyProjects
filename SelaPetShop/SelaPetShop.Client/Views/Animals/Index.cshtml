@@ -13,13 +13,13 @@
         <thead>
             <tr>
                 <th>
-                    @Html.DisplayNameFor(model => model.ImageUrls)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Category)
+                    @Html.DisplayNameFor(model => model.Image)
                 </th>
                 <th>
                     @Html.DisplayNameFor(model => model.Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Category)
                 </th>
                 <th>
                     @Html.DisplayNameFor(model => model.Description)
@@ -33,19 +33,18 @@
                 <th></th>
             </tr>
         </thead>
-        <img />
         <tbody>
             @foreach (var item in Model)
             {
                 <tr>
                     <td>
-                        <img src="@Html.DisplayFor(modelItem=> item.ImageUrls)" />
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Category)
+                        <img src="@Html.DisplayFor(modelItem=> item.Image.Url)" />
                     </td>
                     <td>
                         @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Category.Name)
                     </td>
                     <td>
                         @Html.DisplayFor(modelItem => item.Description)
@@ -53,9 +52,12 @@
                     <td>
                         @Html.DisplayFor(modelItem => item.Birthdate)
                     </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Comments)
-                    </td>
+                    @foreach (var comment in item.Comments)
+                    {
+                        <td>
+                            @Html.DisplayFor(modelItem => comment.Value)
+                        </td>
+                    }
                     <td>
                         <a asp-action="Edit" asp-route-id="@item.AnimalId">Edit</a> |
                         <a asp-action="Details" asp-route-id="@item.AnimalId">Details</a>
