@@ -16,12 +16,24 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = I:\Bar Projects\MyProjects\SelaPetShop\SelaPetShop.Client
 build_property._RazorSourceGeneratorDebug = 
 
-[I:/Bar Projects/MyProjects/SelaPetShop/SelaPetShop.Client/Views/Animals/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsc1xEZXRhaWxzLmNzaHRtbA==
+[I:/Bar Projects/MyProjects/SelaPetShop/SelaPetShop.Client/Views/Admin/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[I:/Bar Projects/MyProjects/SelaPetShop/SelaPetShop.Client/Views/Animals/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsc1xFZGl0LmNzaHRtbA==
+[I:/Bar Projects/MyProjects/SelaPetShop/SelaPetShop.Client/Views/Admin/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/Bar Projects/MyProjects/SelaPetShop/SelaPetShop.Client/Views/Admin/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/Bar Projects/MyProjects/SelaPetShop/SelaPetShop.Client/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/Bar Projects/MyProjects/SelaPetShop/SelaPetShop.Client/Views/Animals/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [I:/Bar Projects/MyProjects/SelaPetShop/SelaPetShop.Client/Views/Animals/Index.cshtml]

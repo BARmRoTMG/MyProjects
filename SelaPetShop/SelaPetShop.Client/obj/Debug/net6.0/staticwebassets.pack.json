@@ -5,12 +5,12 @@
       "PackagePath": "staticwebassets\\SelaPetShop.Client.bundle.scp.css"
     },
     {
-      "Id": "I:\\Bar Projects\\MyProjects\\SelaPetShop\\SelaPetShop.Client\\wwwroot\\css\\StyleSheet.css",
-      "PackagePath": "staticwebassets\\css\\StyleSheet.css"
-    },
-    {
       "Id": "I:\\Bar Projects\\MyProjects\\SelaPetShop\\SelaPetShop.Client\\wwwroot\\css\\animals.css",
       "PackagePath": "staticwebassets\\css\\animals.css"
+    },
+    {
+      "Id": "I:\\Bar Projects\\MyProjects\\SelaPetShop\\SelaPetShop.Client\\wwwroot\\css\\loginStyleSheet.css",
+      "PackagePath": "staticwebassets\\css\\loginStyleSheet.css"
     },
     {
       "Id": "I:\\Bar Projects\\MyProjects\\SelaPetShop\\SelaPetShop.Client\\wwwroot\\css\\site.css",

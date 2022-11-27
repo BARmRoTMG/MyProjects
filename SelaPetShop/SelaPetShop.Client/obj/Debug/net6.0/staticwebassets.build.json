@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Jdd9nczzkwXfovu9oQHeInHMEufZxiyIklvFt0igmsc=",
+  "Hash": "l8/+PLaHoIMQdJgJAdBmEtCUXfdrIYu1XOb/o8WbLS0=",
   "Source": "SelaPetShop.Client",
   "BasePath": "_content/SelaPetShop.Client",
   "Mode": "Default",
@@ -68,6 +68,23 @@
       "OriginalItemSpec": "wwwroot\\css\\animals.css"
     },
     {
+      "Identity": "I:\\Bar Projects\\MyProjects\\SelaPetShop\\SelaPetShop.Client\\wwwroot\\css\\loginStyleSheet.css",
+      "SourceId": "SelaPetShop.Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "I:\\Bar Projects\\MyProjects\\SelaPetShop\\SelaPetShop.Client\\wwwroot\\",
+      "BasePath": "_content/SelaPetShop.Client",
+      "RelativePath": "css/loginStyleSheet.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\loginStyleSheet.css"
+    },
+    {
       "Identity": "I:\\Bar Projects\\MyProjects\\SelaPetShop\\SelaPetShop.Client\\wwwroot\\css\\site.css",
       "SourceId": "SelaPetShop.Client",
       "SourceType": "Discovered",
@@ -83,23 +100,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
-    },
-    {
-      "Identity": "I:\\Bar Projects\\MyProjects\\SelaPetShop\\SelaPetShop.Client\\wwwroot\\css\\StyleSheet.css",
-      "SourceId": "SelaPetShop.Client",
-      "SourceType": "Discovered",
-      "ContentRoot": "I:\\Bar Projects\\MyProjects\\SelaPetShop\\SelaPetShop.Client\\wwwroot\\",
-      "BasePath": "_content/SelaPetShop.Client",
-      "RelativePath": "css/StyleSheet.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\StyleSheet.css"
     },
     {
       "Identity": "I:\\Bar Projects\\MyProjects\\SelaPetShop\\SelaPetShop.Client\\wwwroot\\favicon.ico",

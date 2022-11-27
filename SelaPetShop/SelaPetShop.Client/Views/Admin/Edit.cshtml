@@ -1,0 +1,119 @@
+﻿@model SelaPetShop.Models.Dtos.AnimalDto
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    @* <link rel="stylesheet" href="~/css/animals.css" />*@
+    <title>@ViewData["Title"]</title>
+</head>
+
+<body>
+    <style>
+        h1{
+            text-shadow: 1px 1px 2px red;
+            color: palegoldenrod;
+        }
+        .animal-edit-container {
+            background: white;
+            border: 2px solid black;
+            width: 600px;
+        }
+
+        .field {
+            width: 200px;
+            margin: 5px;
+        }
+
+        .field-name {
+            font-weight: bold;
+        }
+
+        .field-editor {
+            width: 350px;
+        }
+
+        .animal-icon {
+            width: 120px;
+            height: 120px;
+            display: inline-block;
+            margin-right: auto;
+            object-fit: fill;
+            border-radius: 50%;
+            background-color: #bbb;
+        }
+
+        .saveBtn {
+            margin-top: 15px;
+            margin-left: 4px;
+            margin-bottom: 15px;
+            width: 100px;
+        }
+    </style>
+    
+    <h1>Editing: @Html.DisplayFor(model => model.Name)</h1>
+    <hr />
+    <img class="animal-icon" src="@Html.DisplayFor(model => model.Image.Url)" />
+    <div class="animal-edit-container">
+        <a asp-action="Index">Back To Catalogue</a>
+        <form asp-action="Edit" asp-controller="Animals" method="post">
+            <div class="field">
+                <label class="field-name" asp-for="Name">@Html.DisplayNameFor(m => m.Name)</label>
+                <input class="field-editor" asp-for="Name" />
+            </div>
+            <div class="field">
+                <label class="field-name" asp-for="Description">@Html.DisplayNameFor(m => m.Description)</label>
+                <input class="field-editor" asp-for="Description" />
+            </div>
+            <div class="field">
+                <label class="field-name" asp-for="Birthdate">@Html.DisplayNameFor(m => m.Birthdate)</label>
+                <input class="field-editor" asp-for="Birthdate" />
+            </div>
+            <div class="field">
+                <label class="field-name" asp-for="Category">@Html.DisplayNameFor(m => m.Category)</label>
+                <input class="field-editor" type="hidden" asp-for="Category" />
+               
+            </div>
+         @*   <div>
+                <div method="post" enctype="multipart/form-data" asp-controller="Animal" asp-action="Edit">
+                    <div class="container">
+                        <div class="col-sm-12">
+                            <div class="col-md-6" style="float:left;">
+                                <input type="file" name="postedFiles" class="form-control" multiple />
+                            </div>
+                        </div>
+                        @if (ViewBag.Message != null)
+                        {
+                            <div class="col-sm-9">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Image Name</th>
+                                            <th>Image</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var item in (@ViewBag.Message as string).Split(','))
+                                        {
+                                            if (!string.IsNullOrEmpty(item))
+                                            {
+                                                <tr>
+                                                    <td>@item</td>
+                                                    <td><img src="~/Uploads/@item" title="@item" width="50" height="50" /></td>
+                                                </tr>
+                                            }
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>*@
+            
+            <input class="saveBtn" type="submit" value="Save" asp-controller="Admin" />
+        </form>
+    </div>
+</body>
+</html>

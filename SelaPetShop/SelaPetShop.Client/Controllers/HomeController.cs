@@ -4,6 +4,7 @@ using SelaPetShop.Client.Models;
 using SelaPetShop.Models.Dtos;
 using SelaPetShop.Models.Entities;
 using SelaPetShop.Models.Interfaces;
+using System.Collections.Immutable;
 using System.Diagnostics;
 
 namespace SelaPetShop.Client.Controllers
@@ -25,7 +26,16 @@ namespace SelaPetShop.Client.Controllers
 
         public IActionResult Index()
         {
-            return View(_context.Get().Result.Data.Select(p => _mapper.Map(p).Result));
+            //var numbersByOccurrence = from numbers in _context.Get().Result.Data.Select(p => _mapper.Map(p).Result.Comments)
+            //                          group numbers by numbers into g
+            //                          select new { Number = g.Key, Count = g.Count() };
+
+            //var limitedSize = numbersByOccurrence.OrderByDescending(n => n.Count).Take(5);
+
+            var animals = _context.Get().Result.Data.Select(p => _mapper.Map(p).Result);
+
+
+            return View(animals);
         }
 
         public IActionResult CataloguePage()

@@ -10,15 +10,19 @@
     <section class="container">
         <div class="card">
             <div class="card-image animal-1"></div>
-            @*<h2>@Html.DisplayFor(model => model.Name)</h2>*@
-            <h2>Shitzu</h2>
-            <p>Shih Tzus are known for their short snouts and large round eyes, as well as their ever growing coat, floppy ears, and short and stout posture.</p>
+            @foreach (var item in Model)
+            {
+                <h2>@Html.DisplayFor(model => item.Name)</h2>
+                <p>@Html.DisplayFor(model => item.Description)</p>
+            }
         </div>
         <div class="card">
             <div class="card-image animal-2"></div>
-            @*<h2>@Html.DisplayNameFor(model => model.Name)</h2>*@
-            <h2>Owl</h2>
-            <p>Owls are birds from the order Strigiformes, which includes over 200 species of mostly solitary and nocturnal birds of prey typified by an upright stance</p>
+            @foreach (var item in Model)
+            {
+                <h2>@Html.DisplayFor(model => item.Name)</h2>
+                <p>@Html.DisplayFor(model => item.Description)</p>
+            }
         </div>
     </section>
 </body>

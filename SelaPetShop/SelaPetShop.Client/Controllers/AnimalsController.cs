@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Hosting.Server;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Memory;
 using SelaPetShop.Client.Models;
 using SelaPetShop.Models.Dtos;
@@ -63,64 +64,44 @@ namespace SelaPetShop.Client.Controllers
             }
             catch (Exception ex)
             {
-                throw ex;
-            }
-        }
-
-        [HttpGet]
-        public async Task<ActionResult> Edit(int id)
-        {
-            return View();
-            //return View(_mapper.Map(await _contextAnimal.Get(id)));
-        }
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit(AnimalDto model)
-        {
-            // validate request, save data, redirect to list
-            if (model == null)
-                return BadRequest();
-
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
-
-            try
-            {
-                var animal = _contextAnimal.Update(await _mapper.Map(model));
-                return RedirectToAction("Index");
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError, ex);
+                throw new Exception(ex.Message);
             }
         }
 
         public async Task<ActionResult> Details(int id)
         {
-            return View(_mapper.Map(await _contextAnimal.Get(id)));
+            var animal = await _contextAnimal.Get(id);
+
+            if (animal == null)
+                return NotFound();
+
+
+            return View(await _mapper.Map(animal));
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create(AnimalDto model)
+        public async Task<ActionResult> AddComment(int id, IFormCollection collection)
         {
+            var animal = await _contextAnimal.Get(id);
+            var model = await _mapper.Map(animal);
+
             try
             {
                 model.Comments.Add(new Comment
                 {
-                    CommentId = model.Comments.Count + 1,
+                    CommentId = model.Comments.Count() + 1,
                     AnimalId = model.AnimalId,
-                    Value = model.Comments.ToString(),
-                });
-
+                    Value = collection["tbComment"].ToString(),
+            });
+                //await _contextAnimal.Update(model);
                 await _contextAnimal.Add(await _mapper.Map(model));
 
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch (Exception ex)
             {
-                return View();
+                return View(ex.Message);
             }
         }
 

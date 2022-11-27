@@ -1,0 +1,24 @@
+﻿---------TO DO LIST------------
+
+Home Page - 
+
+Add functional view of the top two commented animals 
+
+Catalogue Page - 
+
+Add filtering (Category, amount of commentt)
+Details (Animal Page) with option to add comments to the animal (Shows Name, age, pic, descrption and all comments).
+
+Admin Page - 
+
+Make the login functional and connected to database,
+when in log in go take control to AdminController and add create new, edit existing and remove.
+(Create needs to have working image uploading system)
+
+
+
+New Comment,
+Edit,
+Create New,
+Login
+
