@@ -80,7 +80,9 @@ li {
     margin-bottom: 15px;
     background-size: cover;
     border-radius: 15px 15px 0 0;
-    object-fit: cover;
+    object-fit: contain;
+    aspect-ratio: 3/2;
+    mix-blend-mode: color-burn;
 }
 
 .animal-1 {

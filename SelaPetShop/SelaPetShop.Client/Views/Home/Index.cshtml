@@ -1,28 +1,29 @@
-﻿@model IEnumerable<SelaPetShop.Models.Dtos.AnimalDto>
+﻿@model SelaPetShop.Models.Dtos.AnimalDto
 
 @{
     ViewData["Title"] = "Home Page";
 }
-
+<head>
+    <link rel="stylesheet" href="~/css/animals.css" />
+</head>
 <h3>Our Most Reviewed Animals!</h3>
 
 <body>
     <section class="container">
         <div class="card">
-            <div class="card-image animal-1"></div>
-            @foreach (var item in Model)
-            {
-                <h2>@Html.DisplayFor(model => item.Name)</h2>
-                <p>@Html.DisplayFor(model => item.Description)</p>
-            }
+            <img class="cardd-image" src="@Html.DisplayFor(model => model.Image.Url)" />
+            <h2>@Html.DisplayFor(model => model.Name)</h2>
+            <p>@Html.DisplayFor(model => model.Description)</p>
         </div>
+        @*        <div class="card">
+        <img class="cardd-image" src="@Html.DisplayFor(model => model.Image.Url)" />
+        <h2>@Html.DisplayFor(model => model.Name)</h2>
+        <p>@Html.DisplayFor(model => model.Description)</p>
+        </div>*@
         <div class="card">
-            <div class="card-image animal-2"></div>
-            @foreach (var item in Model)
-            {
-                <h2>@Html.DisplayFor(model => item.Name)</h2>
-                <p>@Html.DisplayFor(model => item.Description)</p>
-            }
+            <img class="cardd-image" src="~/lib/Animals/shitzu.jpg" />
+            <h2>Tofy</h2>
+            <p>Old Shitzu Dog</p>
         </div>
     </section>
 </body>

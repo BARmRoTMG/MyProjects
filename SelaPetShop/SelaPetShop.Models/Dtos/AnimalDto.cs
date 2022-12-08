@@ -10,22 +10,22 @@ namespace SelaPetShop.Models.Dtos
         public AnimalDto()
         {
             Comments = new List<Comment>();
-            //ImageUrls = new List<string>();
         }
+        [Key]
         public int AnimalId { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "A name must be given to the new animal.")]
         [StringLength(50)]
         [Display(Name = "Animal Name")]
         public string? Name { get; set; }
 
-        [Required]
         [Display(Name = "Birthdate")]
         public DateTime? Birthdate { get; set; }
 
         [Display(Name = "Description")]
         public string Description { get; set; }
 
+        [Required(ErrorMessage = "Please assign a category.")]
         [Display(Name = "Category")]
         public Category Category { get; set; }
 
@@ -36,11 +36,5 @@ namespace SelaPetShop.Models.Dtos
 
         [Display(Name = "Image")]
         public Image Image { get; set; }
-
-        //[Required]
-        //[StringLength(1000)]
-        //[Display(Name = "Photo")]
-        //public string ImageUrl { get; set; }
-        ////public List<string> ImageUrls { get; set; }
     }
 }

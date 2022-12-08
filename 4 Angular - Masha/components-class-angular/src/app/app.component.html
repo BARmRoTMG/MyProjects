@@ -1,0 +1,42 @@
+<!-- <h1>{{title}}</h1>
+
+<div *ngIf="show">
+  <app-timer></app-timer>
+</div>
+
+<button (click)="show=!show">Toggle</button>
+
+<a [href]="image" target="_blank">
+  <img [src]="image" [width]="width" />
+</a>
+<br>
+
+<input type="text" (change)="updateTitle ($event)" [value]="title"/>
+
+<button (click)="makeBigger()">Make Bigger</button>
+<button (click)="makeSmaller()">Make Smaller</button> -->
+
+<form>
+  <div>
+    <label>
+      Name: 
+      <input id="name" type="text" [value]="person.name" (input) = "updatePerson2(newName)" #newName/>
+    </label>
+  </div>
+  <div>
+    <label>
+      Age: 
+      <input id="age" type="number" [value]="person.age" (input) = "updatePerson2(newAge)" #newAge/>
+    </label>
+  </div>
+  <div>
+    <label>
+      Address:
+      <input id="address" type="text" [value]="person.address" (input) = "updatePerson2(newAddress)" #newAddress/>
+    </label>
+  </div>
+</form>
+
+<h3>{{person.name}}</h3>
+<h4>{{person.age}}</h4>
+<h4>{{person.address}}</h4>

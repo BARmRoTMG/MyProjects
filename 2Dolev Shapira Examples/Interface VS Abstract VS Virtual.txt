@@ -1,0 +1,7 @@
+	Interface			Abstract		Virtual
+Class	Can't Create new		Can't Create new	    	    X
+	Multiple Inheritance		Only 1 Inheritance
+	No implementations		With Implementations
+
+Method	      X			Must implement	Can override
+				No default value	Have default implementation

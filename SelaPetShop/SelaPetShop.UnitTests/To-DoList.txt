@@ -16,9 +16,7 @@ when in log in go take control to AdminController and add create new, edit exist
 (Create needs to have working image uploading system)
 
 
-
+------------------MISSING:-----------------------------------------
 New Comment,
-Edit,
-Create New,
-Login
-
+Edit partially working,
+Create New

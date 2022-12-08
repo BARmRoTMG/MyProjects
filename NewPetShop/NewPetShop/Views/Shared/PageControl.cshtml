@@ -1,0 +1,29 @@
+﻿@using NewPetShop.Data.Entities
+@model NewPetShop.Client.Models.PageControlViewModel
+
+<div class="page-contrtol">
+    <form asp-action="Index" asp-controller="Animal" method="post">
+        <input type="button" id="firstPage" value="&#60;&#60;" />
+        <input type="button" id="previousPage" value="&#60;" />
+
+        <input asp-for="PageNumber" id="pageNumber" name="pageNumber" type="number" min="1" max="@((Model.TotalCount / Model.PageSize)+((Model.TotalCount % Model.PageSize > 0)? 1: 0))" step="1" />
+
+        <input type="button" id="nextPage" value="&#62;" />
+        <input type="button" id="lastPage" value="&#62;&#62;" />
+
+        <p class="pagination-data">@($"{((Model.PageNumber - 1) * Model.PageSize) + 1} - {Model.PageNumber * Model.PageSize} of {Model.TotalCount}")</p>
+        <input asp-for="PageSize" id="pageSize" name="pageSize" type="number" min="5" max="100" step="5" />
+        <input asp-for="TotalCount" id="totalCount" name="totalCount" type="hidden" />
+        <br />
+        <input asp-for="Category" id="category" name="category" type="hidden" />
+        <select id="selectCategory">
+            <option value="0">All</option>
+            @foreach (CategoryEnum opt in ViewBag.CategoryOptions)
+            {
+                <option value="@opt">@opt.ToString()</option>
+            }
+        </select>
+
+        <input asp-for="Name" id="name" name="name" type="text" placeholder="Search by name" />
+    </form>
+</div>

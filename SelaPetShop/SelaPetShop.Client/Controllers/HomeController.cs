@@ -24,18 +24,20 @@ namespace SelaPetShop.Client.Controllers
             _mapper = mapper;
         }
 
-        public IActionResult Index()
+        public async Task <IActionResult> Index()
         {
             //var numbersByOccurrence = from numbers in _context.Get().Result.Data.Select(p => _mapper.Map(p).Result.Comments)
             //                          group numbers by numbers into g
             //                          select new { Number = g.Key, Count = g.Count() };
 
-            //var limitedSize = numbersByOccurrence.OrderByDescending(n => n.Count).Take(5);
-
-            var animals = _context.Get().Result.Data.Select(p => _mapper.Map(p).Result);
-
-
-            return View(animals);
+            //var limitedSize = numbersByOccurrence.OrderByDescending(n => n.Count).Take(2);
+            for (int i = 1; i <= 2; i++)
+            {
+                var animal = await _context.Get(i);
+                var model = await _mapper.Map(animal);
+                return View(model);
+            }
+            return View();
         }
 
         public IActionResult CataloguePage()

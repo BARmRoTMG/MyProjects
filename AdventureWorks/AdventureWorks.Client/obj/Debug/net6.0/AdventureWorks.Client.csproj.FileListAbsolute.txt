@@ -530,3 +530,13 @@ I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\obj\Debug\net6.0
 I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\obj\Debug\net6.0\AdventureWorks.Client.pdb
 I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\obj\Debug\net6.0\AdventureWorks.Client.genruntimeconfig.cache
 I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\obj\Debug\net6.0\ref\AdventureWorks.Client.dll
+I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\obj\Debug\net6.0\staticwebassets\msbuild.AdventureWorks.Client.Microsoft.AspNetCore.StaticWebAssets.props
+I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\obj\Debug\net6.0\staticwebassets\msbuild.build.AdventureWorks.Client.props
+I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.AdventureWorks.Client.props
+I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.AdventureWorks.Client.props
+I:\Bar Projects\MyProjects\AdventureWorks\AdventureWorks.Client\obj\Debug\net6.0\staticwebassets.pack.json

@@ -58,7 +58,7 @@ namespace AdventureWorks.Client.Models
                     BusinessEntityId = model.Id,
                     EmailAddress1 = eAddress
                 }).ToList(),
-                EmailPromotionKey = model.EmailPromotion??,
+                //EmailPromotionKey = model.EmailPromotion??,
                 PersonPhones = model.PhoneNumbers.Select(phone => 
                 new PersonPhone
                 {

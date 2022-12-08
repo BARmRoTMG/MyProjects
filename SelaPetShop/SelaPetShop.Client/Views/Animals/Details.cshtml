@@ -73,9 +73,8 @@
                 <div>
                     <label class="comment-label">New Comment:</label>
                 </div>
-                <div>
-                    <input class="comment-text" id="tbComment" type="text" />
-                    @*@Html.TextBoxFor(model => model.comment, new { @class = "form-control", @placeholder="Text Here.."})*@
+                <div>>
+                    @Html.TextBoxFor(model => model.comment, new { @class = "form-control", @placeholder="Text Here.."})
                 </div>
                 <div>
                     <input type="submit" value="Submit" />

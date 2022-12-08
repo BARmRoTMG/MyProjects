@@ -22,7 +22,6 @@ namespace SelaPetShop.Client.Controllers
         private readonly IRepository<Image> _contextImage;
         private readonly IMapper<Animal, AnimalDto> _mapper;
         private readonly IMemoryCache _cache;
-        private IWebHostEnvironment _environment;
 
         public AnimalsController(IRepository<Animal> context, IMemoryCache cache, IMapper<Animal, AnimalDto> mapper, IRepository<Category> contextCategory, IRepository<Image> contextImage)
         {
@@ -81,21 +80,19 @@ namespace SelaPetShop.Client.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> AddComment(int id, IFormCollection collection)
+        public async Task<ActionResult> AddComment(int id)
         {
-            var animal = await _contextAnimal.Get(id);
-            var model = await _mapper.Map(animal);
+            var model = await _mapper.Map(await _contextAnimal.Get(id));
 
             try
             {
                 model.Comments.Add(new Comment
                 {
-                    CommentId = model.Comments.Count() + 1,
-                    AnimalId = model.AnimalId,
-                    Value = collection["tbComment"].ToString(),
-            });
-                //await _contextAnimal.Update(model);
-                await _contextAnimal.Add(await _mapper.Map(model));
+                    //CommentId,
+                    AnimalId = id,
+                    Value = model.Comments.ToString()
+                }) ;
+                await _contextAnimal.Update(await _mapper.Map(model));
 
                 return RedirectToAction(nameof(Index));
             }
@@ -103,32 +100,6 @@ namespace SelaPetShop.Client.Controllers
             {
                 return View(ex.Message);
             }
-        }
-
-        [HttpPost]
-        public async Task<ActionResult> UploadFiles(List<IFormFile> postedFiles)
-        {
-            string wwwPath = this._environment.WebRootPath;
-            string contentPath = this._environment.ContentRootPath;
-
-            string path = Path.Combine(this._environment.WebRootPath, "Uploads");
-            if (!Directory.Exists(path))
-            {
-                Directory.CreateDirectory(path);
-            }
-
-            List<string> uploadedFiles = new List<string>();
-            foreach (IFormFile postedFile in postedFiles)
-            {
-                string fileName = Path.GetFileName(postedFile.FileName);
-                using (FileStream stream = new FileStream(Path.Combine(path, fileName), FileMode.Create))
-                {
-                    postedFile.CopyTo(stream);
-                    uploadedFiles.Add(fileName);
-                    ViewBag.Message += fileName + ",";
-                }
-            }
-            return View();
         }
     }
 }

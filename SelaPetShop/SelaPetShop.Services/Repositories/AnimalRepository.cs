@@ -42,7 +42,7 @@ namespace SelaPetShop.Services.Repositories
             var animal = await _context.Animals
                 .Include(c => c.Category)
                 .Include(i => i.Image)
-                .Include(c => c.Comments) //Maybe not necessary
+                .Include(c => c.Comments)
                 .SingleOrDefaultAsync(a => a.AnimalId == id);
 
             if (animal == null)
@@ -75,11 +75,12 @@ namespace SelaPetShop.Services.Repositories
             };
         }
 
-        public async Task<Animal> Update(Animal entity)
+        public async Task<Animal> Update(Animal entity) //problem with update method
         {
+
             var res = _context.Animals.Update(entity);
-            _context.SaveChanges();
-            _context.Entry(entity).Reload();
+            await _context.SaveChangesAsync();
+
 
             if (res == null)
                 _context.Entry(entity).Reload();
