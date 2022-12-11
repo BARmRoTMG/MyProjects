@@ -10,5 +10,6 @@ namespace NewPetShop.Data.Interfaces
         T Get(int id);
         FilterResponse<T> Get(Filter filter = null);
         T Update(T entity);
+        MostCommentedResponse<T> GetMostCommented();
     }
 }

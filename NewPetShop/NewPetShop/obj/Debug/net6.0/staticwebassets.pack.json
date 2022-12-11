@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\css\\animals.css"
     },
     {
+      "Id": "I:\\Bar Projects\\MyProjects\\NewPetShop\\NewPetShop\\wwwroot\\css\\home.css",
+      "PackagePath": "staticwebassets\\css\\home.css"
+    },
+    {
       "Id": "I:\\Bar Projects\\MyProjects\\NewPetShop\\NewPetShop\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

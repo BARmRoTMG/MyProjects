@@ -1,8 +1,27 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model IEnumerable<NewPetShop.Client.Models.AnimalDto>
+
+@{
+    ViewData["Title"] = "Home";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:300,400,600i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/home.css" />
+</head>
+
+<h3>Our Most Reviewed Animals</h3>
+<br />
+<br />
+
+<div>
+    @foreach (var item in Model)
+    {
+        <div class="card">
+            <img src="@Html.DisplayFor(modelItem => item.Image.Url)" alt="@Html.DisplayFor(modelItem => item.Name)" style="width:100%">
+            <h1>@Html.DisplayFor(modelItem => item.Name)</h1>
+            <p class="title">@Html.DisplayFor(modelItem => item.Category.Name)</p>
+            <p>@Html.DisplayFor(modelItem => item.Description)</p>
+            <p><a class="button" asp-area="" asp-controller="Animal" asp-action="Details" asp-route-id="@item.AnimalId">Details</a></p>
+        </div>
+    }
 </div>

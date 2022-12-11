@@ -28,7 +28,7 @@ namespace NewPetShop.Data.Entities
         public virtual Category Category { get; set; } = null!;
 
         [InverseProperty("Animal")]
-        public virtual ICollection<Comment> Comments { get; set; } //= new List<Comment>();
+        public virtual ICollection<Comment> Comments { get; set; }
 
         [ForeignKey("ImageId")]
         [InverseProperty("Animals")]

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JJ2gppvqJtPHO2MuLNcigBFsDWKNP+Z3zTSrraUp29k=",
+  "Hash": "c9JmtHDQbVEf4ineBBdd0ESr/rHCV9jfpn0YaF3JwBY=",
   "Source": "NewPetShop.Client",
   "BasePath": "_content/NewPetShop.Client",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\animals.css"
+    },
+    {
+      "Identity": "I:\\Bar Projects\\MyProjects\\NewPetShop\\NewPetShop\\wwwroot\\css\\home.css",
+      "SourceId": "NewPetShop.Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "I:\\Bar Projects\\MyProjects\\NewPetShop\\NewPetShop\\wwwroot\\",
+      "BasePath": "_content/NewPetShop.Client",
+      "RelativePath": "css/home.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\home.css"
     },
     {
       "Identity": "I:\\Bar Projects\\MyProjects\\NewPetShop\\NewPetShop\\wwwroot\\css\\site.css",

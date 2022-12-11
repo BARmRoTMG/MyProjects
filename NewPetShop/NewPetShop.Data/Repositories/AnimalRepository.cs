@@ -5,6 +5,7 @@ using NewPetShop.Data.Exceptions;
 using NewPetShop.Data.Filters;
 using NewPetShop.Data.Interfaces;
 using System;
+using System.Diagnostics;
 
 namespace NewPetShop.Data.Repositories
 {
@@ -83,7 +84,7 @@ namespace NewPetShop.Data.Repositories
                 .Skip((filter.PageNumber - 1) * filter.PageSize)
                 .Take(filter.PageSize)
                 .ToList(),
-                Count =  all.Count()
+                Count = all.Count()
             };
         }
 
@@ -96,19 +97,30 @@ namespace NewPetShop.Data.Repositories
             return entity;
         }
 
-        public Animal GetMostCommented()
+        public MostCommentedResponse<Animal> GetMostCommented()
         {
-            var counter = 0;
+            List<Animal> mostCommentedList = new List<Animal>();
 
-            var all = _context.Animals.Include(c => c.Comments).ToList();
+            var all = _context.Animals
+                .Include(c => c.Comments)
+                .ToList();
 
-            foreach(var animal in all)
+            var query = all.GroupBy(a => a.Comments).OrderByDescending(g => g.Count()).Take(2).First().Key;
+            var query2 = all.GroupBy(a => a.Comments).OrderByDescending(g => g.Count()).Take(2).Last().Key;
+
+            var selected = query.First();
+            var selected2 = query2.First();
+
+            var animal = Get(selected.AnimalId);
+            var animal2 = Get(selected2.AnimalId);
+
+            mostCommentedList.Add(animal);
+            mostCommentedList.Add(animal2);
+
+            return new MostCommentedResponse<Animal>
             {
-                animal.Comments.Where(a => a.AnimalId == animal.AnimalId);
-                counter++;
-            }+
-
-            return all;
+                Data = mostCommentedList,
+            };
         }
     }
 }
