@@ -1,0 +1,52 @@
+﻿@model IntervalQueue.Client.Models.CustomerDto
+
+<style>
+    .currentTable {
+        width: 320px;
+        margin-top: 45%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .btnNxt{
+        margin-top: 20px;
+    }
+</style>
+
+<h1>Current</h1>
+<div class="currentView">
+    <table class="currentTable">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(m => m.Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(m => m.SerialNumber)
+                </th>
+                <th>
+                    Entered At
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    @Html.DisplayFor(m => m.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(m => m.SerialNumber)
+                </td>
+                <td>
+                    @ViewBag.EnteredAtTime
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <form asp-action="CallNext">
+        <input type="submit" value="Call Next" class="btn btn-primary" />
+        <div>
+            <h4 style="color:red">@ViewBag.ErrorMessage</h4>
+        </div>
+    </form>
+</div>

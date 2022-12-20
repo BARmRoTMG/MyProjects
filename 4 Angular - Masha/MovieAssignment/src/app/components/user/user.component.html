@@ -1,0 +1,26 @@
+<br>
+<br>
+<br>
+
+<h2>{{user.name}}</h2>
+<h2>{{user.username}}</h2>
+<h2>{{user.password}}</h2>
+<h2>{{user.email}}</h2>
+
+<label>
+    Name: <input type="text" [value]="user.name " id="name" #name/>
+</label>
+<br>
+<label>
+    Username: <input type="text"  [value]="user.username" id="username" #username/>
+</label>
+<br>
+<label>5
+    Password: <input type="number" [value]="user.password" id="password" #password />
+</label>
+<br>
+<label>
+    Email: <input type="text" [value]="user.email"  id="email" #email/>
+</label>
+<br>
+<button (click)="update(name, username, password, email)">Submit</button>

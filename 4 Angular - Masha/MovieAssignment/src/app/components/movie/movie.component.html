@@ -1,0 +1,29 @@
+<div>
+    <img src={{movieData?.image}} [width] = 300 [height]="500"/>
+    <h1>{{movieData?.name}}</h1>
+    <p>{{movieData?.year}}</p>
+    <label [ngStyle]="{'color': movieData?.isWatched == true ? 'green' : 'red'}">
+        Watched Movie
+        <input type="checkbox" [checked]="movieData?.isWatched" (change)="toggleIsWatched($event)">
+    </label>
+    <p>{{movieData?.description}}</p>
+
+    <!-- <label>
+        Name: <input type="text" [value]="movieData?.name" id="name" #name />
+    </label>
+    
+    
+    <label>
+        Year: <input type="number" [value]="movieData?.year"  id="year" #year />
+    </label>
+    
+    <label>
+        Description: <input type="text" [value]="movieData?.description"  id="description" #description  />
+    </label> -->
+    <br>
+    <br>
+    <!-- <button (click)="updateFUNCTION(name, year, description)">Update Details</button> -->
+    <button (click)="onUpdateHandler()">Update</button>
+    <button (click)="onDeleteHandler()">Delete</button>
+    <button (click)="onDuplicateHandler()">Duplicate</button>
+</div>

@@ -1,0 +1,18 @@
+﻿<link rel="stylesheet" href="~/css//queueStyle.css" />
+
+<div class="queuePage">
+    @*New Customer Queue Entery*@
+    <div class="queueEntryView">
+        @Html.Partial("QueueEntry", ViewData["QueueEntry"])
+    </div>
+
+    @*Customers Queue List*@
+    <div class="customersQueueView">
+        @Html.Partial("QueueList", ViewData["QueueList"])
+    </div>
+
+    @*Current Customer View*@
+    <div class="currentCustomerView">
+        @Html.Partial("CurrentCustomer", ViewData["CurrentCustomer"])
+    </div>
+</div>

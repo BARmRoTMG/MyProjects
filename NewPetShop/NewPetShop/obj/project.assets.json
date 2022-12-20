@@ -10419,19 +10419,19 @@
   },
   "packageFolders": {
     "C:\\Users\\barba\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "I:\\Bar Projects\\MyProjects\\NewPetShop\\NewPetShop\\NewPetShop.Client.csproj",
+      "projectUniqueName": "D:\\Bar Projects\\MyProjects\\NewPetShop\\NewPetShop\\NewPetShop.Client.csproj",
       "projectName": "NewPetShop.Client",
-      "projectPath": "I:\\Bar Projects\\MyProjects\\NewPetShop\\NewPetShop\\NewPetShop.Client.csproj",
+      "projectPath": "D:\\Bar Projects\\MyProjects\\NewPetShop\\NewPetShop\\NewPetShop.Client.csproj",
       "packagesPath": "C:\\Users\\barba\\.nuget\\packages\\",
-      "outputPath": "I:\\Bar Projects\\MyProjects\\NewPetShop\\NewPetShop\\obj\\",
+      "outputPath": "D:\\Bar Projects\\MyProjects\\NewPetShop\\NewPetShop\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
         "C:\\Users\\barba\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -10449,8 +10449,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "I:\\Bar Projects\\MyProjects\\NewPetShop\\NewPetShop.Data\\NewPetShop.Data.csproj": {
-              "projectPath": "I:\\Bar Projects\\MyProjects\\NewPetShop\\NewPetShop.Data\\NewPetShop.Data.csproj"
+            "D:\\Bar Projects\\MyProjects\\NewPetShop\\NewPetShop.Data\\NewPetShop.Data.csproj": {
+              "projectPath": "D:\\Bar Projects\\MyProjects\\NewPetShop\\NewPetShop.Data\\NewPetShop.Data.csproj"
             }
           }
         }
@@ -10495,7 +10495,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

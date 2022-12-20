@@ -1,0 +1,14 @@
+D:\Bar Projects\MyProjects\IntervalQueue\IntervalQueue.Data\bin\Debug\net6.0\IntervalQueue.Data.deps.json
+D:\Bar Projects\MyProjects\IntervalQueue\IntervalQueue.Data\bin\Debug\net6.0\IntervalQueue.Data.runtimeconfig.json
+D:\Bar Projects\MyProjects\IntervalQueue\IntervalQueue.Data\bin\Debug\net6.0\IntervalQueue.Data.dll
+D:\Bar Projects\MyProjects\IntervalQueue\IntervalQueue.Data\bin\Debug\net6.0\IntervalQueue.Data.pdb
+D:\Bar Projects\MyProjects\IntervalQueue\IntervalQueue.Data\obj\Debug\net6.0\IntervalQueue.Data.csproj.AssemblyReference.cache
+D:\Bar Projects\MyProjects\IntervalQueue\IntervalQueue.Data\obj\Debug\net6.0\IntervalQueue.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Bar Projects\MyProjects\IntervalQueue\IntervalQueue.Data\obj\Debug\net6.0\IntervalQueue.Data.AssemblyInfoInputs.cache
+D:\Bar Projects\MyProjects\IntervalQueue\IntervalQueue.Data\obj\Debug\net6.0\IntervalQueue.Data.AssemblyInfo.cs
+D:\Bar Projects\MyProjects\IntervalQueue\IntervalQueue.Data\obj\Debug\net6.0\IntervalQueue.Data.csproj.CoreCompileInputs.cache
+D:\Bar Projects\MyProjects\IntervalQueue\IntervalQueue.Data\obj\Debug\net6.0\IntervalQueue.Data.dll
+D:\Bar Projects\MyProjects\IntervalQueue\IntervalQueue.Data\obj\Debug\net6.0\refint\IntervalQueue.Data.dll
+D:\Bar Projects\MyProjects\IntervalQueue\IntervalQueue.Data\obj\Debug\net6.0\IntervalQueue.Data.pdb
+D:\Bar Projects\MyProjects\IntervalQueue\IntervalQueue.Data\obj\Debug\net6.0\IntervalQueue.Data.genruntimeconfig.cache
+D:\Bar Projects\MyProjects\IntervalQueue\IntervalQueue.Data\obj\Debug\net6.0\ref\IntervalQueue.Data.dll

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eBOtT9rMYZ4pOuzEOefcD8zISP1VH8OVltpxpB+NYGethL0/6tQxBTNDl2ypZcG/l73TZOuxvksf7Zves8kuxw==",
+  "dgSpecHash": "2vHHzTuFSGffXoxTIKlC9VyruA0sZkS2ATTOEpvHY5tYmy73AGBd3UVXva0LrMH4cHd22UUVB9NSOKt1kiMHUQ==",
   "success": true,
-  "projectFilePath": "I:\\Bar Projects\\MyProjects\\NewPetShop\\NewPetShop\\NewPetShop.Client.csproj",
+  "projectFilePath": "D:\\Bar Projects\\MyProjects\\NewPetShop\\NewPetShop\\NewPetShop.Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\barba\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\barba\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

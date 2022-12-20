@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\IntervalQueue.Client.props" />
+</Project>

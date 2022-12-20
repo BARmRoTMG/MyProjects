@@ -1,0 +1,28 @@
+﻿.queuePage {
+    padding: 20px;
+    align-content: center;
+}
+
+.queueEntryView {
+    width: 350px;
+    height: 600px;
+    float: left;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.customersQueueView {
+    width: 500px;
+    height: 600px;
+    float: left;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.currentCustomerView {
+    width: 350px;
+    height: 600px;
+    float: left;
+    padding: 20px;
+    border: 1px solid black;
+}

@@ -1,16 +1,5 @@
 class Movie {
-    name: string;
-    year: number;
-    description: string;
-    image: string;
-    isWatched: boolean;
-
-    constructor(name: string, year: number, description: string, image: string, isWatched: boolean) {
-        this.name = name;
-        this.year = year;
-        this.description = description;
-        this.image = image;
-        this.isWatched = isWatched;
+    constructor(public name:string, public year:number, public description:string, public image:string, public isWatched:boolean) {
     }
 }
 

@@ -12,3 +12,17 @@ I:\Bar Projects\MyProjects\NewPetShop\NewPetShop.Data\obj\Debug\net6.0\refint\Ne
 I:\Bar Projects\MyProjects\NewPetShop\NewPetShop.Data\obj\Debug\net6.0\NewPetShop.Data.pdb
 I:\Bar Projects\MyProjects\NewPetShop\NewPetShop.Data\obj\Debug\net6.0\NewPetShop.Data.genruntimeconfig.cache
 I:\Bar Projects\MyProjects\NewPetShop\NewPetShop.Data\obj\Debug\net6.0\ref\NewPetShop.Data.dll
+D:\Bar Projects\MyProjects\NewPetShop\NewPetShop.Data\bin\Debug\net6.0\NewPetShop.Data.deps.json
+D:\Bar Projects\MyProjects\NewPetShop\NewPetShop.Data\bin\Debug\net6.0\NewPetShop.Data.runtimeconfig.json
+D:\Bar Projects\MyProjects\NewPetShop\NewPetShop.Data\bin\Debug\net6.0\NewPetShop.Data.dll
+D:\Bar Projects\MyProjects\NewPetShop\NewPetShop.Data\bin\Debug\net6.0\NewPetShop.Data.pdb
+D:\Bar Projects\MyProjects\NewPetShop\NewPetShop.Data\obj\Debug\net6.0\NewPetShop.Data.csproj.AssemblyReference.cache
+D:\Bar Projects\MyProjects\NewPetShop\NewPetShop.Data\obj\Debug\net6.0\NewPetShop.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Bar Projects\MyProjects\NewPetShop\NewPetShop.Data\obj\Debug\net6.0\NewPetShop.Data.AssemblyInfoInputs.cache
+D:\Bar Projects\MyProjects\NewPetShop\NewPetShop.Data\obj\Debug\net6.0\NewPetShop.Data.AssemblyInfo.cs
+D:\Bar Projects\MyProjects\NewPetShop\NewPetShop.Data\obj\Debug\net6.0\NewPetShop.Data.csproj.CoreCompileInputs.cache
+D:\Bar Projects\MyProjects\NewPetShop\NewPetShop.Data\obj\Debug\net6.0\NewPetShop.Data.dll
+D:\Bar Projects\MyProjects\NewPetShop\NewPetShop.Data\obj\Debug\net6.0\refint\NewPetShop.Data.dll
+D:\Bar Projects\MyProjects\NewPetShop\NewPetShop.Data\obj\Debug\net6.0\NewPetShop.Data.pdb
+D:\Bar Projects\MyProjects\NewPetShop\NewPetShop.Data\obj\Debug\net6.0\NewPetShop.Data.genruntimeconfig.cache
+D:\Bar Projects\MyProjects\NewPetShop\NewPetShop.Data\obj\Debug\net6.0\ref\NewPetShop.Data.dll
