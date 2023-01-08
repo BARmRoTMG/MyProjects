@@ -1,0 +1,7 @@
+D:\Bar Projects\MyProjects\FirstAzureApp\FirstAzureApp\obj\Release\net7.0\PubTmp\Out\FirstAzureApp.exe
+D:\Bar Projects\MyProjects\FirstAzureApp\FirstAzureApp\obj\Release\net7.0\PubTmp\Out\appsettings.Development.json
+D:\Bar Projects\MyProjects\FirstAzureApp\FirstAzureApp\obj\Release\net7.0\PubTmp\Out\appsettings.json
+D:\Bar Projects\MyProjects\FirstAzureApp\FirstAzureApp\obj\Release\net7.0\PubTmp\Out\FirstAzureApp.dll
+D:\Bar Projects\MyProjects\FirstAzureApp\FirstAzureApp\obj\Release\net7.0\PubTmp\Out\FirstAzureApp.deps.json
+D:\Bar Projects\MyProjects\FirstAzureApp\FirstAzureApp\obj\Release\net7.0\PubTmp\Out\FirstAzureApp.runtimeconfig.json
+D:\Bar Projects\MyProjects\FirstAzureApp\FirstAzureApp\obj\Release\net7.0\PubTmp\Out\FirstAzureApp.pdb

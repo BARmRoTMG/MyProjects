@@ -56,7 +56,7 @@ namespace IntervalQueue.Client.Controllers
             };
 
             _context.Add(newCustomer); //Enter new queue to database
-            _queue.Enqueue(newCustomer); //Enter new queue to queue list.
+            _queue.Enqueue(newCustomer); //Enter new queue to local queue list.
             UpdateQueue();
 
             return RedirectToAction("Index");

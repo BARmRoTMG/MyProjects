@@ -1,0 +1,20 @@
+﻿@model List<string>
+
+<form 
+    method="post" 
+    enctype="multipart/form-data"
+    asp-controller="Gallery"
+    asp-action="Save">
+
+    <input type="file" name="img" accept="image/*" multiple required/>
+    <button>Upload</button>
+</form>
+
+<ul>
+    @foreach (var file in Model)
+    {
+        <li>
+            <img src="@($"/imgs/{file}")" style="width: 100px" />
+        </li>
+    }
+</ul>

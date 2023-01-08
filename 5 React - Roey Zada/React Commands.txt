@@ -1,0 +1,4 @@
+Create New Project - npx create-react-app [Project Name]
+Start App - npm start
+Open Folder in Visual Code - code .
+Go to Project Folder - cd [project folder name]

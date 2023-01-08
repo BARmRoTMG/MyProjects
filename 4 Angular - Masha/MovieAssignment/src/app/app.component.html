@@ -1,3 +1,27 @@
 <movie-list ></movie-list>
 
-<user></user>
+<div>
+    <h2>Add A New Movie</h2>
+    <label>
+        Title: <input type="text" [(ngModel)]="newMovie.name"/>
+    </label>
+    <label>
+        Year: <input type="number" [(ngModel)]="newMovie.year"/>
+    </label>
+    <label>
+        Description: <input type="text" [(ngModel)]="newMovie.description"/>
+    </label>
+    <label>
+        Image URL: <input type="text" [(ngModel)]="newMovie.image"/>
+    </label>
+    <div>
+        <button (click)="addMovie()">Add Movie</button>
+    </div>
+</div>
+
+<div *ngIf="isError">
+    Server Error, please try again later...
+</div>
+
+
+<!-- <user></user> -->

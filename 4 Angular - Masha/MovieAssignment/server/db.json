@@ -1,0 +1,36 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "name": "The Wolf of Wall Street",
+      "year": 2013,
+      "description": "The Wolf of Wall Street is a 2013 American biographical black comedy crime film directed by Martin Scorsese",
+      "image": "https://m.media-amazon.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@._V1_.jpg",
+      "isWatched": true
+    },
+    {
+      "id": 2,
+      "name": "Shrek",
+      "year": 2001,
+      "description": "Shrek is a 2001 American computer-animated fantasy comedy film loosely based on the 1990 book of the same name by William Steig.",
+      "image": "https://m.media-amazon.com/images/I/81zg+bAdjVS._RI_.jpg",
+      "isWatched": true
+    },
+    {
+      "id": 3,
+      "name": "Avatar",
+      "year": 2009,
+      "description": "Epic science fiction film directed, written, co-produced and co-edited by James Cameron.",
+      "image": "https://upload.wikimedia.org/wikipedia/en/d/d6/Avatar_%282009_film%29_poster.jpg",
+      "isWatched": false
+    },
+    {
+      "id": 4,
+      "name": "New Movie Test",
+      "year": 3000,
+      "description": "A new movie test",
+      "image": "https://randomwordgenerator.com/img/picture-generator/g33815e6df811c258a606a9a313eb798de88de92031fc196fe0bb1d4bd4fa6be7c59d43cfbfedd1268b185db543d21ba8_640.jpg",
+      "isWatched": false
+    }
+  ]
+}

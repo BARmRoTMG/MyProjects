@@ -1,0 +1,5 @@
+Start new project: ng new my-angular-project
+Start Application: ng serve
+Add New Component: ng g c components/title(example)
+Start Json Db Server: json-server --watch ./server/db.json
+
