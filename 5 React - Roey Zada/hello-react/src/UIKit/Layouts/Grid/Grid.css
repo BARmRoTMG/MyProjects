@@ -1,0 +1,19 @@
+.Grid {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 60px 1fr 30px;
+}
+
+.Grid > :nth-child(1) {
+    color: white;
+    background-color:#333;
+}
+
+.Grid > :nth-child(3) {
+    color: #333;
+    background-color: gray;
+}
+
+.Grid > * {
+    padding: 10px;
+}

@@ -1,0 +1,40 @@
+<h1>Add New Listing</h1>
+<div class="container">
+    <div>
+        <div class="form-field">
+            <label>Product Name: </label>
+            <input type="text" [(ngModel)]="newProduct.name" required />
+        </div>
+        <div class="form-field">
+            <label>Description: </label>
+            <input type="text" [(ngModel)]="newProduct.description" required/>
+        </div>
+        <div class="form-field">
+            <label>Image URL: </label>
+            <input type="text" [(ngModel)]="newProduct.image" required/>
+        </div>
+        <div class="form-field">
+            <label>Price: </label>
+            <input type="number" [(ngModel)]="newProduct.price" required/>
+        </div>
+
+        <br>
+        <h3 class="header">Your Details</h3>
+        <div>
+            <div class="form-field">
+                <label>Phone Number: </label>
+                <input type="text" [(ngModel)]="newProduct.sellerPhone" required/>
+            </div>
+            <div class="form-field">
+                <label>Location: </label>
+                <input type="text" [(ngModel)]="newProduct.productLocation" required/>
+            </div>
+        </div>
+        <br>
+        <button class="btn" (click)="addProduct()">Add Listing</button>
+        <h3 *ngIf="isCompleted" style="color: green;">Listing added successfully!</h3>
+    </div>
+</div>
+<div *ngIf="isError">
+    Server Error, please try again later...
+</div>

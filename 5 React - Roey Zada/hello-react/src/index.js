@@ -1,8 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './Components/App'
+import { BrowserRouter } from 'react-router-dom';
+
+import './index.css';
+
+import App from './App'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <App age={24}></App>
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
 );

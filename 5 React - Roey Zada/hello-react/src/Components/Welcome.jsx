@@ -1,3 +1,5 @@
+import './Welcome.css';
+
 const Welcome = (props) => {
 
     const name = props.name;
@@ -5,7 +7,7 @@ const Welcome = (props) => {
 
     return (
         <>
-            <h1>Hello {name}, Age: {age}</h1>
+            <h1 className="Welcome">Hello {name}, Age: {age}</h1>
             {props.children}
         </>
     )

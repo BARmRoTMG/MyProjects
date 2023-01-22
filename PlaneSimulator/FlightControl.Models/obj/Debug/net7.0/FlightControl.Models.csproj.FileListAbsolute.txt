@@ -1,0 +1,12 @@
+D:\Bar Projects\MyProjects\PlaneSimulator\FlightControl.Models\bin\Debug\net7.0\FlightControl.Models.deps.json
+D:\Bar Projects\MyProjects\PlaneSimulator\FlightControl.Models\bin\Debug\net7.0\FlightControl.Models.dll
+D:\Bar Projects\MyProjects\PlaneSimulator\FlightControl.Models\bin\Debug\net7.0\FlightControl.Models.pdb
+D:\Bar Projects\MyProjects\PlaneSimulator\FlightControl.Models\obj\Debug\net7.0\FlightControl.Models.csproj.AssemblyReference.cache
+D:\Bar Projects\MyProjects\PlaneSimulator\FlightControl.Models\obj\Debug\net7.0\FlightControl.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\Bar Projects\MyProjects\PlaneSimulator\FlightControl.Models\obj\Debug\net7.0\FlightControl.Models.AssemblyInfoInputs.cache
+D:\Bar Projects\MyProjects\PlaneSimulator\FlightControl.Models\obj\Debug\net7.0\FlightControl.Models.AssemblyInfo.cs
+D:\Bar Projects\MyProjects\PlaneSimulator\FlightControl.Models\obj\Debug\net7.0\FlightControl.Models.csproj.CoreCompileInputs.cache
+D:\Bar Projects\MyProjects\PlaneSimulator\FlightControl.Models\obj\Debug\net7.0\FlightControl.Models.dll
+D:\Bar Projects\MyProjects\PlaneSimulator\FlightControl.Models\obj\Debug\net7.0\refint\FlightControl.Models.dll
+D:\Bar Projects\MyProjects\PlaneSimulator\FlightControl.Models\obj\Debug\net7.0\FlightControl.Models.pdb
+D:\Bar Projects\MyProjects\PlaneSimulator\FlightControl.Models\obj\Debug\net7.0\ref\FlightControl.Models.dll

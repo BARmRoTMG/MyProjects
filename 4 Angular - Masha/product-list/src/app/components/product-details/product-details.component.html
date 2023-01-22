@@ -1,0 +1,15 @@
+<h1>{{product?.name}}</h1>
+
+<div>
+    <img [src]="product?.image" width="300" />
+    <p>Listed  on: {{product?.publish}}</p>
+    <h3>{{product?.description}}</h3>
+    <h4>Price: {{product?.price}}</h4>
+    <p>Location: {{product?.productLocation}}</p>
+    <p>Seller's Phone: {{product?.sellerPhone}}</p>
+</div>
+
+<div>
+    <button class="btn" (click)="onDelete(product!.id)" routerLink="/list">Purchase</button>
+    <button class="btn" routerLink="/list" routerLinkActive="active">Back To List</button>
+</div>

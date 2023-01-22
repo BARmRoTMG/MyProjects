@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "aAfBDdnkunl96Sfua/rDIWqGpTSc4BtdftDAFGLJ9J0=",
+  "Source": "FlightControl.Server",
+  "BasePath": "_content/FlightControl.Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
