@@ -12,3 +12,17 @@ D:\Bar Projects\MyProjects\IntervalQueue\IntervalQueue.Data\obj\Debug\net6.0\ref
 D:\Bar Projects\MyProjects\IntervalQueue\IntervalQueue.Data\obj\Debug\net6.0\IntervalQueue.Data.pdb
 D:\Bar Projects\MyProjects\IntervalQueue\IntervalQueue.Data\obj\Debug\net6.0\IntervalQueue.Data.genruntimeconfig.cache
 D:\Bar Projects\MyProjects\IntervalQueue\IntervalQueue.Data\obj\Debug\net6.0\ref\IntervalQueue.Data.dll
+C:\Users\User\Documents\GitHub\MyProjects\IntervalQueue\IntervalQueue.Data\bin\Debug\net6.0\IntervalQueue.Data.deps.json
+C:\Users\User\Documents\GitHub\MyProjects\IntervalQueue\IntervalQueue.Data\bin\Debug\net6.0\IntervalQueue.Data.runtimeconfig.json
+C:\Users\User\Documents\GitHub\MyProjects\IntervalQueue\IntervalQueue.Data\bin\Debug\net6.0\IntervalQueue.Data.dll
+C:\Users\User\Documents\GitHub\MyProjects\IntervalQueue\IntervalQueue.Data\bin\Debug\net6.0\IntervalQueue.Data.pdb
+C:\Users\User\Documents\GitHub\MyProjects\IntervalQueue\IntervalQueue.Data\obj\Debug\net6.0\IntervalQueue.Data.csproj.AssemblyReference.cache
+C:\Users\User\Documents\GitHub\MyProjects\IntervalQueue\IntervalQueue.Data\obj\Debug\net6.0\IntervalQueue.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Documents\GitHub\MyProjects\IntervalQueue\IntervalQueue.Data\obj\Debug\net6.0\IntervalQueue.Data.AssemblyInfoInputs.cache
+C:\Users\User\Documents\GitHub\MyProjects\IntervalQueue\IntervalQueue.Data\obj\Debug\net6.0\IntervalQueue.Data.AssemblyInfo.cs
+C:\Users\User\Documents\GitHub\MyProjects\IntervalQueue\IntervalQueue.Data\obj\Debug\net6.0\IntervalQueue.Data.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\MyProjects\IntervalQueue\IntervalQueue.Data\obj\Debug\net6.0\IntervalQueue.Data.dll
+C:\Users\User\Documents\GitHub\MyProjects\IntervalQueue\IntervalQueue.Data\obj\Debug\net6.0\refint\IntervalQueue.Data.dll
+C:\Users\User\Documents\GitHub\MyProjects\IntervalQueue\IntervalQueue.Data\obj\Debug\net6.0\IntervalQueue.Data.pdb
+C:\Users\User\Documents\GitHub\MyProjects\IntervalQueue\IntervalQueue.Data\obj\Debug\net6.0\IntervalQueue.Data.genruntimeconfig.cache
+C:\Users\User\Documents\GitHub\MyProjects\IntervalQueue\IntervalQueue.Data\obj\Debug\net6.0\ref\IntervalQueue.Data.dll

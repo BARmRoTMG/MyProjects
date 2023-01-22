@@ -3492,23 +3492,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\barba\\.nuget\\packages\\": {},
-    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Bar Projects\\MyProjects\\IntervalQueue\\IntervalQueue.Client\\IntervalQueue.Client.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\MyProjects\\IntervalQueue\\IntervalQueue.Client\\IntervalQueue.Client.csproj",
       "projectName": "IntervalQueue.Client",
-      "projectPath": "D:\\Bar Projects\\MyProjects\\IntervalQueue\\IntervalQueue.Client\\IntervalQueue.Client.csproj",
-      "packagesPath": "C:\\Users\\barba\\.nuget\\packages\\",
-      "outputPath": "D:\\Bar Projects\\MyProjects\\IntervalQueue\\IntervalQueue.Client\\obj\\",
+      "projectPath": "C:\\Users\\User\\Documents\\GitHub\\MyProjects\\IntervalQueue\\IntervalQueue.Client\\IntervalQueue.Client.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User\\Documents\\GitHub\\MyProjects\\IntervalQueue\\IntervalQueue.Client\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\barba\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3523,8 +3523,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Bar Projects\\MyProjects\\IntervalQueue\\IntervalQueue.Data\\IntervalQueue.Data.csproj": {
-              "projectPath": "D:\\Bar Projects\\MyProjects\\IntervalQueue\\IntervalQueue.Data\\IntervalQueue.Data.csproj"
+            "C:\\Users\\User\\Documents\\GitHub\\MyProjects\\IntervalQueue\\IntervalQueue.Data\\IntervalQueue.Data.csproj": {
+              "projectPath": "C:\\Users\\User\\Documents\\GitHub\\MyProjects\\IntervalQueue\\IntervalQueue.Data\\IntervalQueue.Data.csproj"
             }
           }
         }
