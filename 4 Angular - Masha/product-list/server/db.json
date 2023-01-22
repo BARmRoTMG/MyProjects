@@ -1,0 +1,44 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Macbook Pro 2018",
+      "publish": "2022-11-27",
+      "image": "https://i.pcmag.com/imagery/reviews/06iYyLP08JhGUulIPXgxOYh-3..v1569469918.jpg",
+      "price": 3500,
+      "description": "Brand new in box Macbook, all originals.",
+      "productLocation": "Kiryat Ono",
+      "sellerPhone": "0544487985"
+    },
+    {
+      "id": 2,
+      "name": "Electric Bike",
+      "publish": "2023-01-10",
+      "image": "http://www.koning.co.il/en/wp-content/uploads/2020/12/BEARmain.png",
+      "price": 3000,
+      "description": "Used condition, new battery.",
+      "productLocation": "Tel-Aviv",
+      "sellerPhone": "0526562338"
+    },
+    {
+      "id": 3,
+      "name": "Sony Playsation 4 Pro",
+      "publish": "2023-01-1",
+      "image": "https://m.media-amazon.com/images/I/61ryVJLDlFL._AC_SX466_.jpg",
+      "price": 1290,
+      "description": "Used like new PS4, comes with two controllers and 5 games.",
+      "productLocation": "Ramat Gan",
+      "sellerPhone": "0506554668"
+    },
+    {
+      "id": 9,
+      "name": "Skateboard",
+      "publish": "2023-01-16T15:56:36.909Z",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/71PfGyStYmL.jpg",
+      "price": 300,
+      "description": "First hand skateboard",
+      "productLocation": "Tel Aviv",
+      "sellerPhone": "0505414455"
+    }
+  ]
+}

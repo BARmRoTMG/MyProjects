@@ -1,0 +1,14 @@
+<div>
+    <span>Order By - </span>
+    <select #select (change)="select.value == 'price' ? sortPrice.bind(this)() : sortDate.bind(this)()">
+        <option value="price">Price</option>
+        <option>Date</option>
+    </select>
+</div>
+
+<div *ngFor="let product of productList">
+    <product [data]="product"></product>
+    <button class="btn" (click)="onDelete(product.id)">Purchase</button>
+    <button class="btn" routerLink="/product/{{product.id}}" routerLinkActive="active">Details</button>
+</div>
+<router-outlet></router-outlet>

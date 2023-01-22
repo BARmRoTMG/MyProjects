@@ -1,0 +1,49 @@
+
+<h1>Date Pipes</h1>
+<h3>{{now}}</h3>
+<h3>{{now | date}}</h3>
+<h3>{{now | date:'dd/MM/YYYY'}}</h3>
+<h3>{{now | date:'short'}}</h3>
+
+<h1>Currency Pipes</h1>
+<h3>{{price}}</h3>
+<h3>{{price | currency:'ILS'}}</h3>
+<h3>{{price | currency:'EUR'}}</h3>
+<h3>{{price | currency:'USD'}}</h3>
+
+<h1>Decimal Pipe</h1>
+<h3>{{price}}</h3>
+<h3>{{price | number: '1.1-3'}}</h3>
+<h3>{{price | number: '1.1-2'}}</h3>
+<h3>{{price | number: '1.1-4'}}</h3>
+<h3>{{price | number: '1.1-1'}}</h3>
+
+<h1>Exponent Pipe</h1>
+<h3>{{number}}</h3>
+<h3>{{number | exponent}}</h3>
+<h3>{{number | exponent:2}}</h3>
+<h3>{{number | exponent:3}}</h3>
+<h3>{{number | exponent:4}}</h3>
+
+
+<div *ngFor="let image of images">
+    <img [src]="image.thumbnailUrl" width="150" /> 
+    <div>{{image.title}}</div>
+    <button (click)="deleteImage(image.id)">Delete</button>
+</div>
+
+
+
+<div>
+  <label>
+    title: <input type="text" [(ngModel)]="newImage.title" />
+  </label>
+  <label>
+    thumbnailUrl: <input type="text" [(ngModel)]="newImage.thumbnailUrl" />
+  </label>
+  <button (click)="addImage()">Save</button>
+</div>
+
+<div *ngIf="isError">
+  Server error. Please try again;
+</div>

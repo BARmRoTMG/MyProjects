@@ -1,0 +1,24 @@
+<div>
+    <input hidden type="number" [value]="EditData.id" id="id" #id/>
+    <label>
+        Name: <input type="text" [value]="EditData.name" id="name" #name />
+    </label>
+</div>
+<div>
+    <label>
+        Movie Image Url: <input type="text" [value]="EditData.image"  id="image" #image />
+    </label>
+</div>
+<div>
+    <label>
+        Year: <input type="number" [value]="EditData.year"  id="year" #year />
+    </label>
+</div>
+<div>
+    <label>
+        Description: <input type="text" [value]="EditData.description"  id="description" #description  style="width: 500px;"/>
+    </label>
+</div>
+<div>
+    <button (click)="updateData(id.value, true, name.value, year.value, description.value, image.value)" style="width:90px; height: 50px;">{{buttonText}}</button>
+</div>

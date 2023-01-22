@@ -7,23 +7,4 @@
         <input type="checkbox" [checked]="movieData?.isWatched" (change)="toggleIsWatched($event)">
     </label>
     <p>{{movieData?.description}}</p>
-
-    <!-- <label>
-        Name: <input type="text" [value]="movieData?.name" id="name" #name />
-    </label>
-    
-    
-    <label>
-        Year: <input type="number" [value]="movieData?.year"  id="year" #year />
-    </label>
-    
-    <label>
-        Description: <input type="text" [value]="movieData?.description"  id="description" #description  />
-    </label> -->
-    <br>
-    <br>
-    <!-- <button (click)="updateFUNCTION(name, year, description)">Update Details</button> -->
-    <button (click)="onUpdateHandler()">Update</button>
-    <button (click)="onDeleteHandler()">Delete</button>
-    <button (click)="onDuplicateHandler()">Duplicate</button>
 </div>

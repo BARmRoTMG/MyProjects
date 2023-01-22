@@ -1,20 +1,6 @@
-<ng-container *ngFor="let p of movies">
-    <movie [movieData]="p" (remove)="removeMovie($event)" (duplicate)="duplicateMovie($event)" (update)="updateMovie($event)">
-    </movie>
-    <label>
-        Name: <input type="text" [value]="p.name" id="name" #name />
-    </label>
-    
-    
-    <label>
-        Year: <input type="number" [value]="p.year"  id="year" #year />
-    </label>
-    
-    <label>
-        Description: <input type="text" [value]="p.description"  id="description" #description  />
-    </label>
-</ng-container>
-
-<ng-container>
-    <label>Movie Name:</label>
-</ng-container>
+<div *ngFor="let m of movies">
+    <movie [movieData]="m"></movie>
+    <button (click)="deleteMovie(m.id)">Delete</button>
+    <button (click)="duplicateMovie(m)">Duplicate</button>
+    <movie-editor [EditData]="m" [buttonText]="'Update'"></movie-editor>
+</div>

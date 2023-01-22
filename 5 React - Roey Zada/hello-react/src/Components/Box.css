@@ -1,0 +1,11 @@
+.Box {
+    border: 1px solid black;
+    padding: 20px;
+    background-color: aqua;
+    margin: 20px;
+}
+
+.Box>.content {
+    background-color: red;
+    padding: 20px;
+}

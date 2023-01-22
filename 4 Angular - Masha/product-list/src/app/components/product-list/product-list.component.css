@@ -1,0 +1,24 @@
+.btn {
+    width: 100px;
+    height: 35px;
+    color: white;
+    background-color: #1c2e4a;
+    border: 2px solid white;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.btn:active {
+    opacity: 0.9;
+}
+
+select {
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+  }
