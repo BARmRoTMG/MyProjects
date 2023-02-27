@@ -1,6 +1,9 @@
 using FlightSimulator.Context;
+using FlightSimulator.Entities;
 using FlightSimulator.Interfaces;
 using FlightSimulator.Repository;
+using Logic.Interfaces;
+using Logic.Services;
 using Microsoft.EntityFrameworkCore;
 using System.Configuration;
 
@@ -13,8 +16,14 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<DataContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
+builder.Services.AddDbContext<DataContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("Default")).EnableSensitiveDataLogging());
+
 builder.Services.AddScoped<IFlightRepository, FlightRepository>();
+builder.Services.AddScoped<ITerminalRepository<Terminal>, TerminalRepository>();
+//builder.Services.AddScoped<ILoggerRepository<Logger>, LoggerRepository>();
+builder.Services.AddScoped<IBasicRepository<Logger>, LoggerRepository>();
+
+builder.Services.AddScoped<ITerminalService, TerminalService>();
 
 var app = builder.Build();
 
@@ -24,6 +33,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseCors(options =>
+    options.WithOrigins("http://localhost:4200").AllowAnyMethod().AllowAnyHeader());
 
 app.UseHttpsRedirection();
 

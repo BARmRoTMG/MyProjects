@@ -24,20 +24,16 @@ namespace FlightSimulator.Repository
 
         public async Task<List<Flight>> GetAll() => await _context.Flights.ToListAsync();
 
+        public Task<Flight> GetBasic(Flight flight)
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task<Flight> GetFlightByName(string flightNumber) => await _context.Flights.SingleOrDefaultAsync(f => f.FlightNumber == flightNumber);
 
         public async Task<List<Flight>> GetFlightsByStatus(FlightStatus flightStatus) => await _context.Flights.Where(f => f.Status == flightStatus).ToListAsync();
 
         public async Task<List<Flight>> GetFlightsByType(FlightType flightType) => await _context.Flights.Where(f => f.Type == flightType).ToListAsync();
-
-        public async Task<DateTime> GetMaxFutureFlightTime()
-        {
-            var futureFlight = await _context.Flights.Where(f => f.Status == FlightStatus.Future).ToListAsync();
-
-            if (futureFlight.Count == 0) return default;
-
-            return futureFlight.Max(f => f.FlightTime);
-        }
 
         public async Task UpdateAsync(Flight model)
         {

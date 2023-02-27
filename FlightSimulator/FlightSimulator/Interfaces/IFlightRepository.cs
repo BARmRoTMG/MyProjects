@@ -10,6 +10,5 @@ namespace FlightSimulator.Interfaces
         Task<List<Flight>> GetFlightsByType(FlightType flightType);
         public Task<List<Flight>> GetFlightsByStatus(FlightStatus flightStatus);
         public Task UpdateFutureFlightsAsync();
-        public Task<DateTime> GetMaxFutureFlightTime();
     }
 }

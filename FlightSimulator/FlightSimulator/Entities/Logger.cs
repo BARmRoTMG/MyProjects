@@ -7,13 +7,14 @@ namespace FlightSimulator.Entities
     [Table("Logger")]
     public class Logger
     {
-        [Key]
         public int Id { get; set; }
 
-        public virtual Terminal? Terminal { get; set; }
+        //public virtual Terminal? Terminal { get; set; }
+        public string? CurrentTerminal { get; set; }
 
         [Required]
-        public virtual Flight Flight { get; set; }
+        //public virtual Flight Flight { get; set; }
+        public string FlightNumber { get; set; }
 
         [Required]
         public DateTime EnterToTerminal { get; set; }

@@ -30,8 +30,9 @@ namespace FlightSimulator.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("CurrentTerminalId")
-                        .HasColumnType("int");
+                    b.Property<int?>("CurrentTerminalId")
+                        .HasColumnType("int")
+                        .HasColumnName("CurrentTerminalId");
 
                     b.Property<string>("FlightCompany")
                         .IsRequired()
@@ -68,23 +69,20 @@ namespace FlightSimulator.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("CurrentTerminal")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime>("EnterToTerminal")
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime?>("ExitFromTerminal")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("FlightId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("TerminalId")
-                        .HasColumnType("int");
+                    b.Property<string>("FlightNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("FlightId");
-
-                    b.HasIndex("TerminalId");
 
                     b.ToTable("Logger");
                 });
@@ -186,28 +184,9 @@ namespace FlightSimulator.Migrations
                 {
                     b.HasOne("FlightSimulator.Entities.Terminal", "CurrentTerminal")
                         .WithMany()
-                        .HasForeignKey("CurrentTerminalId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("CurrentTerminalId");
 
                     b.Navigation("CurrentTerminal");
-                });
-
-            modelBuilder.Entity("FlightSimulator.Entities.Logger", b =>
-                {
-                    b.HasOne("FlightSimulator.Entities.Flight", "Flight")
-                        .WithMany()
-                        .HasForeignKey("FlightId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("FlightSimulator.Entities.Terminal", "Terminal")
-                        .WithMany()
-                        .HasForeignKey("TerminalId");
-
-                    b.Navigation("Flight");
-
-                    b.Navigation("Terminal");
                 });
 #pragma warning restore 612, 618
         }

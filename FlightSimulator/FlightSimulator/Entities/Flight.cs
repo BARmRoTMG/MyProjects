@@ -22,7 +22,10 @@ namespace FlightSimulator.Entities
         
         public FlightStatus? Status { get; set; }
 
-        public virtual Terminal CurrentTerminal { get; set; }
+        public virtual Terminal? CurrentTerminal { get; set; }
+
+        [Column("CurrentTerminalId")]
+        public int? CurrentTerminalId { get; set; }
 
         public int PassengersCount { get; set; }
     }

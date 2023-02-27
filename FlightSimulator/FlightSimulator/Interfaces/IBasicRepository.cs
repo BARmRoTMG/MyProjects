@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FlightSimulator.Entities;
+using System;
 
 namespace FlightSimulator.Interfaces
 {
@@ -7,5 +8,6 @@ namespace FlightSimulator.Interfaces
         Task AddAsync(T model);
         Task UpdateAsync(T model);
         Task<List<T>> GetAll();
+        Task<T> GetBasic(Flight flight);
     }
 }

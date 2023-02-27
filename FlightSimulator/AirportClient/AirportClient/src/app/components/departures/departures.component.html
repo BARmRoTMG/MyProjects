@@ -1,0 +1,25 @@
+<h4 class="title text-center">Departures</h4>
+<br>
+<table class="table table-striped">
+    <thead>
+        <th>Time</th>
+        <th>Flight Number</th>
+        <th>Company</th>
+        <th>Passengers Count</th>
+        <th>Status</th>
+    </thead>
+    <tbody>
+        <ng-container *ngFor="let flight of flightsList$|async">
+            <tr *ngIf="flight.type == 1"> 
+                <td>{{flight.flightTime}}</td>
+                <td>{{flight.flightNumber}}</td>
+                <td>{{flight.flightCompany}}</td>
+                <td>{{flight.passengersCount}}</td>
+                <td *ngIf="flight.status == 0">Future</td>
+                <td *ngIf="flight.status == 1">InQueue</td>
+                <td *ngIf="flight.status == 2">In Process</td>
+                <td *ngIf="flight.status == 3">Past</td>
+            </tr>
+        </ng-container>
+    </tbody>
+</table>

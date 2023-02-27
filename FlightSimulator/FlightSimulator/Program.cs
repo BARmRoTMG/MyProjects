@@ -1,83 +1,72 @@
 ﻿using FlightSimulator.Context;
 using FlightSimulator.Entities;
-using FlightSimulator.Entities.Extentions;
 using FlightSimulator.Enums;
+using FlightSimulator.Interfaces;
+using FlightSimulator.Repository;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Net.Http.Json;
 using System.Text;
 using t = System.Timers;
 
-namespace FlightSimulator
+namespace ConsoleAirs
 {
-    class Program
+    internal class Program
     {
-        private static HttpClient httpClient = new HttpClient { BaseAddress = new Uri("https://localhost:7066") };
+        #region Fields/Properties
+        private static HttpClient httpClient = new HttpClient { BaseAddress = new Uri("https://localhost:7126") };
         private static readonly DataContext _context = new DataContext();
 
-        static t.Timer _timer = new t.Timer(1000);
         private readonly static Random _rnd = new Random();
         private static DateTime _minDateTime;
-        private static double _spaceBetweenFlight = 5;
+        private static double _spaceBetweenFlight = 8;
         private static string[] _flightCompanies = new string[]
         {
-            "ISRAIR AIRLINES", "EL AL ISRAEL AIRLINES",
-            "FLYDUBAI", "EMIRATES AIRWAYS",
-            "ARKIA ISRAELI AIRLINES", "AIR FRANCE"
+                    "ISRAIR AIRLINES", "EL AL ISRAEL AIRLINES",
+                    "FLYDUBAI", "EMIRATES AIRWAYS",
+                    "ARKIA ISRAELI AIRLINES", "AIR FRANCE"
         };
+        #endregion
 
         static void Main(string[] args)
         {
             SetTerminals();
+            AutoFlightGen();
 
-            while (true)
-            {
-                FlightCreatorLoop();
-                Running();
-            }
+            Console.ReadLine();
         }
 
-        private static void Running()
+        private static void PrintFlight(Flight flight)
         {
-            var flight = GetFlightFromAir();    //from here start U web API [HttpPost]
-            foreach (var f in flight)
-            {
-                if (flight != null)
-                {
-                    FromAirToTerminal2(flight);
-                    _timer.Elapsed += (s, e) => GoNextTerminal(f);
-                    UpdateInterval(f);
-                    _timer.Start();
-                }
-            }
+            if (flight.CurrentTerminal == null)
+                Console.WriteLine($"{flight.FlightNumber} - {flight.FlightCompany} - WAITING TO LAND - {flight.Type} - {DateTime.Now} - {flight.Status}");
+            else
+                Console.WriteLine($"{flight.FlightNumber} - {flight.FlightCompany} - {flight.CurrentTerminal} - {flight.Type} - {DateTime.Now} - {flight.Status}");
         }
 
-        private static void FlightCreatorLoop()
+        private static void AutoFlightGen()
         {
-            int flightCount = 5;
-            bool isLanding = false;
-
-            Console.WriteLine("How many flights would you like to generate?");
-
-            while (true)
-            {
-                if (!int.TryParse(Console.ReadLine(), out flightCount))
-                    Console.WriteLine("Invalid input, please try again...");
-                else break;
-            }
-
-            for (int i = 0; i < flightCount; i++)
-            {
-                if (isLanding == true)
-                     PostNewFlight(GenerateFlight(FlightType.Landing));
-                else
-                     PostNewFlight(GenerateFlight(FlightType.Departure));
-
-                isLanding = !isLanding; //if it was true becomes false and other way around.
-                _minDateTime.AddSeconds(_spaceBetweenFlight);
-                Thread.Sleep(TimeSpan.FromSeconds(_spaceBetweenFlight));
-            }
+            var flightTimer = new t.Timer();
+            flightTimer.Interval = _spaceBetweenFlight * 1000;
+            flightTimer.Elapsed += (s, e) => GenerateFlights();
+            flightTimer.Start();
         }
 
-        private static Flight GenerateFlight(FlightType flightType)
+        private async static Task PostNewFlight(Flight plane)
+        {
+            var response = await httpClient.PostAsJsonAsync("api/airport/processFlights", plane);
+            Console.WriteLine(await response.Content.ReadAsStringAsync());
+        }
+
+        #region Starter
+        private static void SetTerminals()
+        {
+            var t2 = Terminal_2.Init;
+            _context.Terminals.Add(t2);
+            _context.SaveChanges();
+        }
+
+        private async static void GenerateFlights()
         {
             if (_minDateTime == default) _minDateTime = DateTime.Now;
             _minDateTime = _minDateTime.AddSeconds(_spaceBetweenFlight);
@@ -85,23 +74,16 @@ namespace FlightSimulator
             var flight = new Flight
             {
                 FlightNumber = GenerateFlightNumber(),
-                FlightTime = _minDateTime,
                 FlightCompany = _flightCompanies[_rnd.Next(_flightCompanies.Length)],
-                Type = flightType,
+                FlightTime = _minDateTime,
+                Type = FlightType.Landing,
                 Status = FlightStatus.Future,
-                PassengersCount = 0
+                PassengersCount = _rnd.Next(1, 200)
             };
-            //return new Flight
-            //{
-            //    FlightNumber = GenerateFlightNumber(),
-            //    FlightTime = _minDateTime,
-            //    FlightCompany = _flightCompanies[_rnd.Next(_flightCompanies.Length)],
-            //    Type = flightType
-            //};
-            _context.Flights.Add(flight);
-            _context.AddLog(flight);
-            _context.SaveChanges();
-            return flight;
+            await _context.Flights.AddAsync(flight);
+            await _context.SaveChangesAsync();
+            await PostNewFlight(flight);
+            PrintFlight(flight);
         }
 
         private static string GenerateFlightNumber()
@@ -117,68 +99,6 @@ namespace FlightSimulator
 
             return sbRandomFlight.ToString();
         }
-
-        private async static Task PostNewFlight(Flight plane)
-        {
-            PrintFlight(plane);
-            var response = await httpClient.PostAsJsonAsync("api/airport", plane);
-            Console.WriteLine(await response.Content.ReadAsStringAsync());
-        }
-
-        private static void PrintFlight(Flight flight)
-        {
-            Console.WriteLine($"{flight.FlightNumber} - {flight.FlightCompany} - {flight.FlightTime}  - {flight.Type} - {flight.Status}");
-        }
-
-        private static void SetTerminals()
-        {
-            var t2 = Terminal_2.Init;
-            _context.Terminals.Add(t2);
-            _context.SaveChanges();
-        }
-
-        private static void UpdateInterval(Flight flight)
-        {
-            if (flight.CurrentTerminal != null)
-                _timer.Interval = flight.CurrentTerminal.WaitTime * 1000;
-            else
-                _timer.Stop();
-        }
-
-        private static void GoNextTerminal(Flight flight)
-        {
-            Next(flight);
-            UpdateInterval(flight);
-            PrintFlight(flight);
-        }
-
-        private static void Next(Flight flight)
-        {
-            if (flight.CurrentTerminal != null)
-            {
-                flight.CurrentTerminal.NextTerminal(flight);
-                _context.UpdateLog(flight);
-            }
-            else
-                _timer.Stop();
-        }
-
-        private static List<Flight> GetFlightFromAir()
-        {
-            var flight = _context.Flights.ToList();//.FirstOrDefault(f => f.IsDeparture == null);
-            return flight;
-        }
-
-        private static void FromAirToTerminal2(List<Flight> flights)
-        {
-            foreach (var flight in flights)
-            {
-                flight.Type = FlightType.Landing;
-                flight.CurrentTerminal = _context.Terminals.First(t => t.TerminalNumber == 2);
-                _context.UpdateLog(flight);
-
-                PrintFlight(flight);
-            }
-        }
+        #endregion
     }
 }

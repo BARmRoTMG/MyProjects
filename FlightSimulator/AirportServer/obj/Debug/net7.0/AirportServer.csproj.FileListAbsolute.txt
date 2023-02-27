@@ -67,7 +67,6 @@ D:\Bar Projects\MyProjects\FlightSimulator\AirportServer\bin\Debug\net7.0\Flight
 D:\Bar Projects\MyProjects\FlightSimulator\AirportServer\bin\Debug\net7.0\Logic.dll
 D:\Bar Projects\MyProjects\FlightSimulator\AirportServer\bin\Debug\net7.0\FlightSimulator.pdb
 D:\Bar Projects\MyProjects\FlightSimulator\AirportServer\bin\Debug\net7.0\Logic.pdb
-D:\Bar Projects\MyProjects\FlightSimulator\AirportServer\obj\Debug\net7.0\AirportServer.MvcApplicationPartsAssemblyInfo.cs
 D:\Bar Projects\MyProjects\FlightSimulator\AirportServer\obj\Debug\net7.0\staticwebassets\msbuild.AirportServer.Microsoft.AspNetCore.StaticWebAssets.props
 D:\Bar Projects\MyProjects\FlightSimulator\AirportServer\obj\Debug\net7.0\staticwebassets\msbuild.build.AirportServer.props
 D:\Bar Projects\MyProjects\FlightSimulator\AirportServer\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.AirportServer.props

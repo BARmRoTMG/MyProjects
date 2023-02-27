@@ -50,7 +50,7 @@ namespace FlightSimulator.Entities
 
             if (flight.Type == FlightType.Departure)
             {
-                //flight.IsDeparture = null;
+                flight.Status = FlightStatus.Past;
                 flight.CurrentTerminal = null;
             }
             else

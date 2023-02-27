@@ -1,6 +1,7 @@
 ﻿using FlightSimulator.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Reflection.Emit;
 
 namespace FlightSimulator.Context
@@ -11,7 +12,11 @@ namespace FlightSimulator.Context
         public virtual DbSet<Terminal> Terminals { get; set; }
         public virtual DbSet<Logger> Loggers { get; set; }
 
-        public DataContext() { }
+        public DataContext() //Resets Database Data
+        {
+            Database.EnsureDeleted();
+            Database.EnsureCreated();
+        }
         public DataContext(DbContextOptions<DataContext> options) : base(options) { }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
                 => optionsBuilder.UseSqlServer("Data Source=(localdb)\\mssqllocaldb;Initial Catalog=AirportDatabase;Integrated Security=True;Trusted_Connection=true");
@@ -26,17 +31,7 @@ namespace FlightSimulator.Context
             builder.Entity<Terminal_7>();
             builder.Entity<Terminal_8>();
 
-            //builder.Entity<Logger>()
-            //  .HasOne(l => l.Terminal)
-            //  .WithMany()
-            //  .OnDelete(DeleteBehavior.NoAction);
-
             base.OnModelCreating(builder);
         }
-
-        //public DataContext() : base("AirportDatabase")
-        //{
-        //    Database.SetInitializer(new DropCreateDatabaseAlways<DataContext>());
-        //}
     }
 }
