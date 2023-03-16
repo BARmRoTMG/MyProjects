@@ -1,9 +1,6 @@
 ﻿using FlightSimulator.Context;
 using FlightSimulator.Entities;
 using FlightSimulator.Enums;
-using FlightSimulator.Interfaces;
-using FlightSimulator.Repository;
-using Microsoft.EntityFrameworkCore;
 using System;
 using System.Net.Http.Json;
 using System.Text;
@@ -13,9 +10,10 @@ namespace ConsoleAirs
 {
     internal class Program
     {
+        private static readonly DataContext _context = new DataContext();
+
         #region Fields/Properties
         private static HttpClient httpClient = new HttpClient { BaseAddress = new Uri("https://localhost:7126") };
-        private static readonly DataContext _context = new DataContext();
 
         private readonly static Random _rnd = new Random();
         private static DateTime _minDateTime;
@@ -55,6 +53,7 @@ namespace ConsoleAirs
         private async static Task PostNewFlight(Flight plane)
         {
             var response = await httpClient.PostAsJsonAsync("api/airport/processFlights", plane);
+            PrintFlight(plane);
             Console.WriteLine(await response.Content.ReadAsStringAsync());
         }
 
@@ -80,10 +79,9 @@ namespace ConsoleAirs
                 Status = FlightStatus.Future,
                 PassengersCount = _rnd.Next(1, 200)
             };
-            await _context.Flights.AddAsync(flight);
-            await _context.SaveChangesAsync();
+            //await _context.Flights.AddAsync(flight);
+            //await _context.SaveChangesAsync();
             await PostNewFlight(flight);
-            PrintFlight(flight);
         }
 
         private static string GenerateFlightNumber()
