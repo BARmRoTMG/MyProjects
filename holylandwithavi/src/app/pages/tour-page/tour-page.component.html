@@ -4,6 +4,7 @@
             <a routerLink="../../menu" class="btn btn-sm btn-dark mb-3">Back</a>
             <img src="{{tourData[0].img}}" width="100%" />
             <h1 class="mt-3">{{tourData[0].title}}</h1>
+            <h6><i class="bi bi-speedometer2"></i>&nbsp;{{tourData[0].difficulty}}&nbsp;&nbsp;<i class="bi bi-clock"></i>&nbsp;{{tourData[0].time}}</h6>
             <p>{{tourData[0].description}}
             <p>{{tourData[0].price | currency :'EUR'}}</p>
         </div>

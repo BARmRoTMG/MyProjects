@@ -1,7 +1,15 @@
 .navbar-nav .nav-link, .navbar-nav .show>.nav-link{
     color: var(--secondary-color);
+    font-weight: bold;
 }
 
 .navbar-nav .nav-link.active-link, .navbar-nav .show>.nav-link{
     color: var(--primary-color);
+    font-weight: bold;
+}
+
+.logo-image {
+    width: 150px;
+    height: 100%;
+    object-fit:cover;
 }

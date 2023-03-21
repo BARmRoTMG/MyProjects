@@ -24,3 +24,8 @@
     border-radius: 10px;
     cursor: pointer;
 }
+
+i {
+    font-size: 20px;
+    color: var(--primary-color);
+}

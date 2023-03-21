@@ -11,6 +11,15 @@ img {
     border-radius: 10px;
 }
 
+i {
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+h6 {
+    font-size: 18px;
+}
+
 @media screen and (max-width:600px) {
     form {
         width: 100%;
