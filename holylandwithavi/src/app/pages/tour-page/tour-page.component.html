@@ -1,20 +1,28 @@
-<div class="container mt-5 mb-5">
-    <div class="row">
-        <div class="col-lg-6" *ngIf="tourData">
-            <a routerLink="../../menu" class="btn btn-sm btn-dark mb-3">Back</a>
-            <img src="{{tourData[0].img}}" width="100%" />
-            <h1 class="mt-3">{{tourData[0].title}}</h1>
-            <h6><i class="bi bi-speedometer2"></i>&nbsp;{{tourData[0].difficulty}}&nbsp;&nbsp;<i class="bi bi-clock"></i>&nbsp;{{tourData[0].time}}</h6>
+<div class="section">
+    <div class="container">
+        <div class="left">
+            <img class="tourImage" src="{{tourData[0].img}}" width="100%" />
+            <h1 class="tourTitle">{{tourData[0].title}}</h1>
+            <h6><i class="bi bi-speedometer2"></i>&nbsp;{{tourData[0].difficulty}}&nbsp;&nbsp;<i
+                    class="bi bi-clock"></i>&nbsp;{{tourData[0].time}}</h6>
             <p>{{tourData[0].description}}
-            <p>{{tourData[0].price | currency :'EUR'}}</p>
         </div>
-        <div class="col-lg-6 col-lg-12">
-            <h1>Enter Your Details</h1>
+
+        <div class="right">
+            <h6>Check out our availability and book the date and time that works for you</h6>
             <form>
-                <input type="text" class="form-control" placeholder="Enter your full name" />
-                <input type="text" class="form-control" placeholder="Enter your phone number" />
-                <textarea class="form-control" placeholder="Enter your address"></textarea>
-                <button class="btn btn-md btn-dark mt-3">Book My Tour</button>
+                <input type="datetime-local" placeholder="Select time and date"/>
+                <input type="number" max="4" min="1" placeholder="Number of participants (Up to 4)"/>
+                <input type="number" max="4" min="0" placeholder="Number of suitcases (Up to 4)"/>
+                <h5>Service Details</h5>
+                <p>
+                    <li>{{tourData[0].title}}</li>
+                    <li>Including pick-up and drop-off</li>
+                    <li>Up to 4 participants</li>
+                    <li>Estimated tour time: {{tourData[0].time}}</li>
+                </p>
+                <p class="price">{{tourData[0].price | currency :'EUR'}}</p>
+                <button>Book My Tour</button>
             </form>
         </div>
     </div>

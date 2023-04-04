@@ -11,7 +11,7 @@
         <div class="col-lg-4 mt-2">
             <div class="step-box">
                 <h1>1</h1>
-                <p>Selet Tour of Choice.</p>
+                <p>Select Tour of Choice.</p>
             </div>
         </div>
         <div class="col-lg-4 mt-2">
@@ -37,10 +37,44 @@
             <div class="tourbox" *ngIf="i <= 3">
                 <img src="{{t.img}}" />
                 <h1>{{t.title}}</h1>
-                <p>{{t.description}}</p>
-                <h5>{{t.price}} <i class="bi bi-currency-euro"></i></h5>
+                <p hidden id="desc">{{t.description}}</p>
             </div>
         </div>
     </div>
     <a routerLink="menu" class="more-btn"><i class="bi bi-list"></i> View More</a>
+</div>
+
+<!-- Reviews Box -->
+<div class="review-container mt-4 mb-4">
+    <div class="board">
+        <h1 class="text-light text-center">Customers <span class="highlight">Reviews</span></h1>
+        <p class="text-light text-center">Taken from Tripadvisor</p>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide" *ngFor="let r of reviewData; index as i">
+                    <div class="flex">
+                        <div class="comments">
+                            <h1 class="comment-title">{{r.title}}</h1>
+                            <p>{{r.comment}}</p>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="profile">
+                            <p class="text-light">Name: {{r.name}}</p>
+                            <p class="text-light">Stars: {{r.stars}}</p>
+                            <p class="text-light">Written {{r.date}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </div>
 </div>
