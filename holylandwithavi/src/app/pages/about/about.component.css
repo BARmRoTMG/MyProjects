@@ -71,3 +71,25 @@ i {
     -webkit-text-stroke-color: var(--primary-color);
   }
   
+  @media (min-width: 320px) {
+      .board {
+          width: auto;
+      }
+      .swiper {
+          width: 320px;
+      } .board > h1, p {
+          padding: 0 2em;
+      }
+  }
+  
+  @media (min-width: 768px) {
+      .board {
+          width: 100%;
+      }
+      .swiper {
+          width: 600px;
+      }
+      .swiper .swiper-button-prev, .swiper-button-next {
+          display: initial;
+      }
+  }
